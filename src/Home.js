@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './Home.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Elements/NavBar';
 
 function Home() {
@@ -9,6 +9,7 @@ function Home() {
       <header className="App-header">
         <Navbar />
       </header>
+      <button className= "btn btn-primary"> Prueba bootstrap </button>
     </div>
   );
 }
