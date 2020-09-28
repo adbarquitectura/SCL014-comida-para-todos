@@ -1,14 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './Home.css';
 
-function App() {
+function Home() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Prueba Comida para todos
+          Prueba Comida para todos con HOME
         </p>
         <a
           className="App-link"
@@ -23,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
