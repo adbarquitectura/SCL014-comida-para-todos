@@ -1,19 +1,18 @@
 import React from 'react';
-import BotonDonar from './Boton-donar';
+import BotonDonar from '../Botones/Boton-donar';
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
 } from 'react-router-dom';
-import QuienesSomosView from '../Views/Quienes-somos/Quienes-somos';
-import QueHacemosView from  '../Views/Que-hacemos/Que-hacemos';
-import ComoAportarView from '../Views/Como-aportar/Como-aportar';
-import ContactoView from '../Views/Contacto/Contacto';
+import QuienesSomosView from '../Vistas/Quienes-somos/QuienesSomosView';
+import QueHacemosView from '../Vistas/Que-hacemos/QueHacemosView';
+import ComoAportarView from '../Vistas/Como-aportar/ComoAportarView';
+import ContactoView from '../Vistas/Contacto/ContactoView';
+import HomeView from '../Vistas/Home/HomeView';
 
-import Home from '../../Home';
-
-const Navbar = () => {
+const MenuNavegacion = () => {
     return (
         <Router>
             <div>
@@ -31,6 +30,10 @@ const Navbar = () => {
                 </nav>
 
                 <Switch>
+
+                    <Route exact path="/">
+                        <HomeView />
+                    </Route>
                     <Route path="/quienesSomos">
                         <QuienesSomosView />
                     </Route>
@@ -47,10 +50,9 @@ const Navbar = () => {
                 </Switch>
 
             </div >
-
         </Router >
 
     )
 }
 
-export default Navbar;
+export default MenuNavegacion;
