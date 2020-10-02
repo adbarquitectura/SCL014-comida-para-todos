@@ -5,14 +5,13 @@ const BotonDonar = () => {
     return (
 
         <div>
-            <button className='btnn btn-primary'>
+            <button className='btn btn-primary'>
                 <a href='https://yodono.cl/proyecto/207/CultivaComidaparaTods'>
                     Se parte
             </a>
             </button>
 
         </div >
-
 
     )
 }
