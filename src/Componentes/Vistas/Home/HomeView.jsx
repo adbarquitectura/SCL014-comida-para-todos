@@ -1,20 +1,8 @@
 import React from 'react';
+import BotonGeneral from '../../Botones/BotonGenrales';
 import LaReceta from '../../MultimediaComponents/LaReceta.mp4';
 
 
-const BlueVioletBtn = (props) => {
-  return (
-    <button className="btn mybtn"> {props.contenidobtn} </button>
-  )
-}
-
-const RedesSociales = () => {
-  return (
-    <div >
-      Redes Sociales
-    </div>
-  )
-}
 
 const ContainerMultimediaHome = () => {
   return (
@@ -35,8 +23,7 @@ const CarrouselSeguridadAlimentaria = () => {
 const HomeView = () => {
     return (
 
-        <div>
-            <RedesSociales />
+        <div>           
             <ContainerMultimediaHome />
             <CarrouselSeguridadAlimentaria />
             
@@ -45,10 +32,10 @@ const HomeView = () => {
                 muted loop >
                 <source src={LaReceta} type="video/mp4" />
             </video>
-            <BlueVioletBtn
+            <BotonGeneral
                 contenidobtn={'Hola'}
             />
-            <button className="btn mybtn"> Prueba bootstrap </button>
+            
         </div >
 
 
