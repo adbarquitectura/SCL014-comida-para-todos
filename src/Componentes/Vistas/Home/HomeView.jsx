@@ -1,58 +1,47 @@
 import React from 'react';
-import LaReceta from '../../MultimediaComponents/LaReceta.mp4';
-
-
-const BlueVioletBtn = (props) => {
-  return (
-    <button className="btn mybtn"> {props.contenidobtn} </button>
-  )
-}
-
-const RedesSociales = () => {
-  return (
-    <div >
-      Redes Sociales
-    </div>
-  )
-}
-
-const ContainerMultimediaHome = () => {
-  return (
-    <div>
-      Menu Video Ppal
-    </div>
-  )
-}
-
-const CarrouselSeguridadAlimentaria = () => {
-  return (
-    <div>
-      Aqui va el Carrousel
-    </div>
-  )
-}
+import BotonGeneral from '../../Botones/BotonGenrales';
+import ContainerMultimediaHome from '../../ElementosDinamicos/ContainerMultimediaHome';
+import CarrouselMultimediaProblematica from '../../ElementosDinamicos/CarruselMultimediaProblematica';
+import Infografia from '../../ElementosDinamicos/Infografia';
+import TarjetasDescriptivas from '../../ElementosDinamicos/TarjetasDescriptivas';
+import CarruselMultimediaInformativo from '../../ElementosDinamicos/CarruselMultimediaInformativo'; 
+import SeccionManerasAportar from '../../ElementosDinamicos/SeccionManerasAportar';
+import Alianzas from '../../ElementosDinamicos/Alianzas';
 
 const HomeView = () => {
-    return (
+  return (
 
-        <div>
-            <RedesSociales />
-            <ContainerMultimediaHome />
-            <CarrouselSeguridadAlimentaria />
-            
-            <video className="video"
-                autoPlay
-                muted loop >
-                <source src={LaReceta} type="video/mp4" />
-            </video>
-            <BlueVioletBtn
-                contenidobtn={'Hola'}
-            />
-            <button className="btn mybtn"> Prueba bootstrap </button>
-        </div >
+    <div>
+      <ContainerMultimediaHome />
+      <CarrouselMultimediaProblematica />
+
+      <Infografia
+        contenidoInfo={'impacto-organizacion'}
+      />
+
+      <TarjetasDescriptivas
+        contenidoInfo={'contneido-tarjetas'}
+      />
+
+      <Infografia
+        contenidoInfo={'ciclo-de-vida'}
+      />
+
+      <CarruselMultimediaInformativo />
+      <SeccionManerasAportar
+      maneras= {'talento, metro cuadrado, educación y horas de capacitación, alimentos'} 
+      />
+
+      <Alianzas />
+
+      <BotonGeneral
+        contenidobtn={'Hola'}
+      />
+
+    </div >
 
 
-    )
+  )
 }
 
 export default HomeView;
