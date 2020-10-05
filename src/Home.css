@@ -40,3 +40,19 @@
 .mybtn {
   background-color: blueviolet !important;
 }
+
+.sectionMultimedia .video {
+  width : 100%;
+  position: relative;
+
+}
+
+.sectionMultimedia .overlay{
+  position: relative; /* Sit on top of the page content */
+  display: block; 
+  /* background-clip: url('./Componentes/MultimediaComponents/LaReceta.mp4'); */
+  width:40%; /* Full width (cover the whole page) */
+  height: 50%; /* Full height (cover the whole page) */
+  background-color:transparent; 
+  z-index: 2; 
+}
