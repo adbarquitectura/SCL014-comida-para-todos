@@ -4,16 +4,27 @@ import ContainerMultimediaHome from '../../ElementosDinamicos/ContainerMultimedi
 import CarrouselMultimediaProblematica from '../../ElementosDinamicos/CarruselMultimediaProblematica';
 import Infografia from '../../ElementosDinamicos/Infografia';
 import TarjetasDescriptivas from '../../ElementosDinamicos/TarjetasDescriptivas';
-import CarruselMultimediaInformativo from '../../ElementosDinamicos/CarruselMultimediaInformativo'; 
+import CarruselMultimediaInformativo from '../../ElementosDinamicos/CarruselMultimediaInformativo';
 import SeccionManerasAportar from '../../ElementosDinamicos/SeccionManerasAportar';
 import Alianzas from '../../ElementosDinamicos/Alianzas';
+
 
 const HomeView = () => {
   return (
 
     <div>
       <ContainerMultimediaHome />
-      <CarrouselMultimediaProblematica />
+      <CarrouselMultimediaProblematica 
+      tituloPrimerSlide = {'titulo1'}
+      parrafoPrimerSlide = {'parrafo1'}
+
+      tituloSegundoSlide = {'titulo2'}
+      parrafoSegundoSlide = {'parrafo2'}
+
+      tituloTercerSlide = {'titulo3'}
+      parrafoTercerSlide = {'parrafo3'}
+
+      />
 
       <Infografia
         contenidoInfo={'impacto-organizacion'}
@@ -29,7 +40,7 @@ const HomeView = () => {
 
       <CarruselMultimediaInformativo />
       <SeccionManerasAportar
-      maneras= {'talento, metro cuadrado, educación y horas de capacitación, alimentos'} 
+        maneras={'talento, metro cuadrado, educación y horas de capacitación, alimentos'}
       />
 
       <Alianzas />
