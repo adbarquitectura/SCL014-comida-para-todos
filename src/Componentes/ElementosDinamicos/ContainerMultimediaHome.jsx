@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap'
 import LaReceta from '../MultimediaComponents/LaReceta.mp4';
 import BotonGeneral from '../Botones/BotonGenrales';
 
