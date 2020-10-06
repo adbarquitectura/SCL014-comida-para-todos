@@ -41,6 +41,7 @@
   background-color: blueviolet !important;
 }
 
+/* Elemento Dinamico Container Multimedia */
 .sectionMultimedia .video {
   width : 100%;
   position: relative;
@@ -56,3 +57,22 @@
   background-color:transparent; 
   z-index: 2; 
 }
+
+/* Elemento fijo Redes Sociales */
+.Social-Container{
+  background: #eee;
+  padding: 25px 50px;
+}
+
+.Social-Container a {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+  color: #98238E;
+}
+
+.Social-Container a:hover{
+  transform: translateY(-2px); 
+  color: #FD4C00 ; 
+}
+
