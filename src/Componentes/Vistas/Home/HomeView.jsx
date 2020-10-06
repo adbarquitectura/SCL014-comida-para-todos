@@ -14,6 +14,7 @@ const HomeView = () => {
 
     <div>
       <ContainerMultimediaHome />
+      
       <CarrouselMultimediaProblematica 
       tituloPrimerSlide = {'titulo1'}
       parrafoPrimerSlide = {'parrafo1'}
@@ -31,7 +32,7 @@ const HomeView = () => {
       />
 
       <TarjetasDescriptivas
-        contenidoInfo={'contneido-tarjetas'}
+        contenidoInfo={'Nuestros 4 ingredientes para la receta'}
       />
 
       <Infografia
