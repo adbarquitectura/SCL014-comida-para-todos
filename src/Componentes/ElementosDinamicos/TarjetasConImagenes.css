@@ -1,0 +1,30 @@
+.contenedorGeneralTarjetas {
+    display: block;
+    width: 100%;
+}
+
+.contenedorTarjetas {
+    display: flex;
+    width: 100%;
+}
+
+.boxTarjeta {
+    background-color: teal;
+}
+.boxImagenes {
+    background-color: yellow;
+}
+
+.boxTextoTarjeta {
+    background-color: tomato;
+}
+
+.imgTarjeta {
+    width: 50%;
+    position: absolute;
+}
+
+.logoTarjeta {
+    width: 50%;
+    position: relative;
+}
