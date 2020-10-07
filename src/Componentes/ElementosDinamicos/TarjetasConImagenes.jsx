@@ -3,24 +3,17 @@ import './TarjetasConImagenes.css';
 
 const TarjetasConImagenes = (props) => {
     return (
-        <div className="boxTarjeta">
-            <div className="boxImagenes">
-                <img
-                    className="imgTarjeta"
-                    src={props.imgSrc}
-                    alt="First slide"
-                />
-                <img
-                    className="logoTarjeta"
-                    src={props.logoImgSrc}
-                    alt="First slide"
-                />
-            </div>
+        <div className="boxImagenesTarjeta">
 
+            <img
+                className="imgTarjeta"
+                src={props.imgSrc}
+                alt="First slide"
+            />
 
             <div className="boxTextoTarjeta">
-                <h3>{props.tituloImg}</h3>
-                <p>{props.parrafoImg}</p>
+                <h3 className="tituloBoxTextoTarjeta">{props.tituloImg}</h3>
+                <p className="parrafoBoxTextoTarjeta">{props.parrafoImg}</p>
             </div>
 
         </div>
