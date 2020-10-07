@@ -4,6 +4,9 @@ text-align: left;
 .contenedorGeneralTarjetas {
     display: block;
     width: 100%;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .contenedorTarjetas {
@@ -25,8 +28,8 @@ text-align: left;
 }
 
 .imgTarjeta {
-    width: 180px;   
-    height: 180px; 
+    width: 200px;   
+    height: 200px; 
     padding: 15px;
     box-sizing: border-box;
     /* background-color: violet; */
