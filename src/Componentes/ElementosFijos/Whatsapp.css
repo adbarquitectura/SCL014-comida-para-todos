@@ -1,0 +1,15 @@
+.btnWhatsapp {
+  width: 100%;
+  height: 50%;
+}
+
+.btnWhatsapp button {
+  height: 50px;
+  width: 50px;
+  background-image: url("../../img/whatsapp\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  object-fit: cover;
+}
