@@ -2,8 +2,8 @@
 text-align: left;
 }
 .contenedorGeneralTarjetas {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .contenedorTarjetas {
@@ -46,3 +46,4 @@ text-align: left;
     line-height: 23px;
     text-align: center;
 }
+
