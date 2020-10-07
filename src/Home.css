@@ -49,23 +49,22 @@
   background-color: teal;
 }
 .sectionMultimedia .video {
-  width : 100%;
-  /* position: absolute; */
-  object-fit: cover;
-
+  width: 100%;
+  position: relative;
 }
 
-.sectionMultimedia .overlay{
+.sectionMultimedia .overlay {
   position: relative; /* Sit on top of the page content */
-  display: block; 
-  width:40%; 
-  height: 50%; 
-  background-color:transparent; 
-  z-index: 2; 
+  display: block;
+  /* background-clip: url('./Componentes/MultimediaComponents/LaReceta.mp4'); */
+  width: 40%; /* Full width (cover the whole page) */
+  height: 50%; /* Full height (cover the whole page) */
+  background-color: transparent;
+  z-index: 2;
 }
 
 /* Elemento fijo Redes Sociales */
-.Social-Container{
+.Social-Container {
   background: #eee;
   padding: 25px 50px;
 }
@@ -74,12 +73,28 @@
   margin: 0 1rem;
   transition: transform 250ms;
   display: inline-block;
-  color: #98238E;
+  color: #98238e;
 }
 
-.Social-Container a:hover{
-  transform: translateY(-2px); 
-  color: #FD4C00 ; 
+.Social-Container a:hover {
+  transform: translateY(-2px);
+  color: #fd4c00;
+}
+
+.pastillaFooter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 364px;
+  background-image: url("img/Comunidad\ footer\ 1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logoImg img {
+  display: flex;
+  width: 100px;
+  height: 100px;
 }
 
 /* Estilo boton Se Parte, dropdown */
@@ -87,4 +102,12 @@
 .sePartedrop{
   background-color: #FD4C00 !important;
   border-color: transparent !important;
+}
+footer li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  width: auto;
+  margin: 0 20px;
+  text-align: justify;
 }
