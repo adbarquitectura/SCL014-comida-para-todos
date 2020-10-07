@@ -3,7 +3,7 @@ import "./Home.css";
 import Whatsapp from "./Componentes/ElementosFijos/Whatsapp";
 import MenuNavegacion from "./Componentes/ElementosFijos/MenuNavegacion";
 import Footer from "./Componentes/ElementosFijos/Footer";
-import RedesSociales from "./Componentes/ElementosFijos/RedesSociales";
+
 
 function Home() {
   return (
@@ -11,7 +11,6 @@ function Home() {
       <MenuNavegacion />
       <Whatsapp />
       <Footer />
-      <RedesSociales />
     </div>
   );
 }

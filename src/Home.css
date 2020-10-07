@@ -41,45 +41,9 @@
   background-color: blueviolet !important;
 }
 
-/* Elemento Dinamico Container Multimedia */
 
-.sectionMultimedia {
-  width: 100%;
-  height: 100%;
-  background-color: teal;
-}
-.sectionMultimedia .video {
-  width: 100%;
-  position: relative;
-}
 
-.sectionMultimedia .overlay {
-  position: relative; /* Sit on top of the page content */
-  display: block;
-  /* background-clip: url('./Componentes/MultimediaComponents/LaReceta.mp4'); */
-  width: 40%; /* Full width (cover the whole page) */
-  height: 50%; /* Full height (cover the whole page) */
-  background-color: transparent;
-  z-index: 2;
-}
 
-/* Elemento fijo Redes Sociales */
-.Social-Container {
-  background: #eee;
-  padding: 25px 50px;
-}
-
-.Social-Container a {
-  margin: 0 1rem;
-  transition: transform 250ms;
-  display: inline-block;
-  color: #98238e;
-}
-
-.Social-Container a:hover {
-  transform: translateY(-2px);
-  color: #fd4c00;
-}
 
 .pastillaFooter {
   display: flex;
