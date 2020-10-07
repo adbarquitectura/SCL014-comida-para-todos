@@ -15,6 +15,12 @@ const Alianzas = () => {
         <img src={boa} />
         <img src={chimba} />
         <img src={cava} />
+
+        <p>
+          Como restaurantes, estamos muy contentos de unirnos a esta causa y
+          poder colaborar con platos de comida ricos y de calidad, cocinados por
+          nustros propios chefs y con mucho cariño para las comunidades.
+        </p>
       </div>
     </div>
   );
