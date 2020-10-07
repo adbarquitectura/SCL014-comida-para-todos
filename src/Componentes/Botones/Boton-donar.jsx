@@ -6,6 +6,7 @@ import DropdownItem from 'react-bootstrap/esm/DropdownItem';
 import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHeart} from '@fortawesome/free-regular-svg-icons';
+import './Boton-donar.css';
 
 const BotonDonar = () => {
     return (
@@ -25,14 +26,6 @@ const BotonDonar = () => {
               <DropdownItem href= "/comoAportar"> Regala Alimentos </DropdownItem>
           </DropdownMenu>
       </Dropdown>
-        // <div>
-        //     <button className='btn btn-primary'>
-        //         <a href='https://yodono.cl/proyecto/207/CultivaComidaparaTods'>
-        //             Se parte
-        //     </a>
-        //     </button>
-
-        // </div >
 
     )
 }
