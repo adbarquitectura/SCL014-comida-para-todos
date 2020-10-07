@@ -14,12 +14,12 @@ const clickBton = () => {
 
 }
 
-/* Función Botón 'Conoce Más' */
+// /* Función Botón 'Conoce Más' */
 
-const clickConoceMas = () => {
-  console.log('Quiero conocer más');
-  window.open('/comoAportar');
-}
+// const clickConoceMas = () => {
+//   console.log('Quiero conocer más');
+//   window.open('/comoAportar');
+// }
 
 const ContainerMultimediaHome = () => {
   return (
@@ -32,11 +32,10 @@ const ContainerMultimediaHome = () => {
           funcion={clickBton}
         />
         <br />
-        <BotonGeneral
+        {/* <BotonGeneral
           contenidobtn={'Conoce más'}
           funcion ={clickConoceMas}
-        />
-        {/* <button><Link to="/comoAportar" />Conoce más </button> */}
+        /> */}
       </section>
 
       <video className="video"
