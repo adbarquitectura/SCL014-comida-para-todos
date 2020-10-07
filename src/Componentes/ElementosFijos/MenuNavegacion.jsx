@@ -12,13 +12,22 @@ import ComoAportarView from '../Vistas/Como-aportar/ComoAportarView';
 import ContactoView from '../Vistas/Contacto/ContactoView';
 import HomeView from '../Vistas/Home/HomeView';
 
+import logoMenu from '../../img/logofondoblanco.png';
+
+import './MenuNavegacion.css';
+
 const MenuNavegacion = () => {
     return (
         <Router>
-            <div>
-                <nav>
+            <div className="boxMenuNavegacionFijo">
 
-                    <ul>
+                <nav className="boxMenuNavegacion">
+                    <img
+                        className="imgLogoMenuNavegacion"
+                        src={logoMenu}
+                        alt="Logo Comida para todos"
+                    />
+                    <ul className="boxListaMenuNavegacion">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/quienesSomos">¿Quiénes somos?</Link></li>
                         <li><Link to="/queHacemos">¿Qué hacemos?</Link></li>
@@ -28,7 +37,9 @@ const MenuNavegacion = () => {
                     </ul>
 
                 </nav>
+            </div>
 
+            <div className="boxRenderizadoMenuSeleccionado">
                 <Switch>
 
                     <Route exact path="/">
@@ -48,7 +59,6 @@ const MenuNavegacion = () => {
                     </Route>
 
                 </Switch>
-
             </div >
         </Router >
 
