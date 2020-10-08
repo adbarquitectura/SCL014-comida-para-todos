@@ -1,6 +1,38 @@
 /* Elemento Dinamico Container Multimedia */
 
+.SectionMultimedia {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+.video {
+    width: 100% !important;
+    object-fit: cover;
+    position: relative;
+}
+
+.Overlay {
+    font-size: 30px;
+    position: absolute;
+    text-align: left;
+    width: 30%;
+    top: -1200%;
+    left: -5%;
+    height: 200px;
+    z-index: -200;
+}
+
+/* .Overlay .btn mybtn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 25px;
+}
+ */
+
+/* 
 .SectionMultimedia{
     width: 100%;
     height:700px;
@@ -38,7 +70,7 @@
     object-fit: cover;
     position: absolute;
     z-index: 1;
-}
+} */
 
 /* .Overlay{
     position: relative; 
@@ -47,14 +79,18 @@
     align-items: center;
     flex-direction: column;
     /* display: block; */
-    /* width: 40%; 
+
+/* width: 40%; 
     height: 50%; 
     background-color: transparent; */
-    /* z-index: 2; */
+
+/* z-index: 2; */
+
 /* } */
 
-/* .video{  Video toma contenido container completo, pero texto desaparece */ 
-    /* display: flex;
+/* .video{  Video toma contenido container completo, pero texto desaparece */
+
+/* display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -71,6 +107,7 @@
     transform: translate(-50%, -50%);
     z-index: -1;
 } */
+
 /* .video{ video sale de contenedor
     width: 100%;
     height: 100%;
@@ -79,14 +116,13 @@
     left:0;
     object-fit: cover;
 } */
+
 /* .SectionMultimedia .video{
     width: 100%;
     height: 100%;
 } */
 
-
-
-  /* .sectionMultimedia .video {
+/* .sectionMultimedia .video {
     width: 100%;
     position: relative;
   }

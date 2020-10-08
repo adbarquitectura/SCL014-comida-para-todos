@@ -5,8 +5,8 @@ text-align: left;
     display: block;
     width: 100%;
     box-sizing: border-box;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 .contenedorTarjetas {
@@ -47,6 +47,6 @@ text-align: left;
     font-size: 21px;
     font-weight: 400;
     line-height: 23px;
-    text-align: center;
+    text-align: left;
 }
 

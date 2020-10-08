@@ -12,16 +12,12 @@ const CarruselMultimediaProblematica = (props) => {
     <div>
       <Carousel>
         <Carousel.Item>
-          <video className="video d-block w-100"
+          <video
+            className="d-block w-100"
             autoPlay muted
             loop >
             <source src={LaReceta} type="video/mp4" />
           </video>
-          {/* <img
-            className="d-block w-100"
-            src={imgcarousel1}
-            alt="First slide"
-          /> */}
           <Carousel.Caption>
             <h3>{props.tituloPrimerSlide}</h3>
             <p>{props.parrafoPrimerSlide}</p>
