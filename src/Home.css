@@ -40,33 +40,3 @@
 .mybtn {
   background-color: blueviolet !important;
 }
-
-
-
-
-
-.pastillaFooter {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 364px;
-  background-image: url("img/Comunidad\ footer\ 1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.logoImg img {
-  display: flex;
-  width: 100px;
-  height: 100px;
-}
-
-
-footer li {
-  text-decoration: none;
-  list-style: none;
-  display: inline-block;
-  width: auto;
-  margin: 0 20px;
-  text-align: justify;
-}
