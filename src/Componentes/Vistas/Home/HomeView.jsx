@@ -13,9 +13,9 @@ const HomeView = () => {
   return (
 
     <div>
-      <ContainerMultimediaHome />
+    <ContainerMultimediaHome />
       
-      <CarrouselMultimediaProblematica 
+     {/* <CarrouselMultimediaProblematica 
       tituloPrimerSlide = {'titulo1'}
       parrafoPrimerSlide = {'parrafo1'}
 
@@ -25,7 +25,7 @@ const HomeView = () => {
       tituloTercerSlide = {'titulo3'}
       parrafoTercerSlide = {'parrafo3'}
 
-      /> 
+      />   */}
 
       <Infografia
         contenidoInfo={'impacto-organizacion'}
