@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import logo from "../../img/logoblanco.png";
+import RedesSociales from "./RedesSociales";
 
 const Footer = () => {
   return (
@@ -22,6 +23,7 @@ const Footer = () => {
               </li>
             </ul>
             <a href="/2020">©2020</a>
+            <RedesSociales/>
           </footer>
         </div>
       </div>
