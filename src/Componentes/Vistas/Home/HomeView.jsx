@@ -25,7 +25,7 @@ const HomeView = () => {
       tituloTercerSlide = {'titulo3'}
       parrafoTercerSlide = {'parrafo3'}
 
-      />
+      /> 
 
       <Infografia
         contenidoInfo={'impacto-organizacion'}

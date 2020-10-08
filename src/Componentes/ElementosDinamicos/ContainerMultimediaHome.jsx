@@ -1,10 +1,7 @@
 import React from 'react';
 import LaReceta from '../MultimediaComponents/LaReceta.mp4';
 import BotonGeneral from '../Botones/BotonGenrales';
-// import {
-//   Link
-// } from "react-router-dom";
-// import { Modal } from 'react-bootstrap';
+import './ContainerMultimediaHome.css';
 
 /* Función Botón 'Regala un almuerzo' */
 const clickBton = () => {
@@ -14,37 +11,26 @@ const clickBton = () => {
 
 }
 
-// /* Función Botón 'Conoce Más' */
-
-// const clickConoceMas = () => {
-//   console.log('Quiero conocer más');
-//   window.open('/comoAportar');
-// }
-
 const ContainerMultimediaHome = () => {
   return (
-    <div className='sectionMultimedia'>
-      <section className="overlay">
-        <h5>LA RECETA PARA UN MEJOR PAÍS</h5>
-        <h2> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h2>
-        < BotonGeneral
-          contenidobtn={'Regala un almuerzo'}
-          funcion={clickBton}
-        />
-        <br />
-        {/* <BotonGeneral
-          contenidobtn={'Conoce más'}
-          funcion ={clickConoceMas}
-        /> */}
+    <div >
+      <section className='SectionMultimedia'>
+      <div className="Overlay Text">
+          <h2> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h2>
+          < BotonGeneral
+            contenidobtn={'Regala un almuerzo'}
+            funcion={clickBton}
+          />
+        </div>
+        {/* <div className="video"> */}
+          <video className="video"
+            autoPlay muted
+            loop >
+            <source src={LaReceta} type="video/mp4" />
+          </video>
+        {/* </div> */}
       </section>
-
-      <video className="video"
-        autoPlay muted
-        loop >
-        <source src={LaReceta} type="video/mp4" />
-      </video>
-
-
+        
     </div>
   )
 }
