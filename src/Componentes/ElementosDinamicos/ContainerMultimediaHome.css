@@ -6,7 +6,7 @@
     height:700px;
     background-color: blue;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
     
@@ -14,13 +14,21 @@
 
 .Overlay {
     display: flex;
-    width: 90%;
-    justify-content: flex-end;
-    align-items: center;
+    width: 20%;
+    justify-content: flex-start;
+    align-items: baseline;
     flex-direction: column;
     z-index: 2;
     color: white;
-    
+    background-color: green;
+    margin-left: 50px;
+}
+
+.Overlay .btn mybtn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 25px;
 }
 
 .video{  
@@ -29,6 +37,7 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
+    z-index: 1;
 }
 
 /* .Overlay{
