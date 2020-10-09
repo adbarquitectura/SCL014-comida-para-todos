@@ -1,13 +1,8 @@
 /* Elemento fijo Redes Sociales */
 
 .Social-Container {
-  background: transparent;
-  padding: 25px 25px;
-  display: flex;
-  /* justify-content: flex-end;
-    align-items: baseline; */
-  background: transparent;
-  display: flex;
+  background: transparent; 
+  display: flex;  
   flex-direction: column;
   justify-content: baseline;
   align-items: flex-end;
@@ -19,19 +14,11 @@
   margin-bottom: 10px;
 }
 
-.SocialIcons a img {
-  margin: 0 1rem;
-  transition: transform 250ms;
-  display: inline-block;
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
-}
 .SocialIcons a {
-  margin: 0 1rem;
+  margin: 0 15px 0 15px;
   transition: transform 250ms;
   display: inline-block;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .SocialIcons a:hover {
@@ -44,9 +31,10 @@
   align-items: space-between;
 }
 
-
-.ColorParrafo {
+.ColorParrafo{
   color: white;
+  font-size: 18px;
+  margin: 0 15px 0 15px;
 }
 
 .TamanoSocialIcons {
