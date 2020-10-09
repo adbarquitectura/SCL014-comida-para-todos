@@ -7,11 +7,13 @@ import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHeart} from '@fortawesome/free-regular-svg-icons';
 import './Boton-donar.css';
+import ModalDonar from '../Botones/ModalDonar';
 
 const BotonDonar = () => {
     return (
-        
-      <Dropdown>
+        <div>
+           
+            <Dropdown>
           {/* Botón que se despliega*/ }
           <DropdownToggle size= "lg" className="sePartedrop">
               Se Parte    <FontAwesomeIcon icon= {faHeart} size= "0.5x" />
@@ -26,6 +28,10 @@ const BotonDonar = () => {
               <DropdownItem href= "/comoAportar"> Regala Alimentos </DropdownItem>
           </DropdownMenu>
       </Dropdown>
+      <br/> <br/> <br/> <br/> <br/>
+      <ModalDonar/>
+        </div>
+      
 
     )
 }

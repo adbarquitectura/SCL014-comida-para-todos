@@ -1,7 +1,7 @@
 import React from 'react';
 import BotonGeneral from '../../Botones/BotonGenrales';
 import ContainerMultimediaHome from '../../ElementosDinamicos/ContainerMultimediaHome';
-import CarrouselMultimediaProblematica from '../../ElementosDinamicos/CarruselMultimediaProblematica';
+// import CarrouselMultimediaProblematica from '../../ElementosDinamicos/CarruselMultimediaProblematica';
 import Infografia from '../../ElementosDinamicos/Infografia';
 import TarjetasDescriptivas from '../../ElementosDinamicos/TarjetasDescriptivas';
 import CarruselMultimediaInformativo from '../../ElementosDinamicos/CarruselMultimediaInformativo';
