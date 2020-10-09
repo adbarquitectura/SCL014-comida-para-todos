@@ -8,9 +8,13 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="pastillaFooter">
-      <div>
-        <footer>
-          <ul>
+      <footer >
+        <div className="footer">
+          <div className="logoImg">
+            <img src={logo} />
+          </div>
+
+          <ul className="listaFooter">
             <li>
               <img className="viñeta" src={viñeta} />
               <a href="/PreguntasFrecuentes">Preguntas frecuentes</a>
@@ -18,23 +22,25 @@ const Footer = () => {
             <li>
               <img className="viñeta" src={viñeta} />
               <a href="/DondeEstamos">¿Dónde Estamos?</a>
+
             </li>
             <li>
               <img className="viñeta" src={viñeta} />
               <a href="/Transparencia">Transparencia</a>
             </li>
           </ul>
-          <div className="logoImg">
-            <img src={logo} />
-          </div>
-          <RedesSociales />
-          <div ClassName="Año">
-            <a href="/2020" ClassName="Año">
-              ©2020 - Comida para todos, Santiago de Chile
+        </div>
+
+
+        <RedesSociales />
+
+        <div className="Año">
+          <a href="/2020" className="Año">
+            ©2020 - Comida para todos, Santiago de Chile
             </a>
-          </div>
-        </footer>
-      </div>
+        </div>
+
+      </footer>
     </div>
   );
 };

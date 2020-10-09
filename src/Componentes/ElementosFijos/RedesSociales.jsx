@@ -31,5 +31,4 @@ const RedesSociales = () => {
     </div>
   );
 };
-
 export default RedesSociales;

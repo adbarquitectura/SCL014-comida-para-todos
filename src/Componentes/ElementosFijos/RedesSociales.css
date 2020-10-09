@@ -1,10 +1,13 @@
 /* Elemento fijo Redes Sociales */
+
 .Social-Container {
   background: transparent;
   padding: 25px 25px;
   display: flex;
   /* justify-content: flex-end;
     align-items: baseline; */
+  background: transparent;
+  display: flex;
   flex-direction: column;
   justify-content: baseline;
   align-items: flex-end;
@@ -24,6 +27,12 @@
   width: 5%;
   height: 5%;
 }
+.SocialIcons a {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+  color: #ffffff;
+}
 
 .SocialIcons a:hover {
   transform: translateY(-2px);
@@ -33,4 +42,13 @@
 .SocialText {
   color: white;
   align-items: space-between;
+}
+
+.SocialText {
+  color: white;
+  align-items: space-between;
+}
+
+.ColorParrafo {
+  color: white;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import BotonGeneral from '../../Botones/BotonGenrales';
+import BotonGeneral from '../../Botones/BotonGeneral';
 import ContainerMultimediaHome from '../../ElementosDinamicos/ContainerMultimediaHome';
 import CarrouselMultimediaProblematica from '../../ElementosDinamicos/CarruselMultimediaProblematica';
 import Infografia from '../../ElementosDinamicos/Infografia';
@@ -8,11 +8,13 @@ import CarruselMultimediaInformativo from '../../ElementosDinamicos/CarruselMult
 import SeccionManerasAportar from '../../ElementosDinamicos/SeccionManerasAportar';
 import Alianzas from '../../ElementosDinamicos/Alianzas';
 
+import './HomeView.css';
+
 
 const HomeView = () => {
   return (
 
-    <div>
+    <div className= "containerMainView">
     <ContainerMultimediaHome />
       
      {/* <CarrouselMultimediaProblematica 

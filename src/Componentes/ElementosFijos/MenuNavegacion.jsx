@@ -32,10 +32,9 @@ const MenuNavegacion = () => {
                         <li><Link to="/quienesSomos">¿Quiénes somos?</Link></li>
                         <li><Link to="/queHacemos">¿Qué hacemos?</Link></li>
                         <li><Link to="/comoAportar">¿Cómo aportar?</Link></li>
-                        <li><Link to="/contacto">Contacto</Link></li>
-                        <BotonDonar />
+                        <li><Link to="/contacto">Contacto</Link></li>                        
                     </ul>
-
+                    <BotonDonar />
                 </nav>
             </div>
 

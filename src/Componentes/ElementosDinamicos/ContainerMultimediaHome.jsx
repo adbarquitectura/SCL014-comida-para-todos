@@ -1,6 +1,6 @@
 import React from 'react';
 import LaReceta from '../MultimediaComponents/LaReceta.mp4';
-import BotonGeneral from '../Botones/BotonGenrales';
+import BotonGeneral from '../Botones/BotonGeneral';
 import './ContainerMultimediaHome.css';
 
 
@@ -32,7 +32,7 @@ const ContainerMultimediaHome = () => {
           </video>
           <Carousel.Caption>
             <div className="Overlay">
-              <h2> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h2>
+              <h1 className="colorTextoh1"> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h1>
               < BotonGeneral
                 contenidobtn={'Regala un almuerzo'}
                 funcion={clickBton}
@@ -45,14 +45,14 @@ const ContainerMultimediaHome = () => {
 
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="video"
             src={imgcarousel2}
             alt="Third slide"
           />
 
           <Carousel.Caption>
             <div className="Overlay">
-              <h2> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h2>
+              <h1 className="colorTextoh1"> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h1>
 
             </div>
 
@@ -61,14 +61,14 @@ const ContainerMultimediaHome = () => {
 
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="video"
             src={imgcarousel3}
             alt="Third slide"
           />
 
           <Carousel.Caption>
             <div className="Overlay">
-              <h2> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h2>
+              <h1 className="colorTextoh1"> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h1>
 
             </div>
 
