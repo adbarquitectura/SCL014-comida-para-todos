@@ -43,7 +43,7 @@ const ContainerMultimediaHome = () => {
 
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="video"
             src={imgcarousel2}
             alt="Third slide"
           />
@@ -59,7 +59,7 @@ const ContainerMultimediaHome = () => {
 
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="video"
             src={imgcarousel3}
             alt="Third slide"
           />

@@ -1,35 +1,32 @@
 /* Elemento fijo Redes Sociales */
-.Social-Container {
-    background:transparent;
-    padding: 25px 25px;
-    display: flex;
-    /* justify-content: flex-end;
-    align-items: baseline; */
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: flex-end;
-  }
 
-.SocialIcons{
+.Social-Container {
+  background: transparent; 
+  display: flex;  
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: flex-end;
+}
+
+.SocialIcons {
   justify-content: baseline;
   align-items: flex-center;
   margin-bottom: 10px;
 }
 
 .SocialIcons a {
-    margin: 0 1rem;
-    transition: transform 250ms;
-    display: inline-block;
-    color: #FFFFFF;
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+  color: #FFFFFF;
+}
 
-  }
-  
 .SocialIcons a:hover {
-    transform: translateY(-2px);
-    /* color: #fd4c00; */
-  }
+  transform: translateY(-2px);
+  /* color: #fd4c00; */
+}
 
-  .SocialText{
-    color: white;
-    align-items: space-between;
-  }
+.SocialText {
+  color: white;
+  align-items: space-between;
+}
