@@ -7,7 +7,6 @@
     /* background: rgba(255, 255, 255, 0.5); */
     z-index: 100;
     /* Inside Auto Layout */
-    flex: none;
     order: 0;
     align-self: center;
     flex-grow: 0;
@@ -21,13 +20,16 @@
 .boxRenderizadoMenuSeleccionado {
     width: 100%;
     background-color: white;
-    margin-top: 0;  
+    margin-top: 0;
 }
 
 .boxMenuNavegacion {
     background-color: white;
-    height: 80px;    
+    height: 80px;
     display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 10px 128px 10px 128px;
 }
 
 .imgLogoMenuNavegacion {
@@ -35,11 +37,10 @@
     width: 130px;
     height: 130px;
     box-sizing: border-box;
-    margin: 10px 50px -40px 60px;
+    margin: auto auto 5px auto;
 }
 
-.boxListaMenuNavegacion {
-    /* background-color: coral; */
+.boxListaMenuNavegacion {  
     display: flex;
     font-size: 18px;
     line-height: 18px;
@@ -49,12 +50,13 @@
     list-style-type: none;
     text-decoration: none;
     width: 100%;
-    margin-right: 0;
-    /* justify-content: flex-end; */
-    justify-content: space-around;
+    justify-content: center;
     box-sizing: border-box;
-    margin: 20px;
-    
+    margin: 5px;
+}
+
+.boxListaMenuNavegacion li {
+    margin: auto 20px auto 20px;
 }
 
 a:link, a:visited, a:active {
@@ -62,4 +64,3 @@ a:link, a:visited, a:active {
     color: black;
     font-size: 18px;
 }
-
