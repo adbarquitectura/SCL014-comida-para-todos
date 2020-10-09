@@ -1,8 +1,10 @@
-.App {
+.ContenedorPadre {
   text-align: center;
+  width: 100%;  
+  margin: 0;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -37,6 +39,4 @@
   }
 }
 
-.mybtn {
-  background-color:#FD4C00 !important;;
-}
+ */

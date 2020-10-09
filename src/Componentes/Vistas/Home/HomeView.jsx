@@ -8,11 +8,13 @@ import CarruselMultimediaInformativo from '../../ElementosDinamicos/CarruselMult
 import SeccionManerasAportar from '../../ElementosDinamicos/SeccionManerasAportar';
 import Alianzas from '../../ElementosDinamicos/Alianzas';
 
+import './HomeView.css';
+
 
 const HomeView = () => {
   return (
 
-    <div>
+    <div className= "containerMainView">
     <ContainerMultimediaHome />
       
      {/* <CarrouselMultimediaProblematica 

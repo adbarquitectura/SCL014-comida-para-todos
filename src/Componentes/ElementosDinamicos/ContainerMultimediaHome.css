@@ -1,16 +1,10 @@
 /* Elemento Dinamico Container Multimedia */
 
-.SectionMultimedia {
-    width: 100%;
-    box-sizing: border-box;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 .video {
     width: 100% !important;
     object-fit: cover;
     position: relative;
+    height: 600px !important;     
 }
 
 .Overlay {
@@ -23,116 +17,3 @@
     height: 200px;
     z-index: -200;
 }
-
-/* .Overlay .btn mybtn{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: 25px;
-}
- */
-
-/* 
-.SectionMultimedia{
-    width: 100%;
-    height:700px;
-    background-color: blue;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    
-}
-
-.Overlay {
-    display: flex;
-    width: 20%;
-    justify-content: flex-start;
-    align-items: baseline;
-    flex-direction: column;
-    z-index: 2;
-    color: white;
-    background-color: green;
-    margin-left: 50px;
-}
-
-.Overlay .btn mybtn{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: 25px;
-}
-
-.video{  
-    display: flex;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: 1;
-} */
-
-/* .Overlay{
-    position: relative; 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    /* display: block; */
-
-/* width: 40%; 
-    height: 50%; 
-    background-color: transparent; */
-
-/* z-index: 2; */
-
-/* } */
-
-/* .video{  Video toma contenido container completo, pero texto desaparece */
-
-/* display: flex;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-} */
-
-/* .video{ Video queda bajo el contenedor y afuera de el 
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 50%;
-    height: 50%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-} */
-
-/* .video{ video sale de contenedor
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left:0;
-    object-fit: cover;
-} */
-
-/* .SectionMultimedia .video{
-    width: 100%;
-    height: 100%;
-} */
-
-/* .sectionMultimedia .video {
-    width: 100%;
-    position: relative;
-  }
-  
-  .sectionMultimedia .overlay {
-    position: relative; 
-    display: block;
-  
-    width: 40%; 
-    height: 50%; 
-    background-color: transparent;
-    z-index: 2;
-  } */
