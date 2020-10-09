@@ -8,6 +8,7 @@ import Footer from "./Componentes/ElementosFijos/Footer";
 function Home() {
   return (
     <div className="ContenedorPadre">
+      
       <MenuNavegacion />
       <Whatsapp />
       <Footer />

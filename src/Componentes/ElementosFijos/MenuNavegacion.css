@@ -35,16 +35,16 @@
 
 .imgLogoMenuNavegacion {
     /* background-color: blueviolet; */
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     box-sizing: border-box;
-    margin: auto auto 5px auto;
+    margin: auto auto 0px auto;
 }
 
 .boxListaMenuNavegacion {  
     display: flex;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 16px;
     align-items: center;
     letter-spacing: 0.2px;
     color: #373F41;

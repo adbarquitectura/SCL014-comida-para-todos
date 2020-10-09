@@ -1,0 +1,46 @@
+.btnGeneral{
+    background-color: #FD4C00;
+    color: white;
+    box-sizing: border-box;
+    transition-duration: 0.4s;
+    height: 42px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.btnGeneral:hover{
+    background-color: #8A2900;
+    color: white;
+}
+
+.btnGeneral:active{
+    background-color: transparent;
+    color: #FD4C00;
+    border: 2px solid #FD4C00;
+}
+
+.btnSecundario{
+    background-color: transparent;
+    color: #8A2900;
+    box-sizing: border-box;
+    transition-duration: 0.4s;
+    height: 42px;
+    border: 2px solid #8A2900;
+    border-radius: 3px;
+    font-size: 18px;
+    text-align: center; 
+}
+
+.btnSecundario:hover{
+    background-color:  #4F5515;
+    color: white;
+    border: none;
+}
+
+.btnSecundario:active {
+    background-color: #FDAC07;
+    color: white;
+    border: none;
+}
