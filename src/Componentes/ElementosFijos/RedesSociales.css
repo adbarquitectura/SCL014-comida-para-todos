@@ -24,8 +24,8 @@
   transition: transform 250ms;
   display: inline-block;
   color: #ffffff;
-  width: 5%;
-  height: 5%;
+  width: 40px;
+  height: 40px;
 }
 .SocialIcons a {
   margin: 0 1rem;
@@ -44,11 +44,12 @@
   align-items: space-between;
 }
 
-.SocialText {
-  color: white;
-  align-items: space-between;
-}
 
 .ColorParrafo {
   color: white;
+}
+
+.TamanoSocialIcons {
+  width: 40px;
+  height: 40px;
 }

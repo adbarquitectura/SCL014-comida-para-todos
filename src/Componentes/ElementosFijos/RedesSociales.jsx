@@ -13,20 +13,20 @@ const RedesSociales = () => {
           href="https://www.instagram.com/comida_para_todos_cl/"
           className="Instagram Social"
         >
-          <img src={instagram} />
+          <img className="TamanoSocialIcons" src={instagram} />
         </a>
         <a
           href="https://www.facebook.com/Comida-para-Todos-100133851719302/"
           className="Facebook Social"
         >
-          <img src={facebook} />
+          <img className="TamanoSocialIcons" src={facebook} />
         </a>
         <a href="https://twitter.com/chilecomida" className="Twitter Social">
-          <img src={twitter} />
+          <img className="TamanoSocialIcons" src={twitter} />
         </a>
       </div>
       <div className="SocialText">
-        <p>¡Síguenos en las redes! </p>
+        <p className="ColorParrafo">¡Síguenos en las redes!</p>
       </div>
     </div>
   );

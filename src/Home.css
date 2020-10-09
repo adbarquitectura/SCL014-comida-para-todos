@@ -27,16 +27,3 @@ p {
   font-weight: 400;
   color: #4d4d4d;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.mybtn {
-  background-color: #fd4c00 !important;
-}
