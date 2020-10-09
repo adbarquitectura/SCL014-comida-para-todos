@@ -1,6 +1,6 @@
 .ContenedorPadre {
   text-align: center;
-  width: 100%;  
+  width: 100%;
   margin: 0;
 }
 
@@ -19,11 +19,24 @@ h2 {
 h3 {
   font-size: 30px;
   font-weight: 600;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
-p{
+p {
   font-weight: 21px;
   font-weight: 400;
-  color: #4D4D4D;
+  color: #4d4d4d;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mybtn {
+  background-color: #fd4c00 !important;
 }
