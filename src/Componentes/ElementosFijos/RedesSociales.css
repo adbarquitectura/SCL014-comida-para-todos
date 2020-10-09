@@ -1,11 +1,8 @@
 /* Elemento fijo Redes Sociales */
 
 .Social-Container {
-  background: transparent;
-  padding: 25px 25px;
-  display: flex;
-  /* justify-content: flex-end;
-    align-items: baseline; */
+  background: transparent; 
+  display: flex;  
   flex-direction: column;
   justify-content: baseline;
   align-items: flex-end;

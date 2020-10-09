@@ -8,31 +8,38 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="pastillaFooter">
-      <footer className="footer">        
-        <ul className="listaFooter">
-          <li>
-            <img className="viñeta" src={viñeta} />
-            <a href="/PreguntasFrecuentes">Preguntas frecuentes</a>
-          </li>
-          <li>
-            <img className="viñeta" src={viñeta} />
-            <a href="/DondeEstamos">¿Dónde Estamos?</a>
-          </li>
-          <li>
-            <img className="viñeta" src={viñeta} />
-            <a href="/Transparencia">Transparencia</a>
-          </li>
-        </ul>
+      <footer >
+        <div className="footer">
+          <div className="logoImg">
+            <img src={logo} />
+          </div>
 
-        <div className="logoImg">
-          <img src={logo} />
+          <ul className="listaFooter">
+            <li>
+              <img className="viñeta" src={viñeta} />
+              <a href="/PreguntasFrecuentes">Preguntas frecuentes</a>
+            </li>
+            <li>
+              <img className="viñeta" src={viñeta} />
+              <a href="/DondeEstamos">¿Dónde Estamos?</a>
+
+            </li>
+            <li>
+              <img className="viñeta" src={viñeta} />
+              <a href="/Transparencia">Transparencia</a>
+            </li>
+          </ul>
         </div>
+
+
         <RedesSociales />
-        <div ClassName="Año">
-          <a href="/2020" ClassName="Año">
+
+        <div className="Año">
+          <a href="/2020" className="Año">
             ©2020 - Comida para todos, Santiago de Chile
             </a>
         </div>
+
       </footer>
     </div>
   );
