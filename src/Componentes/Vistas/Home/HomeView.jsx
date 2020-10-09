@@ -1,5 +1,6 @@
 import React from 'react';
-import BotonGeneral from '../../Botones/BotonGenrales';
+import BotonGeneral from '../../Botones/BotonGeneral';
+import BotonSecundario from '../../Botones/BotonSecundario';
 import ContainerMultimediaHome from '../../ElementosDinamicos/ContainerMultimediaHome';
 // import CarrouselMultimediaProblematica from '../../ElementosDinamicos/CarruselMultimediaProblematica';
 import Infografia from '../../ElementosDinamicos/Infografia';
@@ -14,10 +15,10 @@ import './HomeView.css';
 const HomeView = () => {
   return (
 
-    <div className= "containerMainView">
-    <ContainerMultimediaHome />
-      
-     {/* <CarrouselMultimediaProblematica 
+    <div className="containerMainView">
+      <ContainerMultimediaHome />
+
+      {/* <CarrouselMultimediaProblematica 
       tituloPrimerSlide = {'titulo1'}
       parrafoPrimerSlide = {'parrafo1'}
 
@@ -49,6 +50,9 @@ const HomeView = () => {
       <Alianzas />
 
       <BotonGeneral
+        contenidobtn={'Hola'}
+      />
+      <BotonSecundario
         contenidobtn={'Hola'}
       />
 

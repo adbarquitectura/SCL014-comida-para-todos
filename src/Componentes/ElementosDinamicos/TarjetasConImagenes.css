@@ -36,16 +36,12 @@ text-align: left;
 }
 .tituloBoxTextoTarjeta{
     margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 26px;
-    font-weight: 700;
+    margin-bottom: 10px;    
     line-height: 24px;
     text-align: center;
 }
 
-.parrafoBoxTextoTarjeta{
-    font-size: 21px;
-    font-weight: 400;
+.parrafoBoxTextoTarjeta{    
     line-height: 23px;
     text-align: left;
 }
