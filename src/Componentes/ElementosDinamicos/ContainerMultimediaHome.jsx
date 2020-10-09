@@ -32,7 +32,7 @@ const ContainerMultimediaHome = () => {
           </video>
           <Carousel.Caption>
             <div className="Overlay">
-              <h1> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h1>
+              <h1 className="colorTextoh1"> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h1>
               < BotonGeneral
                 contenidobtn={'Regala un almuerzo'}
                 funcion={clickBton}
@@ -52,7 +52,7 @@ const ContainerMultimediaHome = () => {
 
           <Carousel.Caption>
             <div className="Overlay">
-              <h1> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h1>
+              <h1 className="colorTextoh1"> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h1>
 
             </div>
 
@@ -68,7 +68,7 @@ const ContainerMultimediaHome = () => {
 
           <Carousel.Caption>
             <div className="Overlay">
-              <h1> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h1>
+              <h1 className="colorTextoh1"> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h1>
 
             </div>
 

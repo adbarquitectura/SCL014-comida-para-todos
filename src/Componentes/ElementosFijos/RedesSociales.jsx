@@ -23,7 +23,7 @@ const RedesSociales = () => {
                 </a>
             </div>
             <div className="SocialText">
-                <p>¡Síguenos en las redes! </p>
+                <p className="ColorParrafo">¡Síguenos en las redes! </p>
             </div>
         </div>
     )

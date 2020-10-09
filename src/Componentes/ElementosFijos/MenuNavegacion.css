@@ -56,6 +56,10 @@
     margin: 5px;
 }
 
+.boxListaMenuNavegacion:hover {  
+    color: #FD4C00;    
+}
+
 .boxListaMenuNavegacion li {
     margin: auto 20px auto 20px;
 }

@@ -37,7 +37,8 @@ footer li {
   list-style: none;
   width: auto;
   margin: 0 20px;
-  text-align: justify;  
+  text-align: justify;   
+  font-size: 16px; 
 }
 
 .Año {  
@@ -47,8 +48,7 @@ footer li {
 
 footer a:link, footer a:visited, footer a:active {
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 21px;
+  color: rgb(255, 255, 255);  
 }
 
 .viñeta {
