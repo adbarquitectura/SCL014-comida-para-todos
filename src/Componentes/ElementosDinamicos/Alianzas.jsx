@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./TarjetasConImagenes.css";
 import restaurant from "../../img/99-restaurant.png";
 import boa from "../../img/Boa.png";
@@ -11,20 +11,21 @@ import { Carousel } from 'react-bootstrap';
 import imgPrevIcon from '../../img/previoIcon.png';
 import imgNextIcon from '../../img/nextIcon.png';
 
-
+import { Col, Container, Row } from 'react-bootstrap';
+// Data imagenes de carrusel
 const alianzasData = [
   restaurant,
   boa,
   chimba,
   cava
 ];
-
+//Commponente Icon Next Carrusel
 const PrevIcon = () => {
   return (
     <img src={imgPrevIcon} />
   )
 };
-
+//Commponente Icon Prev  Carrusel
 const NextIcon = () => {
   return (
     <img src={imgNextIcon} />
@@ -55,12 +56,12 @@ const Alianzas = () => {
     }
   };
 
-
+  // funcion actualiza posiciones de elementos en arreglo de Data Alianza adelante 
   const actualizarAlianzasRenderizadasAdelante = () => {
     arregloAlianza.push(arregloAlianza.shift());
     setArregloAlianza([...arregloAlianza]);
   };
-
+  // funcion actualiza posiciones de elementos en arreglo de Data Alianza atrás
   const actualizarAlianzasRenderizadasAtras = () => {
     arregloAlianza.unshift(arregloAlianza.pop());
     setArregloAlianza([...arregloAlianza]);
@@ -83,56 +84,85 @@ const Alianzas = () => {
         prevIcon={<PrevIcon />}
         nextIcon={<NextIcon />}
       >
+
         <Carousel.Item>
-          <div className="contenedorItemCarousel">
-            <img
-              src={restaurant}
-              alt="First slide"
-            />
-            <div>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
+          <Container>
+            <Row>
+              <Col>
+                <img
+                  src={restaurant}
+                  alt="First slide"
+                />
+              </Col>
+
+              <Col>
+                <div>
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="contenedorItemCarousel">
-            <img
-              src={boa}
-              alt="First slide"
-            />
-            <div>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
+          <Container>
+            <Row>
+              <Col>
+                <img
+                  src={boa}
+                  alt="First slide"
+                />
+              </Col>
+
+              <Col>
+                <div>
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="contenedorItemCarousel">
-            <img
-              src={chimba}
-              alt="First slide"
-            />
-            <div>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
+          <Container>
+            <Row>
+              <Col>
+                <img
+                  src={chimba}
+                  alt="First slide"
+                />
+              </Col>
+
+              <Col>
+                <div>
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="contenedorItemCarousel">
-            <img
-              src={cava}
-              alt="First slide"
-            />
-            <div>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
+          <Container>
+            <Row>
+              <Col>
+                <img
+                  src={cava}
+                  alt="First slide"
+                />
+              </Col>
+
+              <Col>
+                <div>
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </Carousel.Item>
 
       </Carousel>

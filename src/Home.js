@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Whatsapp from "./Componentes/ElementosFijos/Whatsapp";
 import MenuNavegacion from "./Componentes/ElementosFijos/MenuNavegacion";
@@ -9,12 +9,12 @@ function Home() {
 
   const [modalShow, setModalShow] = React.useState(false);
 
-  useEffect(()=>{
+  useEffect(() => {
     setModalShow(true)
-  },[]);
+  }, []);
 
   return (
-    <div className="ContenedorPadre">      
+    <div className="ContenedorPadre">
       <MenuNavegacion />
       <Whatsapp />
       <Footer />
@@ -23,7 +23,6 @@ function Home() {
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
-
     </div>
   );
 };
