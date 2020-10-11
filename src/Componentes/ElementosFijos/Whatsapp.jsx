@@ -6,7 +6,7 @@ import "./Whatsapp.css";
 const Whatsapp = () => {
   return (
     <div className="btnWhatsapp">
-      <ReactWhatsapp number="56-9-524-11777" message="Hello World!!!" />
+      <ReactWhatsapp number="56-9-524-11777" message="Quisiera donar..." />
     </div>
   );
 };
