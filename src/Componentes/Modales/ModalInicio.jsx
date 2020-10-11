@@ -20,24 +20,22 @@ function ModalCargadoInicial(props) {
       <Modal.Header>
 
         <Modal.Title id="contained-modal-title-vcenter">
-          <h1>Modal heading</h1>
+          <h1>{props.tituloModal}</h1>
 
         </Modal.Title>
 
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
+        <h4>{props.subtituloModal}</h4>
         <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-          </p>
+          {props.contenidoModal}
+        </p>
       </Modal.Body>
       <Modal.Footer>
 
         < BotonGeneral
-          contenidobtn={'Close'}
-          funcion={props.onHide}
+          contenidobtn={props.contenidoBotonModal}
+          funcion={props.funcionBotonModal}
         />
 
       </Modal.Footer>

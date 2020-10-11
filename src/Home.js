@@ -22,6 +22,11 @@ function Home() {
       <ModalCargadoInicial
         show={modalShow}
         onHide={() => setModalShow(false)}
+        tituloModal={'Nuestras Campañas'}
+        subtituloModal={'Inaguración de nuestra primera escuela'}
+        contenidoModal={' La Junta de Vecinos de Villa Arauco (La Pintana) y a @cultiva_reforestacion dimos inicio a las clases y capacitaciones del Huerto Comunitario.'}
+        contenidoBotonModal={'Conoce más'}
+        funcionBotonModal={() => setModalShow(false)}
       />
     </div>
   );

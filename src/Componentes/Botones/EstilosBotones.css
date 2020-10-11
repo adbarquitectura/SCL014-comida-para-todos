@@ -51,9 +51,13 @@
     background-color: transparent;
 }
 
-.btnCloseModal img{
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    */
+.btnCloseModal img {
     border-radius: 50px;
-    /* background-color: transparent; */
     background: transparent;
+    transition: opacity .15s ease;
+    opacity: .5;
+}
+
+.btnCloseModal img:hover {
+    opacity: 1;
 }
