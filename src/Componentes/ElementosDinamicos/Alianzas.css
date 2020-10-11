@@ -1,0 +1,8 @@
+.contenedorItemCarousel{
+    display: flex;
+    background-color: grey;
+}
+.fotoAlianzas>img:first-child{
+    background-color: hotpink;
+    border: 3px red solid;
+}
