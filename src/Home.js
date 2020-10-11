@@ -5,11 +5,12 @@ import MenuNavegacion from "./Componentes/ElementosFijos/MenuNavegacion";
 import Footer from "./Componentes/ElementosFijos/Footer";
 
 
+
 function Home() {
   return (
     <div className="ContenedorPadre">
       <MenuNavegacion />
-      <Whatsapp />
+      <Whatsapp/>
       <Footer />
     </div>
   );

@@ -7,7 +7,6 @@ import TarjetasDescriptivas from '../../ElementosDinamicos/TarjetasDescriptivas'
 import CarruselMultimediaInformativo from '../../ElementosDinamicos/CarruselMultimediaInformativo';
 import SeccionManerasAportar from '../../ElementosDinamicos/SeccionManerasAportar';
 import Alianzas from '../../ElementosDinamicos/Alianzas';
-
 import './HomeView.css';
 
 
@@ -28,7 +27,6 @@ const HomeView = () => {
       parrafoTercerSlide = {'parrafo3'}
 
       />   */}
-
       <Infografia
         contenidoInfo={'impacto-organizacion'}
       />
