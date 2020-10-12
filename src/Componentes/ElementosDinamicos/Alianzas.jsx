@@ -24,7 +24,7 @@ const alianzasData = [
   cava
 ];
 
-const Alianzas = () => {
+const Alianzas = (props) => {
   const [arregloAlianza, setArregloAlianza] = useState(alianzasData);
 
   const [index, setIndex] = useState(0);
@@ -61,9 +61,9 @@ const Alianzas = () => {
 
   return (
     <div className="boxCarruselAlianzas">
-      <div className="boxTituloCarrusel">
+      <div className="boxTituloCarruselAlianzas">
         <div className="viñetaYellow"></div>
-        <h2 className="tituloalineadoIzquierda">Nuestras Alianzas</h2>
+        <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
 
         < BotonGeneral
           contenidobtn={'Aporta como Restaurant'}
@@ -92,7 +92,7 @@ const Alianzas = () => {
 
       </div>
 
-      <div className="boxContenedorCarrusel">
+      <div className="boxContenedorCarruselAlianzas">
         <Carousel
           activeIndex={index}
           onSelect={handleSelect}
@@ -104,14 +104,14 @@ const Alianzas = () => {
               <Row>
                 <Col>
                   <img
-                    className="boxImagenCarrusel"
+                    className="boxImagenCarruselAlianzas"
                     src={restaurant}
                     alt="First slide"
                   />
                 </Col>
 
                 <Col>
-                  <div className="boxTextoCarrusel">
+                  <div className="boxTextoCarruselAlianzas">
                     <img
                       src={quoteIcon}
                     />
@@ -130,14 +130,14 @@ const Alianzas = () => {
               <Row>
                 <Col>
                   <img
-                    className="boxImagenCarrusel"
+                    className="boxImagenCarruselAlianzas"
                     src={boa}
                     alt="First slide"
                   />
                 </Col>
 
                 <Col>
-                  <div className="boxTextoCarrusel">
+                  <div className="boxTextoCarruselAlianzas">
                     <img
                       src={quoteIcon}
                     />
@@ -156,14 +156,14 @@ const Alianzas = () => {
               <Row>
                 <Col>
                   <img
-                    className="boxImagenCarrusel"
+                    className="boxImagenCarruselAlianzas"
                     src={chimba}
                     alt="First slide"
                   />
                 </Col>
 
                 <Col>
-                  <div className="boxTextoCarrusel">
+                  <div className="boxTextoCarruselAlianzas">
                     <img
                       src={quoteIcon}
                     />
@@ -182,14 +182,14 @@ const Alianzas = () => {
               <Row>
                 <Col>
                   <img
-                    className="boxImagenCarrusel"
+                    className="boxImagenCarruselAlianzas"
                     src={cava}
                     alt="First slide"
                   />
                 </Col>
 
                 <Col>
-                  <div className="boxTextoCarrusel">
+                  <div className="boxTextoCarruselAlianzas">
                     <img
                       src={quoteIcon}
                     />

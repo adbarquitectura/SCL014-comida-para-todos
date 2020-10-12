@@ -6,10 +6,11 @@ import NextIcon from '../Iconos/NextIcon';
 import PrevIcon from '../Iconos/PrevIcon';
 
 import imgcarrusel1 from "../../img/imgcarrusel1.png";
+import imgcarrusel2 from "../../img/images.jpg";
 import './CarruselMultimediaInformativo.css';
 
 
-const CarruselMultimediaInformativo = () => {
+const CarruselMultimediaInformativo = (props) => {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -20,7 +21,7 @@ const CarruselMultimediaInformativo = () => {
     <div className="boxCarrusel">
       <div className="boxTituloCarrusel">
         <div className="viñetaYellow"></div>
-        <h2 className="tituloalineadoIzquierda">Seguridad alimentaria en Chile</h2>
+        <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
       </div>
 
       <div className="boxContenedorCarrusel">
@@ -59,7 +60,7 @@ const CarruselMultimediaInformativo = () => {
                 <Col>
                   <img
                     className="boxImagenCarrusel"
-                    src={imgcarrusel1}
+                    src={imgcarrusel2}
                     alt="First slide"
                   />
                 </Col>

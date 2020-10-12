@@ -11,7 +11,12 @@ import { Col, Container, Row } from 'react-bootstrap';
 const TarjetasDescriptivas = (props) => {
     return (
         <div className="contenedorGeneralTarjetas">
-            <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
+
+            <div className="boxTituloCarrusel">
+                <div className="viñetaYellow"></div>
+                <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
+            </div>
+
             <Container>
                 <Row>
                     <Col>

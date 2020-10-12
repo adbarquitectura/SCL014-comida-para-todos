@@ -30,7 +30,7 @@ const HomeView = () => {
       parrafoTercerSlide = {'parrafo3'}
 
       />   */}
-      
+
       <TarjetasDonaciones />
 
       <Infografia
@@ -45,19 +45,18 @@ const HomeView = () => {
         contenidoInfo={'ciclo-de-vida'}
       />
 
-      <CarruselMultimediaInformativo />
+      <CarruselMultimediaInformativo
+        contenidoInfo={'Seguridad alimentaria en Chile'}
+      />
       <SeccionManerasAportar
+        contenidoInfo={'Otras maneras de aportar'}
         maneras={'talento, metro cuadrado, educación y horas de capacitación, alimentos'}
       />
 
-      <Alianzas />
-
-      <BotonGeneral
-        contenidobtn={'Hola'}
+      <Alianzas
+        contenidoInfo={'Nuestras Alianzas'}
       />
-      <BotonSecundario
-        contenidobtn={'Hola'}
-      />
+    
 
     </div >
 

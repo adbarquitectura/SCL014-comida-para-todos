@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.boxContenedorCarrusel {
+.boxContenedorCarruselAlianzas {
     box-sizing: border-box;
     padding-bottom: 15px;
     background-color: #F4F4F4;
@@ -17,7 +17,7 @@
     margin-right: 15px;
 }
 
-.boxTituloCarrusel {
+.boxTituloCarruselAlianzas {
     box-sizing: border-box;
     padding-left: 128px;
     padding-right: 128px;
@@ -25,29 +25,29 @@
     flex-basis: 0;
     flex-grow: 1;
     align-items: center;
-    margin-top: 15px;
+    padding-top: 15px;
     margin-bottom: 15px;
 }
 
-.boxImagenCarrusel {
+.boxImagenCarruselAlianzas {
     width: 100%;
     object-fit: cover;
     box-sizing: border-box;
-    padding: 15px 15px 30px 15px;
-    height: 350px;
+    padding: 40px 15px 40px 15px;
+    height: 400px;
 }
 
-.boxTextoCarrusel {
+.boxTextoCarruselAlianzas {
     text-align: left;
     align-self: center;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 40px 15px 40px 15px;
     height: 100%;
 }
 
-.boxTextoCarrusel a:link, 
-.boxTextoCarrusel a:visited, 
-.boxTextoCarrusel a:active {
+.boxTextoCarruselAlianzas a:link, 
+.boxTextoCarruselAlianzas a:visited, 
+.boxTextoCarruselAlianzas a:active {
     text-decoration: none;
     color: #FD4C00;
     font-size: 16px;
@@ -59,7 +59,7 @@
     margin: 25px;
 }
 
-.boxTextoCarrusel h4{
+.boxTextoCarruselAlianzas h4{
     padding-bottom: 50px;
     font-size: 21px;
 }
