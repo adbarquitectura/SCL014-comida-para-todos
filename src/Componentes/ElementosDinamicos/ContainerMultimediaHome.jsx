@@ -1,7 +1,7 @@
 import React from 'react';
 // import LaReceta from '../MultimediaComponents/LaReceta.mp4';
 import CampañaCPT from '../MultimediaComponents/CampañaCPT.mp4';
-import BotonGeneral from '../Botones/BotonGenrales';
+import BotonGeneral from '../Botones/BotonGeneral';
 
 import './ContainerMultimediaHome.css';
 import Carousel from 'react-bootstrap/Carousel'
@@ -75,8 +75,7 @@ const ContainerMultimediaHome = () => {
 
           </Carousel.Caption>
         </Carousel.Item>
-      </Carousel>
-      <FormularioTalento/>
+      </Carousel>     
     </div>
 
   )

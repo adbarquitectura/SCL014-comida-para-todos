@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './FormularioTalento.css';
 import * as Comunas from './comunas.js';
 
+import firebase from '../../Firebase';
 
 const FormularioTalento = () => {
 
@@ -9,12 +10,17 @@ const FormularioTalento = () => {
     const [formTalento, setformTalento] = useState({});
 
     /* Definición del Estado de select Comunas*/
-    const[comunas, setcomunas] = useState([]);
+    const [comunas, setcomunas] = useState([]);
+
+    /* Contiene firestore */
+    const refTalento = firebase.firestore().collection('FormularioTalento');
+
+
 
     /* Asociar opción de select */
     const RegionSelect = (e) => {
         const { name, value } = e.target;
-        const region= Comunas[value];
+        const region = Comunas[value];
         setcomunas([...region]);
         setformTalento({ ...formTalento, [name]: value })
 
@@ -32,7 +38,8 @@ const FormularioTalento = () => {
     /* Función para manejar Form con HandleSubmit*/
     const HandleSubmit = (e) => {
         e.preventDefault();
-        console.log(formTalento)
+        console.log(formTalento);
+        refTalento.add(formTalento);
     };
 
     return (
@@ -72,8 +79,8 @@ const FormularioTalento = () => {
                     <label htmlFor="Comuna"> Comuna </label>
                     <select name="Comuna" id="Comuna" onChange={HandleInputChange}>
                         <option value="">Seleccione su comuna </option>
-                        {comunas.map((comuna, index )=>{
-                            return (<option key ={index} value={comuna}>{comuna}</option>)
+                        {comunas.map((comuna, index) => {
+                            return (<option key={index} value={comuna}>{comuna}</option>)
                         })}
                     </select>
                     <label htmlFor="Talento"> Cuentanos con que talento quieres aportar </label>
