@@ -1,17 +1,16 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
-import "./TarjetasConImagenes.css";
+import './Alianzas.css';
+import { Carousel } from 'react-bootstrap';
+
+import { Col, Container, Row } from 'react-bootstrap';
+import PrevIcon from "../Iconos/PrevIcon";
+import NextIcon from "../Iconos/NextIcon";
+
 import restaurant from "../../img/99-restaurant.png";
 import boa from "../../img/Boa.png";
 import chimba from "../../img/lachimba.jpg";
 import cava from "../../img/CAVA_DEL_SOMMELIER.jpg";
 
-import './Alianzas.css';
-import { Carousel } from 'react-bootstrap';
-import imgPrevIcon from '../../img/previoIcon.png';
-import imgNextIcon from '../../img/nextIcon.png';
-
-import { Col, Container, Row } from 'react-bootstrap';
 // Data imagenes de carrusel
 const alianzasData = [
   restaurant,
@@ -19,18 +18,6 @@ const alianzasData = [
   chimba,
   cava
 ];
-//Commponente Icon Next Carrusel
-const PrevIcon = () => {
-  return (
-    <img src={imgPrevIcon} />
-  )
-};
-//Commponente Icon Prev  Carrusel
-const NextIcon = () => {
-  return (
-    <img src={imgNextIcon} />
-  )
-};
 
 const Alianzas = () => {
   const [arregloAlianza, setArregloAlianza] = useState(alianzasData);

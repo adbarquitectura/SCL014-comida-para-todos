@@ -67,8 +67,13 @@
     margin: auto 20px auto 20px;
 }
 
-a:link, a:visited, a:active {
+.boxListaMenuNavegacion a:link, 
+.boxListaMenuNavegacion a:visited, 
+.boxListaMenuNavegacion a:active {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
+}
+.boxListaMenuNavegacion a:hover {    
+    color: #FD4C00;
 }

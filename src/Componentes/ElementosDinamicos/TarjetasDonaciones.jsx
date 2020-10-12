@@ -7,7 +7,7 @@ import donarRestaurantIcon from '../../img/donarRestaurantIcon.png';
 import './TarjetasDonaciones.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import BotonGeneral from '../Botones/BotonGeneral';
-import ModalCargadoInicial from '../Modales/ModalInicio';
+import ModalGeneral from '../Modales/ModalGeneral';
 
 /* Función Botón 'Regala un almuerzo' */
 const clickBton = () => {
@@ -52,7 +52,7 @@ const TarjetasDonaciones = (props) => {
                 </Row>
             </Container>
 
-            <ModalCargadoInicial
+            <ModalGeneral
                 show={modalShow}
                 onHide={() => setModalShow(false)}
                 tituloModal={'Será redireccionado al sitio de yodono.cl para completar la donación.'}

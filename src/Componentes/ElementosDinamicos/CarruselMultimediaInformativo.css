@@ -1,0 +1,53 @@
+.boxCarrusel {
+    background-color: #F4F4F4;
+    box-sizing: border-box;
+}
+
+.boxContenedorCarrusel {
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+
+.viñetaYellow {
+    width: 21px;
+    height: 26px;
+    background-color: #FDAC07;
+    border-top-right-radius: 20px 20px !important;
+    border-bottom-right-radius: 20px 20px !important;
+    margin-right: 15px;
+}
+
+.boxTituloCarrusel {
+    box-sizing: border-box;
+    padding-left: 128px;
+    padding-right: 128px;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.boxImagenCarrusel {
+    width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    padding: 15px 15px 30px 15px;
+}
+
+.boxTextoCarrusel {
+    text-align: left;
+    align-self: center;
+    box-sizing: border-box;
+    padding: 15px;
+    height: 100%;
+}
+
+.boxTextoCarrusel a:link, 
+.boxTextoCarrusel a:visited, 
+.boxTextoCarrusel a:active {
+    text-decoration: none;
+    color: #FD4C00;
+    font-size: 16px;
+}
