@@ -1,17 +1,22 @@
-/* eslint-disable jsx-a11y/alt-text */
-import React, { useEffect, useState } from "react";
-import "./TarjetasConImagenes.css";
+import React, { useState } from "react";
+import './Alianzas.css';
+import { Carousel } from 'react-bootstrap';
+
+import { Col, Container, Row } from 'react-bootstrap';
+import BotonGeneral from '../Botones/BotonGeneral';
+import PrevIcon from "../Iconos/PrevIcon";
+import NextIcon from "../Iconos/NextIcon";
+import quoteIcon from '../../img/quote icon.png';
+
+
 import restaurant from "../../img/99-restaurant.png";
 import boa from "../../img/Boa.png";
 import chimba from "../../img/lachimba.jpg";
 import cava from "../../img/CAVA_DEL_SOMMELIER.jpg";
 
-import './Alianzas.css';
-import { Carousel } from 'react-bootstrap';
-import imgPrevIcon from '../../img/previoIcon.png';
-import imgNextIcon from '../../img/nextIcon.png';
 
 
+// Data imagenes de carrusel
 const alianzasData = [
   restaurant,
   boa,
@@ -19,19 +24,7 @@ const alianzasData = [
   cava
 ];
 
-const PrevIcon = () => {
-  return (
-    <img src={imgPrevIcon} />
-  )
-};
-
-const NextIcon = () => {
-  return (
-    <img src={imgNextIcon} />
-  )
-};
-
-const Alianzas = () => {
+const Alianzas = (props) => {
   const [arregloAlianza, setArregloAlianza] = useState(alianzasData);
 
   const [index, setIndex] = useState(0);
@@ -55,113 +48,167 @@ const Alianzas = () => {
     }
   };
 
-
+  // funcion actualiza posiciones de elementos en arreglo de Data Alianza adelante 
   const actualizarAlianzasRenderizadasAdelante = () => {
     arregloAlianza.push(arregloAlianza.shift());
     setArregloAlianza([...arregloAlianza]);
   };
-
+  // funcion actualiza posiciones de elementos en arreglo de Data Alianza atrás
   const actualizarAlianzasRenderizadasAtras = () => {
     arregloAlianza.unshift(arregloAlianza.pop());
     setArregloAlianza([...arregloAlianza]);
   };
 
   return (
-    <div>
-      <div className="fotoAlianzas">
-        {
-          arregloAlianza.map((aliado, idx) => {
-            return (
-              <img src={aliado} key={idx} />
-            )
-          })
-        }
+    <div className="boxCarruselAlianzas">
+      <div className="boxTituloCarruselAlianzas">
+        <div className="viñetaYellow"></div>
+        <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
+
+        < BotonGeneral
+          contenidobtn={'Aporta como Restaurant'}
+          funcion={() => console.log('va al restaurant')}
+        />
+
       </div>
-      <Carousel
-        activeIndex={index}
-        onSelect={handleSelect}
-        prevIcon={<PrevIcon />}
-        nextIcon={<NextIcon />}
-      >
-        <Carousel.Item>
-          <div className="contenedorItemCarousel">
-            <img
-              src={restaurant}
-              alt="First slide"
-            />
-            <div>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-        </Carousel.Item>
 
-        <Carousel.Item>
-          <div className="contenedorItemCarousel">
-            <img
-              src={boa}
-              alt="First slide"
-            />
-            <div>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-        </Carousel.Item>
+      <div>
+        <Container>
+          <Row>
+            <Col>
+              <div className="fotoAlianzas">
+                {
+                  arregloAlianza.map((aliado, idx) => {
+                    return (
+                      <img
+                        src={aliado} key={idx} />
+                    )
+                  })
+                }
+              </div>
+            </Col>
+          </Row>
+        </Container>
 
-        <Carousel.Item>
-          <div className="contenedorItemCarousel">
-            <img
-              src={chimba}
-              alt="First slide"
-            />
-            <div>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-        </Carousel.Item>
+      </div>
 
-        <Carousel.Item>
-          <div className="contenedorItemCarousel">
-            <img
-              src={cava}
-              alt="First slide"
-            />
-            <div>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-        </Carousel.Item>
+      <div className="boxContenedorCarruselAlianzas">
+        <Carousel
+          activeIndex={index}
+          onSelect={handleSelect}
+          prevIcon={<PrevIcon />}
+          nextIcon={<NextIcon />}
+        >
+          <Carousel.Item>
+            <Container>
+              <Row>
+                <Col>
+                  <img
+                    className="boxImagenCarruselAlianzas"
+                    src={restaurant}
+                    alt="First slide"
+                  />
+                </Col>
 
-      </Carousel>
+                <Col>
+                  <div className="boxTextoCarruselAlianzas">
+                    <img
+                      src={quoteIcon}
+                    />
+                    <h3>Jorge Lopez</h3>
+                    <h4>Dueño Boa Restaurant</h4>
+                    <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
+                    <a href='https://www.boasantiago.cl/pedir'target='_blank'>Boasantiago.cl</a>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <Container>
+              <Row>
+                <Col>
+                  <img
+                    className="boxImagenCarruselAlianzas"
+                    src={boa}
+                    alt="First slide"
+                  />
+                </Col>
+
+                <Col>
+                  <div className="boxTextoCarruselAlianzas">
+                    <img
+                      src={quoteIcon}
+                    />
+                    <h3>Jorge Lopez</h3>
+                    <h4>Dueño Boa Restaurant</h4>
+                    <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
+                    <a href='https://www.boasantiago.cl/pedir' target='_blank'>Boasantiago.cl</a>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <Container>
+              <Row>
+                <Col>
+                  <img
+                    className="boxImagenCarruselAlianzas"
+                    src={chimba}
+                    alt="First slide"
+                  />
+                </Col>
+
+                <Col>
+                  <div className="boxTextoCarruselAlianzas">
+                    <img
+                      src={quoteIcon}
+                    />
+                    <h3>Jorge Lopez</h3>
+                    <h4>Dueño Boa Restaurant</h4>
+                    <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
+                    <a href='https://www.boasantiago.cl/pedir' target='_blank'>Boasantiago.cl</a>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <Container>
+              <Row>
+                <Col>
+                  <img
+                    className="boxImagenCarruselAlianzas"
+                    src={cava}
+                    alt="First slide"
+                  />
+                </Col>
+
+                <Col>
+                  <div className="boxTextoCarruselAlianzas">
+                    <img
+                      src={quoteIcon}
+                    />
+                    <h3>Jorge Lopez</h3>
+                    <h4>Dueño Boa Restaurant</h4>
+                    <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
+                    <a href='https://www.boasantiago.cl/pedir' target='_blank'>Boasantiago.cl</a>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </Carousel.Item>
+
+        </Carousel>
+      </div>
     </div>
-
   );
 
 
 };
 
 export default Alianzas;
-
-/* return (
-  <div>
-    Nuestras Alianzas
-    <div className="fotoAlianzas">
-      <img src={restaurant} />
-      <img src={boa} />
-      <img src={chimba} />
-      <img src={cava} />
-
-      <p>
-        Como restaurantes, estamos muy contentos de unirnos a esta causa y
-        poder colaborar con platos de comida ricos y de calidad, cocinados por
-        nustros propios chefs y con mucho cariño para las comunidades.
-      </p>
-    </div>
-
-
-
-  </div>
-); */

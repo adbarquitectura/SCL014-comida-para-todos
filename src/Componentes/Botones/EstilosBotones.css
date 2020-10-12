@@ -1,4 +1,4 @@
-.btnGeneral{
+.btnGeneral {
     background-color: #FD4C00;
     color: white;
     box-sizing: border-box;
@@ -10,18 +10,18 @@
     text-align: center;
 }
 
-.btnGeneral:hover{
+.btnGeneral:hover {
     background-color: #8A2900;
     color: white;
 }
 
-.btnGeneral:active{
+.btnGeneral:active {
     background-color: transparent;
     color: #FD4C00;
     border: 2px solid #FD4C00;
 }
 
-.btnSecundario{
+.btnSecundario {
     background-color: transparent;
     color: #8A2900;
     box-sizing: border-box;
@@ -30,11 +30,11 @@
     border: 2px solid #8A2900;
     border-radius: 3px;
     font-size: 18px;
-    text-align: center; 
+    text-align: center;
 }
 
-.btnSecundario:hover{
-    background-color:  #4F5515;
+.btnSecundario:hover {
+    background-color: #4F5515;
     color: white;
     border: none;
 }
@@ -43,4 +43,21 @@
     background-color: #FDAC07;
     color: white;
     border: none;
+}
+
+.btnCloseModal {
+    transition-duration: 0.4s;
+    border: none;
+    background-color: transparent;
+}
+
+.btnCloseModal img {
+    border-radius: 50px;
+    background: transparent;
+    transition: opacity .15s ease;
+    opacity: .5;
+}
+
+.btnCloseModal img:hover {
+    opacity: 1;
 }
