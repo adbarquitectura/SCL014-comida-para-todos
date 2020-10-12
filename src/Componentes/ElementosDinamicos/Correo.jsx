@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import BotonGeneral from "../Botones/BotonGeneral";
 
 const Correo = () => {
   const frmContact = {
@@ -46,7 +47,7 @@ const Correo = () => {
 
       {showMessage ? (
         <div className="alert alert-success col-md-5 mx-auto" role="alert">
-          El correo se envio correctamente!!
+          El correo se envio corréctamente!!
         </div>
       ) : (
         ``
@@ -82,10 +83,10 @@ const Correo = () => {
               onChange={handleChange}
               name="concernCategory"
             >
-              <option value="">Donaciones</option>
-              <option value="info">Información</option>
-              <option value="buy">Ser parte del equipo</option>
-              <option value="play tennis">Otros</option>
+              <option value="donaciones">Donaciones</option>
+              <option value="informacion">Información</option>
+              <option value="Ser parte">Ser parte del equipo</option>
+              <option value="otros">Otros</option>
             </select>
           </div>
         </div>
@@ -106,7 +107,8 @@ const Correo = () => {
           </div>
         </div>
         <div className="pt-3 col-md-5 mx-auto text-left">
-          <button className="btn btn-primary">Submit</button>
+          {/* <button className="btn btn-primary">Submit</button> */}
+          <BotonGeneral contenidobtn={"Enviar"} />
         </div>
       </form>
     </div>
