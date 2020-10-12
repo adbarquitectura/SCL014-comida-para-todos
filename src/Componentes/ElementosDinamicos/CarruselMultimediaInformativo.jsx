@@ -4,7 +4,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 import NextIcon from '../Iconos/NextIcon';
 import PrevIcon from '../Iconos/PrevIcon';
-import ItemCarrusel from './ItemCarrusel';
 
 import imgcarrusel1 from "../../img/imgcarrusel1.png";
 import './CarruselMultimediaInformativo.css';
@@ -31,6 +30,28 @@ const CarruselMultimediaInformativo = () => {
           prevIcon={<PrevIcon />}
           nextIcon={<NextIcon />}
         >
+
+          <Carousel.Item>
+            <Container>
+              <Row>
+                <Col>
+                  <img
+                    className="boxImagenCarrusel"
+                    src={imgcarrusel1}
+                    alt="First slide"
+                  />
+                </Col>
+
+                <Col>
+                  <div className="boxTextoCarrusel">
+                    <h3>3 millones de chilenos padecen Inseguridad Alimentaria moderada o severa</h3>
+                    <p>El Programa Mundial de Alimentos de las Naciones Unidas (PMA), advirtió recientemente que estamos al borde de una pandemia alimentaria.La inseguridad alimentaria aguda aumentará a 265 millones en 2020 en Latinoamérica, duplicando las cifras del 2019. (PMA, 2020)</p>
+                    <a href='https://www.un.org/sustainabledevelopment/es/hunger/'>Objetivos de Desarrollo Sostenible</a>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </Carousel.Item>
 
           <Carousel.Item>
             <Container>
