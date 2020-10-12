@@ -1,10 +1,13 @@
 import React from 'react';
+import Mapa from '../../ElementosDinamicos/Mapa';
 
 const ContactoView = () => {
     return (
 
-        <div>
+        <div className="MapaContacto">
             Estas en el módulo de “Contacto”
+            <Mapa/>
+
         </div >
 
 

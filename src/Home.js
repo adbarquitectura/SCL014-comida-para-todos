@@ -1,31 +1,39 @@
-import React, {useEffect} from "react";
+import React, { useEffect, useState } from "react";
+
 import "./Home.css";
 import Whatsapp from "./Componentes/ElementosFijos/Whatsapp";
 import MenuNavegacion from "./Componentes/ElementosFijos/MenuNavegacion";
 import Footer from "./Componentes/ElementosFijos/Footer";
 import ModalCargadoInicial from '../src/Componentes/Modales/ModalInicio';
+
 import Correo from './Componentes/ElementosDinamicos/Correo';
+
 function Home() {
 
   const [modalShow, setModalShow] = React.useState(false);
 
-  useEffect(()=>{
+  useEffect(() => {
     setModalShow(true)
-  },[]);
+  }, []);
 
   return (
-    <div className="ContenedorPadre">      
+    <div className="ContenedorPadre">
       <MenuNavegacion />
       <Whatsapp />
       <Correo/>
+
       <Footer />
   
 
       <ModalCargadoInicial
         show={modalShow}
         onHide={() => setModalShow(false)}
+        tituloModal={'Nuestras Campañas'}
+        subtituloModal={'Inaguración de nuestra primera escuela'}
+        contenidoModal={' La Junta de Vecinos de Villa Arauco (La Pintana) y a @cultiva_reforestacion dimos inicio a las clases y capacitaciones del Huerto Comunitario.'}
+        contenidoBotonModal={'Conoce más'}
+        funcionBotonModal={() => setModalShow(false)}
       />
-
     </div>
   );
 };
