@@ -2,10 +2,14 @@ import React from 'react';
 import LaReceta from '../MultimediaComponents/LaReceta.mp4';
 import CampañaCPT from '../MultimediaComponents/CampañaCPT.mp4'
 import BotonGeneral from '../Botones/BotonGeneral';
+// import LaReceta from '../MultimediaComponents/LaReceta.mp4';
+
 import './ContainerMultimediaHome.css';
 import Carousel from 'react-bootstrap/Carousel'
 import imgcarousel2 from '../../img/imgcarousel2.jpg';
 import imgcarousel3 from '../../img/imgcarousel3.jpg';
+import FormularioTalento from '../Formularios/FormularioTalento';
+
 
 
 /* Función Botón 'Regala un almuerzo' */
@@ -73,7 +77,7 @@ const ContainerMultimediaHome = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-
+      <FormularioTalento/>
     </div>
 
   )
