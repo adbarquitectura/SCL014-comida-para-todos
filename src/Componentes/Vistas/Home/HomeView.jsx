@@ -1,22 +1,27 @@
 import React from 'react';
-import BotonGeneral from '../../Botones/BotonGenrales';
+import BotonGeneral from '../../Botones/BotonGeneral';
+import BotonSecundario from '../../Botones/BotonSecundario';
 import ContainerMultimediaHome from '../../ElementosDinamicos/ContainerMultimediaHome';
-// import CarrouselMultimediaProblematica from '../../ElementosDinamicos/CarruselMultimediaProblematica';
+import CarruselMultimediaComunidad from '../../ElementosDinamicos/CarruselMultimediaComunidad';
+
 import Infografia from '../../ElementosDinamicos/Infografia';
 import TarjetasDescriptivas from '../../ElementosDinamicos/TarjetasDescriptivas';
 import CarruselMultimediaInformativo from '../../ElementosDinamicos/CarruselMultimediaInformativo';
 import SeccionManerasAportar from '../../ElementosDinamicos/SeccionManerasAportar';
 import Alianzas from '../../ElementosDinamicos/Alianzas';
+
+import TarjetasDonaciones from '../../ElementosDinamicos/TarjetasDonaciones';
+
 import './HomeView.css';
 
 
 const HomeView = () => {
   return (
 
-    <div className= "containerMainView">
-    <ContainerMultimediaHome />
-      
-     {/* <CarrouselMultimediaProblematica 
+    <div className="containerMainView">
+      <ContainerMultimediaHome />
+
+      {/* <CarrouselMultimediaProblematica 
       tituloPrimerSlide = {'titulo1'}
       parrafoPrimerSlide = {'parrafo1'}
 
@@ -27,6 +32,9 @@ const HomeView = () => {
       parrafoTercerSlide = {'parrafo3'}
 
       />   */}
+
+      <TarjetasDonaciones />
+
       <Infografia
         contenidoInfo={'impacto-organizacion'}
       />
@@ -39,15 +47,20 @@ const HomeView = () => {
         contenidoInfo={'ciclo-de-vida'}
       />
 
-      <CarruselMultimediaInformativo />
+      <CarruselMultimediaInformativo
+        contenidoInfo={'Seguridad alimentaria en Chile'}
+      />
       <SeccionManerasAportar
+        contenidoInfo={'Otras maneras de aportar'}
         maneras={'talento, metro cuadrado, educación y horas de capacitación, alimentos'}
       />
 
-      <Alianzas />
+      <Alianzas
+        contenidoInfo={'Nuestras Alianzas'}
+      />
 
-      <BotonGeneral
-        contenidobtn={'Hola'}
+      <CarruselMultimediaComunidad
+        contenidoInfo={'¿Qué dice la comunidad en las redes?'}
       />
 
     </div >

@@ -1,28 +1,31 @@
-.pastillaFooter { 
-  width: 100%; 
+.pastillaFooter {
+  width: 100%;
   padding: 100px 128px 10px 128px;
   background-color: #353535;   
-  align-items: flex-end;      
+  /* align-items: flex-end;       */
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-footer {  
-  box-sizing: border-box;   
+footer {
+  box-sizing: border-box;
   margin-bottom: 0;
-  
 }
 
-.footer{
-  display: flex;  
+.footer {
+  display: flex;
   justify-content: space-around;
-    padding-right: 180px;
-    box-sizing: border-box;
-
+  padding-right: 180px;
+  box-sizing: border-box;
 }
 
-.listaFooter{
-  display: flex;   
+.listaFooter {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
   align-items: center;
   margin: auto 20px auto 20px;
+  box-sizing: border-box;
 }
 
 .logoImg img {
@@ -37,18 +40,18 @@ footer li {
   list-style: none;
   width: auto;
   margin: 0 20px;
-  text-align: justify;  
+  text-align: justify;
+  font-size: 16px;
 }
 
-.Año {  
-  align-items: center;  
+.Año {
+  align-items: center;
   justify-content: baseline;
 }
 
 footer a:link, footer a:visited, footer a:active {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 21px;
 }
 
 .viñeta {
@@ -62,4 +65,4 @@ footer a:link, footer a:visited, footer a:active {
   background-color: #FD4C00;
   border-top-right-radius: 20px 20px !important;
   border-bottom-right-radius: 20px 20px !important;
-} 
+}

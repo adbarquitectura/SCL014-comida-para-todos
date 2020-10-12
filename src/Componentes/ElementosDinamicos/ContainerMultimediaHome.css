@@ -15,5 +15,8 @@
     top: -1000%;
     left: -5%;
     height: 200px;
-    z-index: -200;
+    z-index: -200;    
+}
+.colorTextoh1{
+    color: white;
 }

@@ -13,7 +13,7 @@
     margin: 0px 0px;
     width: 100%;
     height: auto;
-    box-sizing: border-box;
+    box-sizing: border-box;     
     /* background-color: tomato; */
 }
 
@@ -31,20 +31,21 @@
     box-sizing: border-box;
     padding: 10px 128px 10px 128px;
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.08);
+    /* overflow: hidden; */
 }
 
 .imgLogoMenuNavegacion {
     /* background-color: blueviolet; */
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     box-sizing: border-box;
-    margin: auto auto 5px auto;
+    margin: auto auto 0px auto;
 }
 
 .boxListaMenuNavegacion {  
     display: flex;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 16px;
     align-items: center;
     letter-spacing: 0.2px;
     color: #373F41;
@@ -54,14 +55,25 @@
     justify-content: center;
     box-sizing: border-box;
     margin: 5px;
+    overflow: hidden;
+    overflow-y: hidden; 
+}
+
+.boxListaMenuNavegacion:hover {  
+    color: #FD4C00;    
 }
 
 .boxListaMenuNavegacion li {
     margin: auto 20px auto 20px;
 }
 
-a:link, a:visited, a:active {
+.boxListaMenuNavegacion a:link, 
+.boxListaMenuNavegacion a:visited, 
+.boxListaMenuNavegacion a:active {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
+}
+.boxListaMenuNavegacion a:hover {    
+    color: #FD4C00;
 }
