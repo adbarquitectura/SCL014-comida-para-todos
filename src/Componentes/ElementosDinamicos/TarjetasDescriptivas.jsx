@@ -1,5 +1,5 @@
-import React from 'react';
-import TarjetasConImagenes from './TarjetasConImagenes';
+import React from "react";
+import TarjetasConImagenes from "./TarjetasConImagenes";
 
 import AlimentoBueno from '../../img/Alimento-bueno.png';
 import Empleo from '../../img/Empleo.png';
@@ -55,6 +55,7 @@ const TarjetasDescriptivas = (props) => {
             </div> */}
         </div>
     )
+
 };
 
 export default TarjetasDescriptivas;
