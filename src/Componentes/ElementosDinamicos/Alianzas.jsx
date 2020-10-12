@@ -118,7 +118,7 @@ const Alianzas = (props) => {
                     <h3>Jorge Lopez</h3>
                     <h4>Dueño Boa Restaurant</h4>
                     <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
-                    <a href='https://www.boasantiago.cl/pedir'>Boasantiago.cl</a>
+                    <a href='https://www.boasantiago.cl/pedir'target='_blank'>Boasantiago.cl</a>
                   </div>
                 </Col>
               </Row>
@@ -144,7 +144,7 @@ const Alianzas = (props) => {
                     <h3>Jorge Lopez</h3>
                     <h4>Dueño Boa Restaurant</h4>
                     <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
-                    <a href='https://www.boasantiago.cl/pedir'>Boasantiago.cl</a>
+                    <a href='https://www.boasantiago.cl/pedir' target='_blank'>Boasantiago.cl</a>
                   </div>
                 </Col>
               </Row>
@@ -170,7 +170,7 @@ const Alianzas = (props) => {
                     <h3>Jorge Lopez</h3>
                     <h4>Dueño Boa Restaurant</h4>
                     <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
-                    <a href='https://www.boasantiago.cl/pedir'>Boasantiago.cl</a>
+                    <a href='https://www.boasantiago.cl/pedir' target='_blank'>Boasantiago.cl</a>
                   </div>
                 </Col>
               </Row>
@@ -196,7 +196,7 @@ const Alianzas = (props) => {
                     <h3>Jorge Lopez</h3>
                     <h4>Dueño Boa Restaurant</h4>
                     <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
-                    <a href='https://www.boasantiago.cl/pedir'>Boasantiago.cl</a>
+                    <a href='https://www.boasantiago.cl/pedir' target='_blank'>Boasantiago.cl</a>
                   </div>
                 </Col>
               </Row>

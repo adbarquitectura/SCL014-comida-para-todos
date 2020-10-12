@@ -47,7 +47,7 @@ const CarruselMultimediaInformativo = (props) => {
                   <div className="boxTextoCarrusel">
                     <h3>3 millones de chilenos padecen Inseguridad Alimentaria moderada o severa</h3>
                     <p>El Programa Mundial de Alimentos de las Naciones Unidas (PMA), advirtió recientemente que estamos al borde de una pandemia alimentaria.La inseguridad alimentaria aguda aumentará a 265 millones en 2020 en Latinoamérica, duplicando las cifras del 2019. (PMA, 2020)</p>
-                    <a href='https://www.un.org/sustainabledevelopment/es/hunger/'>Objetivos de Desarrollo Sostenible</a>
+                    <a href='https://www.un.org/sustainabledevelopment/es/hunger/' target='_blank'>Objetivos de Desarrollo Sostenible</a>
                   </div>
                 </Col>
               </Row>
@@ -69,7 +69,7 @@ const CarruselMultimediaInformativo = (props) => {
                   <div className="boxTextoCarrusel">
                     <h3>3 millones de chilenos padecen Inseguridad Alimentaria moderada o severa</h3>
                     <p>El Programa Mundial de Alimentos de las Naciones Unidas (PMA), advirtió recientemente que estamos al borde de una pandemia alimentaria.La inseguridad alimentaria aguda aumentará a 265 millones en 2020 en Latinoamérica, duplicando las cifras del 2019. (PMA, 2020)</p>
-                    <a href='https://www.un.org/sustainabledevelopment/es/hunger/'>Objetivos de Desarrollo Sostenible</a>
+                    <a href='https://www.un.org/sustainabledevelopment/es/hunger/' target='_blank'>Objetivos de Desarrollo Sostenible</a>
                   </div>
                 </Col>
               </Row>
