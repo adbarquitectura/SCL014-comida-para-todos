@@ -1,58 +1,70 @@
 import React from 'react';
-import LaReceta from '../../MultimediaComponents/LaReceta.mp4';
+import BotonGeneral from '../../Botones/BotonGeneral';
+import BotonSecundario from '../../Botones/BotonSecundario';
+import ContainerMultimediaHome from '../../ElementosDinamicos/ContainerMultimediaHome';
+import CarruselMultimediaComunidad from '../../ElementosDinamicos/CarruselMultimediaComunidad';
+import Infografia from '../../ElementosDinamicos/Infografia';
+import TarjetasDescriptivas from '../../ElementosDinamicos/TarjetasDescriptivas';
+import CarruselMultimediaInformativo from '../../ElementosDinamicos/CarruselMultimediaInformativo';
+import SeccionManerasAportar from '../../ElementosDinamicos/SeccionManerasAportar';
+import Alianzas from '../../ElementosDinamicos/Alianzas';
+import TarjetasDonaciones from '../../ElementosDinamicos/TarjetasDonaciones';
 
+import './HomeView.css';
 
-const BlueVioletBtn = (props) => {
-  return (
-    <button className="btn mybtn"> {props.contenidobtn} </button>
-  )
-}
-
-const RedesSociales = () => {
-  return (
-    <div >
-      Redes Sociales
-    </div>
-  )
-}
-
-const ContainerMultimediaHome = () => {
-  return (
-    <div>
-      Menu Video Ppal
-    </div>
-  )
-}
-
-const CarrouselSeguridadAlimentaria = () => {
-  return (
-    <div>
-      Aqui va el Carrousel
-    </div>
-  )
-}
 
 const HomeView = () => {
-    return (
+  return (
 
-        <div>
-            <RedesSociales />
-            <ContainerMultimediaHome />
-            <CarrouselSeguridadAlimentaria />
-            
-            <video className="video"
-                autoPlay
-                muted loop >
-                <source src={LaReceta} type="video/mp4" />
-            </video>
-            <BlueVioletBtn
-                contenidobtn={'Hola'}
-            />
-            <button className="btn mybtn"> Prueba bootstrap </button>
-        </div >
+    <div className="containerMainView">
+      <ContainerMultimediaHome />
+
+      {/* <CarrouselMultimediaProblematica 
+      tituloPrimerSlide = {'titulo1'}
+      parrafoPrimerSlide = {'parrafo1'}
+
+      tituloSegundoSlide = {'titulo2'}
+      parrafoSegundoSlide = {'parrafo2'}
+
+      tituloTercerSlide = {'titulo3'}
+      parrafoTercerSlide = {'parrafo3'}
+
+      />   */}
+
+      <TarjetasDonaciones />
+
+      <Infografia
+        contenidoInfo={'impacto-organizacion'}
+      />
+
+      <TarjetasDescriptivas
+        contenidoInfo={'Nuestros 4 ingredientes para la receta'}
+      />
+
+      <Infografia
+        contenidoInfo={'ciclo-de-vida'}
+      />
+
+      <CarruselMultimediaInformativo
+        contenidoInfo={'Seguridad alimentaria en Chile'}
+      />
+      <SeccionManerasAportar
+        contenidoInfo={'Otras maneras de aportar'}
+        maneras={'talento, metro cuadrado, educación y horas de capacitación, alimentos'}
+      />
+
+      <Alianzas
+        contenidoInfo={'Nuestras Alianzas'}
+      />
+
+      <CarruselMultimediaComunidad
+        contenidoInfo={'¿Qué dice la comunidad en las redes?'}
+      />
+
+    </div >
 
 
-    )
+  )
 }
 
 export default HomeView;

@@ -1,0 +1,25 @@
+.contenedorGeneralTarjetasDonarciones {
+    width: 100%;
+    box-sizing: border-box;
+    padding: auto 128px auto 128px;
+    margin: 15px auto 15px auto;
+    justify-content: space-around;
+}
+
+.boxTarjetasDonacion{
+    width: 100%;
+    border: 1px #FD4C00 solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    align-self: center;
+    margin: auto 15px auto 15px;        
+}
+
+.boxTarjetasDonacion p{
+    text-align: center;    
+}
+.boxTarjetasDonacion img{
+    width: 100px;
+    height: 100px;    
+}

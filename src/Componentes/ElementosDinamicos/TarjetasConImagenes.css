@@ -1,0 +1,48 @@
+.tituloalineadoIzquierda{
+text-align: left;
+}
+.contenedorGeneralTarjetas {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    /* padding-left: 120px;
+    padding-right: 120px; */
+}
+
+.contenedorTarjetas {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-color: teal; */
+}
+
+.boxImagenesTarjeta {    
+    width: 100%;
+}
+
+.boxTextoTarjeta {
+    padding: 15px;
+    box-sizing: border-box;
+    /* background-color: tomato; */
+}
+
+.imgTarjeta {
+    width: 200px;   
+    height: 200px; 
+    padding: 15px;
+    box-sizing: border-box;
+    /* background-color: violet; */
+}
+.tituloBoxTextoTarjeta{
+    margin-top: 5px;
+    margin-bottom: 10px;    
+    line-height: 24px;
+    text-align: center;
+}
+
+.parrafoBoxTextoTarjeta{    
+    line-height: 23px;
+    text-align: left;
+}
+

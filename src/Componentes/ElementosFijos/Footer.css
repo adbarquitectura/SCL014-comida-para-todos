@@ -1,0 +1,68 @@
+.pastillaFooter {
+  width: 100%;
+  padding: 100px 128px 10px 128px;
+  background-color: #353535;   
+  /* align-items: flex-end;       */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+footer {
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 180px;
+  box-sizing: border-box;
+}
+
+.listaFooter {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  align-items: center;
+  margin: auto 20px auto 20px;
+  box-sizing: border-box;
+}
+
+.logoImg img {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+}
+
+footer li {
+  text-decoration: none;
+  list-style: none;
+  width: auto;
+  margin: 0 20px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.Año {
+  align-items: center;
+  justify-content: baseline;
+}
+
+footer a:link, footer a:visited, footer a:active {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.viñeta {
+  width: 20px;
+  height: 26px;
+}
+
+.viñetaOrange {
+  width: 21px;
+  height: 26px;
+  background-color: #FD4C00;
+  border-top-right-radius: 20px 20px !important;
+  border-bottom-right-radius: 20px 20px !important;
+}

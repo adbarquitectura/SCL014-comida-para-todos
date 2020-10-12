@@ -1,0 +1,79 @@
+.boxMenuNavegacionFijo {
+    position: sticky;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    /* background: rgba(255, 255, 255, 0.5); */
+    z-index: 100;
+    /* Inside Auto Layout */
+    order: 0;
+    align-self: center;
+    flex-grow: 0;
+    margin: 0px 0px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;     
+    /* background-color: tomato; */
+}
+
+.boxRenderizadoMenuSeleccionado {
+    width: 100%;
+    background-color: white;
+    margin-top: 0;
+}
+
+.boxMenuNavegacion {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 10px 128px 10px 128px;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.08);
+    /* overflow: hidden; */
+}
+
+.imgLogoMenuNavegacion {
+    /* background-color: blueviolet; */
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    margin: auto auto 0px auto;
+}
+
+.boxListaMenuNavegacion {  
+    display: flex;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #373F41;
+    list-style-type: none;
+    text-decoration: none;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 5px;
+    overflow: hidden;
+    overflow-y: hidden; 
+}
+
+.boxListaMenuNavegacion:hover {  
+    color: #FD4C00;    
+}
+
+.boxListaMenuNavegacion li {
+    margin: auto 20px auto 20px;
+}
+
+.boxListaMenuNavegacion a:link, 
+.boxListaMenuNavegacion a:visited, 
+.boxListaMenuNavegacion a:active {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.boxListaMenuNavegacion a:hover {    
+    color: #FD4C00;
+}
