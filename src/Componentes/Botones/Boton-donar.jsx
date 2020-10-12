@@ -16,7 +16,7 @@ const BotonDonar = () => {
             <Dropdown>
                 {/* Botón que se despliega*/}
                 <DropdownToggle size="lg" className="sePartedrop">
-                    Sé Parte    <FontAwesomeIcon icon={faHeart} size="0.5x" />
+                    Sé Parte    <FontAwesomeIcon icon={faHeart} size="xs" />
                 </DropdownToggle>
 
                 {/* Información del Botón */}
