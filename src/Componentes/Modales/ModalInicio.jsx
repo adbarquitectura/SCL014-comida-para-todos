@@ -2,7 +2,6 @@ import React from 'react';
 import Modal from 'react-bootstrap/Modal'
 import BotonCloseModal from '../Botones/BotonCloseModal';
 import BotonGeneral from '../Botones/BotonGeneral';
-
 import './ModalInicio.css';
 
 

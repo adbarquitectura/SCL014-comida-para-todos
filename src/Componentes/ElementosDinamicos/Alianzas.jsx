@@ -69,15 +69,22 @@ const Alianzas = () => {
 
   return (
     <div>
-      <div className="fotoAlianzas">
-        {
-          arregloAlianza.map((aliado, idx) => {
-            return (
-              <img src={aliado} key={idx} />
-            )
-          })
-        }
-      </div>
+      <Container>
+        <Row>
+          <Col>
+            <div className="fotoAlianzas">
+              {
+                arregloAlianza.map((aliado, idx) => {
+                  return (
+                    <img src={aliado} key={idx} />
+                  )
+                })
+              }
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
       <Carousel
         activeIndex={index}
         onSelect={handleSelect}
@@ -174,24 +181,3 @@ const Alianzas = () => {
 };
 
 export default Alianzas;
-
-/* return (
-  <div>
-    Nuestras Alianzas
-    <div className="fotoAlianzas">
-      <img src={restaurant} />
-      <img src={boa} />
-      <img src={chimba} />
-      <img src={cava} />
-
-      <p>
-        Como restaurantes, estamos muy contentos de unirnos a esta causa y
-        poder colaborar con platos de comida ricos y de calidad, cocinados por
-        nustros propios chefs y con mucho cariño para las comunidades.
-      </p>
-    </div>
-
-
-
-  </div>
-); */

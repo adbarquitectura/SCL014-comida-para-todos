@@ -2,6 +2,12 @@
     display: flex;
     background-color: grey;
 }
+
+.fotoAlianzas img{
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+}
 .fotoAlianzas>img:first-child{
     background-color: hotpink;
     border: 3px red solid;
