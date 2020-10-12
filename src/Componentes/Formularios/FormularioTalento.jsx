@@ -1,37 +1,35 @@
 import React, { useState } from 'react';
 import './FormularioTalento.css';
-import {aricaparinacota, tarapaca, antofagasta,atacama,coquimbo,valparaiso,
-    ohiggins, maule, ñuble, biobio, araucania, losrios, loslagos, aysen, magallanes, metropolitana} from './comunas.js';
-
+import * as Comunas from './comunas.js';
 
 
 const FormularioTalento = () => {
 
-/* Información de comunas */
-    // console.log(aricaparinacota, tarapaca, antofagasta,atacama,coquimbo,valparaiso,
-    //     ohiggins, maule, ñuble, biobio, araucania, losrios, loslagos, aysen, magallanes, metropolitana);
+    /* Definición de Estado del form */
+    const [formTalento, setformTalento] = useState({});
 
-        /* Asociar opción de select */
- const ComunasSelect = (e) =>{
-     console.log(e.target.value);
-    // console.log('estoy escuchando ');
-    //  const regionSeleccionada = e.target.value;
-    //  console.log(regionSeleccionada);
- }
+    /* Definición del Estado de select Comunas*/
+    const[comunas, setcomunas] = useState([]);
 
-/* Definición de Estado del form */
-    const [formTalento, setformTalento] = useState();
+    /* Asociar opción de select */
+    const RegionSelect = (e) => {
+        const { name, value } = e.target;
+        const region= Comunas[value];
+        setcomunas([...region]);
+        setformTalento({ ...formTalento, [name]: value })
 
-/* Función para manejar cambio de input*/
+    }
 
-const HandleInputChange = (e) =>{
-//   console.log(e.target.value)
-    const {name, value} = e.target;
-    // console.log(name,value);
-    setformTalento({...formTalento, [name]:value})
-};
+    /* Función para manejar cambio de input*/
 
-/* Función para manejar Form con HandleSubmit*/
+    const HandleInputChange = (e) => {
+        //   console.log(e.target.value)
+        const { name, value } = e.target;
+        // console.log(name,value);
+        setformTalento({ ...formTalento, [name]: value })
+    };
+
+    /* Función para manejar Form con HandleSubmit*/
     const HandleSubmit = (e) => {
         e.preventDefault();
         console.log(formTalento)
@@ -53,7 +51,7 @@ const HandleInputChange = (e) =>{
                     <label htmlFor="Telefono"> Teléfono </label>
                     <input type="text" name="Telefono" id="Telefono" placeholder="1 2345789" onChange={HandleInputChange} />
                     <label htmlFor="Region"> Región </label>
-                    <select name="Region" id="Region" onChange={HandleInputChange}>
+                    <select name="Region" id="Region" onChange={RegionSelect}>
                         <option value="tarapaca">Región de Tarapacá</option>
                         <option value="antofagasta"> Región de Antofagasta </option>
                         <option value="atacama"> Región de Atacama </option>
@@ -72,8 +70,11 @@ const HandleInputChange = (e) =>{
                         <option value="ñuble"> Región de Ñuble </option>
                     </select>
                     <label htmlFor="Comuna"> Comuna </label>
-                    <select name="Comuna" id="Comuna" onChange={ComunasSelect}>
-                        <option value="">Comunas según elección de Select anterior</option>
+                    <select name="Comuna" id="Comuna" onChange={HandleInputChange}>
+                        <option value="">Seleccione su comuna </option>
+                        {comunas.map((comuna, index )=>{
+                            return (<option key ={index} value={comuna}>{comuna}</option>)
+                        })}
                     </select>
                     <label htmlFor="Talento"> Cuentanos con que talento quieres aportar </label>
                     <textarea name="Talento" id="talento" cols="40" rows="4" onChange={HandleInputChange}></textarea>
