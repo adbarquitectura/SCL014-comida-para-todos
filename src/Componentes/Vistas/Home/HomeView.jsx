@@ -2,7 +2,7 @@ import React from 'react';
 import BotonGeneral from '../../Botones/BotonGeneral';
 import BotonSecundario from '../../Botones/BotonSecundario';
 import ContainerMultimediaHome from '../../ElementosDinamicos/ContainerMultimediaHome';
-import CarrouselMultimediaProblematica from '../../ElementosDinamicos/CarruselMultimediaProblematica';
+import CarruselMultimediaComunidad from '../../ElementosDinamicos/CarruselMultimediaComunidad';
 import Infografia from '../../ElementosDinamicos/Infografia';
 import TarjetasDescriptivas from '../../ElementosDinamicos/TarjetasDescriptivas';
 import CarruselMultimediaInformativo from '../../ElementosDinamicos/CarruselMultimediaInformativo';
@@ -56,7 +56,10 @@ const HomeView = () => {
       <Alianzas
         contenidoInfo={'Nuestras Alianzas'}
       />
-    
+
+      <CarruselMultimediaComunidad
+        contenidoInfo={'¿Qué dice la comunidad en las redes?'}
+      />
 
     </div >
 
