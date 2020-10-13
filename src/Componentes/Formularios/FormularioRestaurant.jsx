@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FormularioTalento.css';
+import './Formularios.css';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
 
@@ -45,7 +45,7 @@ const FormularioRestaurant = () => {
             )
             .then(
                 (response) => {
-                    console.log("SUCCESS!", response.status, response.text);                    
+                    console.log("SUCCESS!", response.status, response.text);
                 },
                 (err) => {
                     console.log("FAILED...", err);
@@ -64,15 +64,24 @@ const FormularioRestaurant = () => {
                     <h2>Formulario de Registro</h2>
                 </div>
                 <form action="restaurant form-group" onSubmit={HandleSubmit}>
-                    <label htmlFor="NombreCompleto"> Nombre Completo </label>
-                    <input type="text" name="NombreCompleto" id="Nombre" placeholder=" Nombre y Apellido" onChange={HandleInputChange} />
-                    <label htmlFor="CorreoElectronico"> Nombre Restaurant </label>
-                    <input type="text" name="NombreRestaurant" id="Restaurant" placeholder="Nombre Restaurant" onChange={HandleInputChange} />
-                    <label htmlFor="CorreoElectronico"> Correo Eléctronico </label>
-                    <input type="email" name="CorreoElectronico" id="Correo" placeholder="correo@electronico.com" onChange={HandleInputChange} />
-                    <label htmlFor="Telefono"> Teléfono </label>
-                    <input type="text" name="Telefono" id="Telefono" placeholder="1 2345789" onChange={HandleInputChange} />
-                    <input type="submit" value="enviar" placeholder="Enviar" className="btn mybtn" />
+                    <div className="form-group">
+                        <label htmlFor="NombreCompleto"> Nombre Completo </label>
+                        <input type="text" className="form-control" name="NombreCompleto" id="Nombre" placeholder=" Nombre y Apellido" onChange={HandleInputChange} />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="CorreoElectronico"> Nombre Restaurant </label>
+                        <input type="text" className="form-control" name="NombreRestaurant" id="Restaurant" placeholder="Nombre Restaurant" onChange={HandleInputChange} />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="CorreoElectronico"> Correo Eléctronico </label>
+                        <input type="email" className="form-control" name="CorreoElectronico" id="Correo" placeholder="correo@electronico.com" onChange={HandleInputChange} />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="Telefono"> Teléfono </label>
+                        <input type="text" className="form-control" name="Telefono" id="Telefono" placeholder="1 2345789" onChange={HandleInputChange} />
+                    </div>
+
+                    <input type="submit" value="Enviar" placeholder="Enviar" className="btn mybtn" />
                 </form>
 
             </div>

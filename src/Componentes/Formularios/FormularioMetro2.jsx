@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FormularioTalento.css';
+import './Formularios.css';
 import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
@@ -60,7 +60,7 @@ const FormularioMetroCuadrado = () => {
             )
             .then(
                 (response) => {
-                    console.log("SUCCESS!", response.status, response.text);                    
+                    console.log("SUCCESS!", response.status, response.text);
                 },
                 (err) => {
                     console.log("FAILED...", err);
@@ -78,41 +78,55 @@ const FormularioMetroCuadrado = () => {
                     <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
                 </div>
                 <form action="talento form-group" onSubmit={HandleSubmit}>
-                    <label htmlFor="NombreCompleto"> Nombre Completo </label>
-                    <input type="text" name="NombreCompleto" id="Nombre" placeholder=" Nombre y Apellido" onChange={HandleInputChange} />
-                    <label htmlFor="CorreoElectronico"> Correo Eléctronico </label>
-                    <input type="email" name="CorreoElectronico" id="Correo" placeholder="correo@electronico.com" onChange={HandleInputChange} />
-                    <label htmlFor="Telefono"> Teléfono </label>
-                    <input type="text" name="Telefono" id="Telefono" placeholder="1 2345789" onChange={HandleInputChange} />
-                    <label htmlFor="Region"> Región </label>
-                    <select name="Region" id="Region" onChange={RegionSelect}>
-                        <option value="tarapaca">Región de Tarapacá</option>
-                        <option value="antofagasta"> Región de Antofagasta </option>
-                        <option value="atacama"> Región de Atacama </option>
-                        <option value="coquimbo"> Región de Coquimbo </option>
-                        <option value="valparaiso">Región de Valparaíso </option>
-                        <option value="ohiggins"> Región del Libertador General Bernardo O'Higgins</option>
-                        <option value="maule"> Región del Maule </option>
-                        <option value="biobio"> Región del Biobío</option>
-                        <option value="araucania"> Región de La Araucanía </option>
-                        <option value="loslagos"> Región de Los Lagos </option>
-                        <option value="aysen">Región Aysén del General Carlos Ibáñez del Campo</option>
-                        <option value="magallanes"> Región de Magallanes y Antártica Chilena </option>
-                        <option value="metropolitana"> Región Metropolitana de Santiago </option>
-                        <option value="losríos"> Región de Los Ríos </option>
-                        <option value="aricaparinacota"> Región de Arica y Parinacota </option>
-                        <option value="ñuble"> Región de Ñuble </option>
-                    </select>
-                    <label htmlFor="Comuna"> Comuna </label>
-                    <select name="Comuna" id="Comuna" onChange={HandleInputChange}>
-                        <option value="">Seleccione su comuna </option>
-                        {comunas.map((comuna, index) => {
-                            return (<option key={index} value={comuna}>{comuna}</option>)
-                        })}
-                    </select>
-                    <label htmlFor="MetroCuadrado"> Cuentanos con cuantos metros cuadrados para huertas quieres aportar </label>
-                    <textarea name="MetroCuadrado" id="metrocuadrado" cols="40" rows="4" onChange={HandleInputChange}></textarea>
-                    <input type="submit" value="enviar" placeholder="Enviar" className="btn mybtn" />
+                    <div className="form-group">
+                        <label htmlFor="NombreCompleto"> Nombre Completo </label>
+                        <input type="text" className="form-control" name="NombreCompleto" id="Nombre" placeholder=" Nombre y Apellido" onChange={HandleInputChange} />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="CorreoElectronico"> Correo Eléctronico </label>
+                        <input type="email" className="form-control" name="CorreoElectronico" id="Correo" placeholder="correo@electronico.com" onChange={HandleInputChange} />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="Telefono"> Teléfono </label>
+                        <input type="text" className="form-control" name="Telefono" id="Telefono" placeholder="1 2345789" onChange={HandleInputChange} />
+                    </div>
+                    <div className="form-region">
+                        <div className="form-group">
+                            <label htmlFor="Region"> Región </label>
+                            <select name="Region" className="form-control" id="Region" onChange={RegionSelect}>
+                                <option value="tarapaca">Región de Tarapacá</option>
+                                <option value="antofagasta"> Región de Antofagasta </option>
+                                <option value="atacama"> Región de Atacama </option>
+                                <option value="coquimbo"> Región de Coquimbo </option>
+                                <option value="valparaiso">Región de Valparaíso </option>
+                                <option value="ohiggins"> Región del Libertador General Bernardo O'Higgins</option>
+                                <option value="maule"> Región del Maule </option>
+                                <option value="biobio"> Región del Biobío</option>
+                                <option value="araucania"> Región de La Araucanía </option>
+                                <option value="loslagos"> Región de Los Lagos </option>
+                                <option value="aysen">Región Aysén del General Carlos Ibáñez del Campo</option>
+                                <option value="magallanes"> Región de Magallanes y Antártica Chilena </option>
+                                <option value="metropolitana"> Región Metropolitana de Santiago </option>
+                                <option value="losríos"> Región de Los Ríos </option>
+                                <option value="aricaparinacota"> Región de Arica y Parinacota </option>
+                                <option value="ñuble"> Región de Ñuble </option>
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="Comuna"> Comuna </label>
+                            <select name="Comuna" className="form-control" id="Comuna" onChange={HandleInputChange}>
+                                <option value="">Seleccione su comuna </option>
+                                {comunas.map((comuna, index) => {
+                                    return (<option key={index} value={comuna}>{comuna}</option>)
+                                })}
+                            </select>
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="MetroCuadrado"> Cuentanos con cuantos metros cuadrados para huertas quieres aportar </label>
+                        <textarea name="MetroCuadrado" className="form-control" id="metrocuadrado" cols="40" rows="4" onChange={HandleInputChange}></textarea>
+                    </div>
+                    <input type="submit" value="Enviar" placeholder="Enviar" className="btn mybtn" />
                 </form>
 
             </div>
