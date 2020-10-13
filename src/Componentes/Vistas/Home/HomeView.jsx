@@ -1,6 +1,6 @@
 import React from 'react';
-import BotonGeneral from '../../Botones/BotonGeneral';
-import BotonSecundario from '../../Botones/BotonSecundario';
+// import BotonGeneral from '../../Botones/BotonGeneral';
+// import BotonSecundario from '../../Botones/BotonSecundario';
 import ContainerMultimediaHome from '../../ElementosDinamicos/ContainerMultimediaHome';
 import CarruselMultimediaComunidad from '../../ElementosDinamicos/CarruselMultimediaComunidad';
 import InfografiaImpacto from '../../ElementosDinamicos/InfografiaImpacto';
@@ -10,8 +10,6 @@ import CarruselMultimediaInformativo from '../../ElementosDinamicos/CarruselMult
 import SeccionManerasAportar from '../../ElementosDinamicos/SeccionManerasAportar';
 import Alianzas from '../../ElementosDinamicos/Alianzas';
 import TarjetasDonaciones from '../../ElementosDinamicos/TarjetasDonaciones';
-
-import cicloVida from '../../../img/ciclodonacion.jpg';
 
 import './HomeView.css';
 

@@ -2,10 +2,10 @@ import React from 'react';
 import FormularioTalento from '../../Formularios/FormularioTalento';
 import ModalFormularios from '../../Modales/ModalFormularios';
 import BotonGeneral from '../../Botones/BotonGeneral';
-import FormularioRestaurant from '../../Formularios/FormularioRestaurant';
-import FormularioMetroCuadrado from '../../Formularios/FormularioMetro2';
-import FormularioCapacitacion from '../../Formularios/FormularioCapacitación';
-import FormularioBancoAlimentos from '../../Formularios/FormularioBancoAlimentos';
+// import FormularioRestaurant from '../../Formularios/FormularioRestaurant';
+// import FormularioMetroCuadrado from '../../Formularios/FormularioMetro2';
+// import FormularioCapacitacion from '../../Formularios/FormularioCapacitación';
+// import FormularioBancoAlimentos from '../../Formularios/FormularioBancoAlimentos';
 import RegalaUnAlmuerzo from '../../ElementosDinamicos/RegalaUnAlmuerzo';
 
 const clickBton = () => {
