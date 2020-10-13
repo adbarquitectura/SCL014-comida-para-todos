@@ -1,45 +1,40 @@
-.tituloalineadoIzquierda {
-  text-align: left;
-}
-.contenedorGeneralTarjetas {
+.contenedorManerasDeAportar{
   display: block;
   width: 100%;
   box-sizing: border-box;
-}
+} 
 
-.contenedorTarjetas {
+.contenedorTarjetasAportar {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
-  /* background-color: teal; */
 }
 
-.boxImagenesTarjeta {
+.boxImagenesTarjetaAportar {
   width: 100%;
 }
 
-.boxTextoTarjeta {
-  padding: 15px;
+.boxTextoTarjetaAportar {
+  /* padding: 15px; */
+  padding-top: 15px;
   box-sizing: border-box;
   /* background-color: tomato; */
 }
 
-.imgAportar {
-  width: 335px;
-  height: 400px;
-  padding: 15px;
+.imgAportar { 
+  height: 300px;
+  /* padding: 15px; */
+  object-fit: cover;
   box-sizing: border-box;
   /* background-color: violet; */
 }
-.tituloBoxTextoTarjeta {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  line-height: 24px;
-  text-align: center;
+
+.parrafoBoxTextoTarjetaAportar {  
+  text-align: left;
+  padding-top: 15px;
 }
 
-.parrafoBoxTextoTarjeta {
-  line-height: 23px;
-  text-align: left;
+.boxTextoTarjetaAportar  button{
+  width: 100%;  
 }

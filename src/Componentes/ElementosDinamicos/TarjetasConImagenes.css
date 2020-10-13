@@ -1,12 +1,7 @@
-.tituloalineadoIzquierda{
-text-align: left;
-}
 .contenedorGeneralTarjetas {
     display: block;
     width: 100%;
     box-sizing: border-box;
-    /* padding-left: 120px;
-    padding-right: 120px; */
 }
 
 .contenedorTarjetas {
@@ -41,8 +36,7 @@ text-align: left;
     text-align: center;
 }
 
-.parrafoBoxTextoTarjeta{    
-    line-height: 23px;
+.parrafoBoxTextoTarjeta{ 
     text-align: left;
 }
 

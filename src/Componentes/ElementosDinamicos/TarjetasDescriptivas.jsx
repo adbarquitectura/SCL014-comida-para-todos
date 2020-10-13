@@ -51,8 +51,6 @@ const TarjetasDescriptivas = (props) => {
                     </Row>
                 </Container>
             </div>
-
-
         </div>
     )
 
