@@ -1,38 +1,38 @@
-import React from 'react';
-import FormularioTalento from '../../Formularios/FormularioTalento';
-import ModalFormularios from '../../Modales/ModalFormularios';
-import BotonGeneral from '../../Botones/BotonGeneral';
+import React from "react";
+import FormularioTalento from "../../Formularios/FormularioTalento";
+import ModalFormularios from "../../Modales/ModalFormularios";
+import BotonGeneral from "../../Botones/BotonGeneral";
+import AportarRestaurante from "../../ElementosDinamicos/AportarRestaurante";
 
 const clickBton = () => {
-    window.open('https://yodono.cl/proyecto/207/CultivaComidaparaTods');
+  window.open("https://yodono.cl/proyecto/207/CultivaComidaparaTods");
 };
 
 const ComoAportarView = () => {
+  const [modalShow, setModalShow] = React.useState(false);
 
-    const [modalShow, setModalShow] = React.useState(false);
+  return (
+    <div>
+      <BotonGeneral
+        contenidobtn={"Inscribete"}
+        funcion={() => setModalShow(true)}
+      />
 
-    return (
-
-
-        <div>
-            < BotonGeneral
-                contenidobtn={'Inscribete'}
-                funcion={() => setModalShow(true)}
-            />
-
-            <ModalFormularios
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-                tituloModal={'Será redireccionado al sitio de yodono.cl para completar la donación.'}
-                contenidoModal={<FormularioTalento/>}
-                contenidoBotonModal={'Eviar'}
-                funcionBotonModal={clickBton}
-            />
-
-        </div >
-
-
-    )
-}
+      <ModalFormularios
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        tituloModal={
+          "Será redireccionado al sitio de yodono.cl para completar la donación."
+        }
+        contenidoModal={<FormularioTalento />}
+        contenidoBotonModal={"Eviar"}
+        funcionBotonModal={clickBton}
+      />
+      <AportarRestaurante
+        contenidoInfo={"¿Cómo aportar si eres un Restaurant?"}
+      />
+    </div>
+  );
+};
 
 export default ComoAportarView;
