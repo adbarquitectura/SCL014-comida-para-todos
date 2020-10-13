@@ -17,7 +17,7 @@
 }
 
 .boxTextoTarjeta {
-    padding: 15px;
+    padding-top: 15px;
     box-sizing: border-box;
     /* background-color: tomato; */
 }
@@ -25,13 +25,13 @@
 .imgTarjeta {
     width: 200px;   
     height: 200px; 
-    padding: 15px;
+    /* padding: 15px; */
     box-sizing: border-box;
     /* background-color: violet; */
 }
 .tituloBoxTextoTarjeta{
     margin-top: 5px;
-    margin-bottom: 10px;    
+    margin-bottom: 15px;    
     line-height: 24px;
     text-align: center;
 }

@@ -64,7 +64,7 @@ const SeccionManerasAportar = (props) => {
             </Col>
             <Col>
               <TarjetasAportar
-                contenidoBotonTarjeta={"Banco de Alimento"}
+                contenidoBotonTarjeta={"Banco de Alimentos"}
                 imgSrc={BancoAlimento}
                 tituloImg={"Banco de Alimento"}
                 parrafoImg={
