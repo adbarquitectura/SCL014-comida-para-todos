@@ -4,16 +4,16 @@ import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
 
-const FormularioTalento = () => {
+const FormularioBancoAlimentos = () => {
 
     /* Definición de Estado del form */
-    const [formTalento, setformTalento] = useState({});
+    const [formBancoAlimentos, setformBancoAlimentos] = useState({});
 
     /* Definición del Estado de select Comunas*/
     const [comunas, setcomunas] = useState([]);
 
     /* Contiene firestore */
-    const refTalento = firebase.firestore().collection('FormularioTalento');
+    const refBancoAlimentos = firebase.firestore().collection('FormularioBancoAlimentos');
 
 
 
@@ -22,7 +22,7 @@ const FormularioTalento = () => {
         const { name, value } = e.target;
         const region = Comunas[value];
         setcomunas([...region]);
-        setformTalento({ ...formTalento, [name]: value })
+        setformBancoAlimentos({ ...formBancoAlimentos, [name]: value })
 
     }
 
@@ -32,14 +32,14 @@ const FormularioTalento = () => {
         //   console.log(e.target.value)
         const { name, value } = e.target;
         // console.log(name,value);
-        setformTalento({ ...formTalento, [name]: value })
+        setformBancoAlimentos({ ...formBancoAlimentos, [name]: value })
     };
 
     /* Función para manejar Form con HandleSubmit*/
     const HandleSubmit = (e) => {
         e.preventDefault();
-        console.log(formTalento);
-        refTalento.add(formTalento)
+        console.log(formBancoAlimentos);
+        refBancoAlimentos.add(formBancoAlimentos)
             .then(() => {
                 enviarCorreoConfirmacion();
             });
@@ -53,14 +53,14 @@ const FormularioTalento = () => {
                 //ID plantilla correo a enviar
                 "template_5w4glhd",
                 {
-                    email_donante: formTalento.CorreoElectronico
+                    email_donante: formBancoAlimentos.CorreoElectronico
                 },
                 // User ID servicio 
                 "user_rM14hw1bnYdkRYLeQZpSK"
             )
             .then(
                 (response) => {
-                    console.log("SUCCESS!", response.status, response.text);                    
+                    console.log("SUCCESS!", response.status, response.text);
                 },
                 (err) => {
                     console.log("FAILED...", err);
@@ -73,7 +73,7 @@ const FormularioTalento = () => {
         <div className="form-group form-bg">
             <div className="FormTalento">
                 <div className="text">
-                    <h3>Regala un poco de talento a las comunidades, ellas te lo agradecerán.</h3>
+                    <h3> Queremos crear comunidades con el apoyo de todos, puedes aportar con alimentos a nuestro "Banco de Alimentos". Así podremos llegar cada día a más comunidades. </h3>
                     <p>A continuación puedes completar este formulario de inscripción.</p>
                     <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
                 </div>
@@ -110,8 +110,8 @@ const FormularioTalento = () => {
                             return (<option key={index} value={comuna}>{comuna}</option>)
                         })}
                     </select>
-                    <label htmlFor="Talento"> Cuentanos con que talento quieres aportar </label>
-                    <textarea name="Talento" id="talento" cols="40" rows="4" onChange={HandleInputChange}></textarea>
+                    <label htmlFor="Alimento"> Cuentanos con que alimentos te gustaría aportar a nuestro Banco </label>
+                    <textarea name="Alimento" id="capacitacion" cols="40" rows="4" onChange={HandleInputChange}></textarea>
                     <input type="submit" value="enviar" placeholder="Enviar" className="btn mybtn" />
                 </form>
 
@@ -122,4 +122,4 @@ const FormularioTalento = () => {
     )
 }
 
-export default FormularioTalento;
+export default FormularioBancoAlimentos;
