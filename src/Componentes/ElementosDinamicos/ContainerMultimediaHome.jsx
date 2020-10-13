@@ -1,8 +1,9 @@
 import React from 'react';
-import LaReceta from '../MultimediaComponents/LaReceta.mp4';
-import CampañaCPT from '../MultimediaComponents/CampañaCPT.mp4'
-import BotonGeneral from '../Botones/BotonGeneral';
 // import LaReceta from '../MultimediaComponents/LaReceta.mp4';
+// import CampañaCPT from '../MultimediaComponents/CampañaCPT.mp4';
+import videoCPT from '../MultimediaComponents/videofinalCPT.mp4';
+import BotonGeneral from '../Botones/BotonGeneral';
+
 import './ContainerMultimediaHome.css';
 import Carousel from 'react-bootstrap/Carousel'
 import imgcarousel2 from '../../img/imgcarousel2.jpg';
@@ -29,7 +30,7 @@ const ContainerMultimediaHome = () => {
             className="video"
             autoPlay muted
             loop >
-            <source src={CampañaCPT} type="video/mp4" />
+            <source src={videoCPT} type="video/mp4" />
           </video>
           <Carousel.Caption>
             <div className="Overlay">

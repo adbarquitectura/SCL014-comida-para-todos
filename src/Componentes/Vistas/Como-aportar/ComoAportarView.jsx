@@ -23,6 +23,9 @@ const ComoAportarView = () => {
 
             <RegalaUnAlmuerzo
             contenidoInfo={'Regala un Almuerzo'}/>
+
+            <br/> <br/> <br/>
+
             < BotonGeneral
                 contenidobtn={'Inscribe tu talento'}
                 funcion={() => setModalShow(true)}
@@ -48,10 +51,10 @@ const ComoAportarView = () => {
                 contenidoModal={<FormularioRestaurant/>}
             />
               */}
-              <FormularioRestaurant/>
+              {/* <FormularioRestaurant/>
              <FormularioMetroCuadrado/>
              <FormularioCapacitacion/>
-             <FormularioBancoAlimentos/> 
+             <FormularioBancoAlimentos/>  */}
         </div >
 
 

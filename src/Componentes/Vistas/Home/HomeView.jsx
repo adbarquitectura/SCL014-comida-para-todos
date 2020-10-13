@@ -3,14 +3,15 @@ import BotonGeneral from '../../Botones/BotonGeneral';
 import BotonSecundario from '../../Botones/BotonSecundario';
 import ContainerMultimediaHome from '../../ElementosDinamicos/ContainerMultimediaHome';
 import CarruselMultimediaComunidad from '../../ElementosDinamicos/CarruselMultimediaComunidad';
-
-import Infografia from '../../ElementosDinamicos/Infografia';
+import InfografiaImpacto from '../../ElementosDinamicos/InfografiaImpacto';
+import InfografiaCiclo from '../../ElementosDinamicos/InfografiaCiclo';
 import TarjetasDescriptivas from '../../ElementosDinamicos/TarjetasDescriptivas';
 import CarruselMultimediaInformativo from '../../ElementosDinamicos/CarruselMultimediaInformativo';
 import SeccionManerasAportar from '../../ElementosDinamicos/SeccionManerasAportar';
 import Alianzas from '../../ElementosDinamicos/Alianzas';
-
 import TarjetasDonaciones from '../../ElementosDinamicos/TarjetasDonaciones';
+
+import cicloVida from '../../../img/ciclodonacion.jpg';
 
 import './HomeView.css';
 
@@ -35,17 +36,13 @@ const HomeView = () => {
 
       <TarjetasDonaciones />
 
-      <Infografia
-        contenidoInfo={'impacto-organizacion'}
-      />
+      <InfografiaImpacto/>
 
       <TarjetasDescriptivas
         contenidoInfo={'Nuestros 4 ingredientes para la receta'}
       />
 
-      <Infografia
-        contenidoInfo={'ciclo-de-vida'}
-      />
+      <InfografiaCiclo/>
 
       <CarruselMultimediaInformativo
         contenidoInfo={'Seguridad alimentaria en Chile'}
