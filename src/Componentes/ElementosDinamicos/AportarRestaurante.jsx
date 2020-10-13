@@ -59,7 +59,7 @@ const AportarRestaurante = (props) => {
                 en el corto plazo, debido a la emergencia sanitaria, ser parte
                 de los cursos de capacitación y educación a la comunidad.
               </p>
-              <BotonGeneral contenidobtn={"Aporta como Restaurant"} />{" "}
+              <BotonGeneral contenidobtn={"Aporta como Restaurant"} />
             </div>
           </Col>
         </Row>
