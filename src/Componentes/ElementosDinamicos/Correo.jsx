@@ -4,6 +4,7 @@ import BotonGeneral from "../Botones/BotonGeneral";
 
 const Correo = () => {
   const frmContact = {
+    userName: "",
     userEmail: "",
     concernCategory: "",
     emailTitle: "",
@@ -23,8 +24,9 @@ const Correo = () => {
         "default_service",
         "template_fofx3ss",
         {
+          nombre_donador: contact.userName,
           email_donador: contact.userEmail,
-          tipo_donacion: contact.concernCategory,
+          tipo_interes: contact.concernCategory,
           mensaje: contact.emailDetails,
         },
 
@@ -56,6 +58,21 @@ const Correo = () => {
       <form onSubmit={handleSubmit}>
         <div className="pt-3">
           <h3 className="font-weight-bold"> Contáctanos! </h3>
+        </div>
+        <div className="pt-3 col-md-5 mx-auto">
+          <div className="form-group text-left">
+            {" "}
+            <b>Ingresa tu Nombre</b> <br />
+            <input
+              required
+              type="text"
+              value={contact.userName}
+              name="userName"
+              onChange={handleChange}
+              className="form-control"
+              placeholder="Tu nombre"
+            />
+          </div>
         </div>
         <div className="pt-3 col-md-5 mx-auto">
           <div className="form-group text-left">
