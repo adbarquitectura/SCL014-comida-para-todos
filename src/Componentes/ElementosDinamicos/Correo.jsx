@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import BotonGeneral from "../Botones/BotonGeneral";
+
 const Correo = () => {
   const frmContact = {
     userEmail: "",
@@ -41,15 +43,11 @@ const Correo = () => {
   };
   return (
     <div className="container pt-2 text-center">
-      <div className="alert alert-light" role="alert">
-        <a href="https://tupaginaonline.net/tutorial-para-enviar-correo-con-react-js-hooks-y-emailjs">
-          Tutorial para enviar correo con React.js (Hooks) y emailJS
-        </a>
-      </div>
+      <div className="alert alert-light" role="alert"></div>
 
       {showMessage ? (
         <div className="alert alert-success col-md-5 mx-auto" role="alert">
-          Email Send Success!!
+          El correo se envio corréctamente!!
         </div>
       ) : (
         ``
@@ -57,12 +55,12 @@ const Correo = () => {
 
       <form onSubmit={handleSubmit}>
         <div className="pt-3">
-          <h3 className="font-weight-bold"> Contact Us !! </h3>
+          <h3 className="font-weight-bold"> Contáctanos! </h3>
         </div>
         <div className="pt-3 col-md-5 mx-auto">
           <div className="form-group text-left">
             {" "}
-            <b>Your Email</b> <br />
+            <b>Ingresa tu correo</b> <br />
             <input
               required
               type="text"
@@ -70,14 +68,14 @@ const Correo = () => {
               name="userEmail"
               onChange={handleChange}
               className="form-control"
-              placeholder="Your email"
+              placeholder="Correo electrónico"
             />
           </div>
         </div>
         <div className="pt-3 col-md-5 mx-auto">
           <div className="form-group text-left">
             {" "}
-            <b>Concern Category</b> <br />
+            <b>¿Qué te interesa saber?</b> <br />
             <select
               required
               className="form-control"
@@ -85,48 +83,34 @@ const Correo = () => {
               onChange={handleChange}
               name="concernCategory"
             >
-              <option value="">Select</option>
-              <option value="info">Info</option>
-              <option value="buy">Buy</option>
-              <option value="play tennis">Play tennis</option>
-              <option value="other">Other</option>
+              <option value="donaciones">Donaciones</option>
+              <option value="informacion">Información</option>
+              <option value="Ser parte">Ser parte del equipo</option>
+              <option value="otros">Otros</option>
             </select>
           </div>
         </div>
         <div className="pt-3 col-md-5 mx-auto">
-          <div className="form-group text-left">
-            {" "}
-            <b>Title</b> <br />
-            <input
-              value={contact.emailTitle}
-              required
-              type="text"
-              name="emailTitle"
-              onChange={handleChange}
-              className="form-control"
-              placeholder="Your email"
-            />
-          </div>
+          <div className="form-group text-left"> </div>
         </div>
         <div className="pt-3 col-md-5 mx-auto">
           <div className="form-group text-left">
-            {" "}
-            <b>Describe your concerns</b> <br />
+            <b>Mensaje</b> <br />
             <textarea
               required
               name="emailDetails"
               onChange={handleChange}
               className="form-control"
-              placeholder="Describe your concerns"
+              placeholder="Mensaje"
               value={contact.emailDetails}
             ></textarea>
           </div>
         </div>
         <div className="pt-3 col-md-5 mx-auto text-left">
-          <button className="btn btn-primary">Submit</button>
+          {/* <button className="btn btn-primary">Submit</button> */}
+          <BotonGeneral contenidobtn={"Enviar"} />
         </div>
       </form>
-      <div className="pt-5 font-weight-bold">tupaginaonline.net</div>
     </div>
   );
 };

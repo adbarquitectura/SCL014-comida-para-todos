@@ -3,6 +3,7 @@ import './FormularioTalento.css';
 import * as Comunas from './comunas.js';
 
 import firebase from '../../Firebase';
+import emailjs from "emailjs-com";
 
 const FormularioTalento = () => {
 
@@ -39,8 +40,35 @@ const FormularioTalento = () => {
     const HandleSubmit = (e) => {
         e.preventDefault();
         console.log(formTalento);
-        refTalento.add(formTalento);
+        refTalento.add(formTalento)
+            .then(() => {
+                enviarCorreoConfirmacion();
+            });
     };
+
+    //funcion enviar correo Confirmacion
+    const enviarCorreoConfirmacion = () => {
+        emailjs
+            .send(
+                "default_service",
+                //ID plantilla correo a enviar
+                "template_5w4glhd",
+                {
+                    email_donante: formTalento.CorreoElectronico
+                },
+                // User ID servicio 
+                "user_rM14hw1bnYdkRYLeQZpSK"
+            )
+            .then(
+                (response) => {
+                    console.log("SUCCESS!", response.status, response.text);                    
+                },
+                (err) => {
+                    console.log("FAILED...", err);
+                }
+            );
+    };
+
 
     return (
         <div className="form-group form-bg">
