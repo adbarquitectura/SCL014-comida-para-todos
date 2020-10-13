@@ -13,3 +13,7 @@ body {
   font-family: 'Mulish', sans-serif; 
 }
 
+Row{
+  justify-content: space-around;
+  background-color: tomato;
+}
