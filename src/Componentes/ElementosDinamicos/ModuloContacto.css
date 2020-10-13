@@ -1,0 +1,13 @@
+.containerModuloContacto {
+    justify-content: center;
+}
+
+.containerModuloContacto h2 {
+    color: #FD4C00;
+}
+
+/* .containerModuloContacto input::placeholder, 
+.containerModuloContacto select>option,
+.containerModuloContacto textarea::placeholder{
+    color: #8A2900;
+} */

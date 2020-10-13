@@ -50,12 +50,11 @@ const TarjetasDescriptivas = (props) => {
                     </Col>
                 </Row>
             </Container>
-            {/* <div className="contenedorTarjetas">
-
-            </div> */}
+            
         </div>
     )
 
 };
 
 export default TarjetasDescriptivas;
+

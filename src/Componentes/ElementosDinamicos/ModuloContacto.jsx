@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import BotonGeneral from "../Botones/BotonGeneral";
+import './ModuloContacto.css';
 
-const Correo = () => {
+const ModuloContacto = () => {
   const frmContact = {
     userName: "",
     userEmail: "",
@@ -44,12 +45,13 @@ const Correo = () => {
       );
   };
   return (
-    <div className="container pt-2 text-center">
+    <div className="containerModuloContacto">
+
       <div className="alert alert-light" role="alert"></div>
 
       {showMessage ? (
         <div className="alert alert-success col-md-5 mx-auto" role="alert">
-          El correo se envio corréctamente!!
+           <h4>Su correo se envio corréctamente!!</h4>
         </div>
       ) : (
         ``
@@ -57,7 +59,7 @@ const Correo = () => {
 
       <form onSubmit={handleSubmit}>
         <div className="pt-3">
-          <h3 className="font-weight-bold"> Contáctanos! </h3>
+          <h2 className="font-weight-bold"> Contáctanos!</h2>
         </div>
         <div className="pt-3 col-md-5 mx-auto">
           <div className="form-group text-left">
@@ -123,12 +125,11 @@ const Correo = () => {
             ></textarea>
           </div>
         </div>
-        <div className="pt-3 col-md-5 mx-auto text-left">
-          {/* <button className="btn btn-primary">Submit</button> */}
+        <div className="containerbtoModulo">          
           <BotonGeneral contenidobtn={"Enviar"} />
         </div>
       </form>
     </div>
   );
 };
-export default Correo;
+export default ModuloContacto;
