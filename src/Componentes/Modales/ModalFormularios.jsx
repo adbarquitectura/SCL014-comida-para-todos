@@ -33,14 +33,14 @@ function ModalFormularios(props) {
         </p>
         
       </Modal.Body>
-      <Modal.Footer>
+      {/* <Modal.Footer>
 
         < BotonGeneral
           contenidobtn={props.contenidoBotonModal}
           funcion={props.funcionBotonModal}
         />
 
-      </Modal.Footer>
+      </Modal.Footer> */}
     </Modal>
   );
 }

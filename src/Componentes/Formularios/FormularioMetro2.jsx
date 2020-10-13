@@ -4,16 +4,16 @@ import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
 
-const FormularioTalento = () => {
+const FormularioMetroCuadrado = () => {
 
     /* Definición de Estado del form */
-    const [formTalento, setformTalento] = useState({});
+    const [formMetroCuadrado, setformMetroCuadrado] = useState({});
 
     /* Definición del Estado de select Comunas*/
     const [comunas, setcomunas] = useState([]);
 
     /* Contiene firestore */
-    const refTalento = firebase.firestore().collection('FormularioTalento');
+    const refMetroCuadrado = firebase.firestore().collection('FormularioMetroCuadrado');
 
 
 
@@ -22,7 +22,7 @@ const FormularioTalento = () => {
         const { name, value } = e.target;
         const region = Comunas[value];
         setcomunas([...region]);
-        setformTalento({ ...formTalento, [name]: value })
+        setformMetroCuadrado({ ...formMetroCuadrado, [name]: value })
 
     }
 
@@ -32,14 +32,14 @@ const FormularioTalento = () => {
         //   console.log(e.target.value)
         const { name, value } = e.target;
         // console.log(name,value);
-        setformTalento({ ...formTalento, [name]: value })
+        setformMetroCuadrado({ ...formMetroCuadrado, [name]: value })
     };
 
     /* Función para manejar Form con HandleSubmit*/
     const HandleSubmit = (e) => {
         e.preventDefault();
-        console.log(formTalento);
-        refTalento.add(formTalento)
+        console.log(formMetroCuadrado);
+        refMetroCuadrado.add(formMetroCuadrado)
             .then(() => {
                 enviarCorreoConfirmacion();
             });
@@ -53,7 +53,7 @@ const FormularioTalento = () => {
                 //ID plantilla correo a enviar
                 "template_5w4glhd",
                 {
-                    email_donante: formTalento.CorreoElectronico
+                    email_donante: formMetroCuadrado.CorreoElectronico
                 },
                 // User ID servicio 
                 "user_rM14hw1bnYdkRYLeQZpSK"
@@ -73,8 +73,8 @@ const FormularioTalento = () => {
         <div className="form-group form-bg">
             <div className="FormTalento">
                 <div className="text">
-                    <h3>Regala un poco de talento a las comunidades, ellas te lo agradecerán.</h3>
-                    <p>A continuación puedes completar este formulario de inscripción.</p>
+                    <h3>Queremos avanzar en la autosustentabilidad de las comunidades por medio de la producción y cuidado de huertos en ellas. </h3>
+                    <p>Si tienes un metro cuadrado disponible para llegar a este objetivo, inscribete y se parte de un cambio en tu comunidad.</p>
                     <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
                 </div>
                 <form action="talento form-group" onSubmit={HandleSubmit}>
@@ -114,7 +114,7 @@ const FormularioTalento = () => {
                         </div>
                         <div className="form-group">
                             <label htmlFor="Comuna"> Comuna </label>
-                            <select name="Comuna" id="Comuna" className="form-control" onChange={HandleInputChange}>
+                            <select name="Comuna" className="form-control" id="Comuna" onChange={HandleInputChange}>
                                 <option value="">Seleccione su comuna </option>
                                 {comunas.map((comuna, index) => {
                                     return (<option key={index} value={comuna}>{comuna}</option>)
@@ -122,12 +122,10 @@ const FormularioTalento = () => {
                             </select>
                         </div>
                     </div>
-
                     <div className="form-group">
-                        <label htmlFor="Talento"> Cuentanos con que talento quieres aportar </label>
-                        <textarea name="Talento" className="form-control" id="talento" cols="40" rows="4" onChange={HandleInputChange}></textarea>
+                        <label htmlFor="MetroCuadrado"> Cuentanos con cuantos metros cuadrados para huertas quieres aportar </label>
+                        <textarea name="MetroCuadrado" className="form-control" id="metrocuadrado" cols="40" rows="4" onChange={HandleInputChange}></textarea>
                     </div>
-
                     <input type="submit" value="Enviar" placeholder="Enviar" className="btn mybtn" />
                 </form>
 
@@ -138,4 +136,4 @@ const FormularioTalento = () => {
     )
 }
 
-export default FormularioTalento;
+export default FormularioMetroCuadrado;

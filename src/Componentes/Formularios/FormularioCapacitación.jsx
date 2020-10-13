@@ -4,16 +4,16 @@ import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
 
-const FormularioTalento = () => {
+const FormularioCapacitacion = () => {
 
     /* Definición de Estado del form */
-    const [formTalento, setformTalento] = useState({});
+    const [formCapacitacion, setformCapacitacion] = useState({});
 
     /* Definición del Estado de select Comunas*/
     const [comunas, setcomunas] = useState([]);
 
     /* Contiene firestore */
-    const refTalento = firebase.firestore().collection('FormularioTalento');
+    const refCapacitacion = firebase.firestore().collection('FormularioCapacitacion');
 
 
 
@@ -22,7 +22,7 @@ const FormularioTalento = () => {
         const { name, value } = e.target;
         const region = Comunas[value];
         setcomunas([...region]);
-        setformTalento({ ...formTalento, [name]: value })
+        setformCapacitacion({ ...formCapacitacion, [name]: value })
 
     }
 
@@ -32,14 +32,14 @@ const FormularioTalento = () => {
         //   console.log(e.target.value)
         const { name, value } = e.target;
         // console.log(name,value);
-        setformTalento({ ...formTalento, [name]: value })
+        setformCapacitacion({ ...formCapacitacion, [name]: value })
     };
 
     /* Función para manejar Form con HandleSubmit*/
     const HandleSubmit = (e) => {
         e.preventDefault();
-        console.log(formTalento);
-        refTalento.add(formTalento)
+        console.log(formCapacitacion);
+        refCapacitacion.add(formCapacitacion)
             .then(() => {
                 enviarCorreoConfirmacion();
             });
@@ -53,7 +53,7 @@ const FormularioTalento = () => {
                 //ID plantilla correo a enviar
                 "template_5w4glhd",
                 {
-                    email_donante: formTalento.CorreoElectronico
+                    email_donante: formCapacitacion.CorreoElectronico
                 },
                 // User ID servicio 
                 "user_rM14hw1bnYdkRYLeQZpSK"
@@ -73,16 +73,16 @@ const FormularioTalento = () => {
         <div className="form-group form-bg">
             <div className="FormTalento">
                 <div className="text">
-                    <h3>Regala un poco de talento a las comunidades, ellas te lo agradecerán.</h3>
+                    <h3>Regala a las comunidades horas de capacitación para áreas en las cuales puedas aportar, y podamos empezar a crear comunidades orientadas a la sustentabilidad.</h3>
                     <p>A continuación puedes completar este formulario de inscripción.</p>
                     <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
                 </div>
                 <form action="talento form-group" onSubmit={HandleSubmit}>
-                    <div className="form-group">
+                    <div class="form-group">
                         <label htmlFor="NombreCompleto"> Nombre Completo </label>
                         <input type="text" className="form-control" name="NombreCompleto" id="Nombre" placeholder=" Nombre y Apellido" onChange={HandleInputChange} />
                     </div>
-                    <div className="form-group">
+                    <div class="form-group">
                         <label htmlFor="CorreoElectronico"> Correo Eléctronico </label>
                         <input type="email" className="form-control" name="CorreoElectronico" id="Correo" placeholder="correo@electronico.com" onChange={HandleInputChange} />
                     </div>
@@ -114,7 +114,7 @@ const FormularioTalento = () => {
                         </div>
                         <div className="form-group">
                             <label htmlFor="Comuna"> Comuna </label>
-                            <select name="Comuna" id="Comuna" className="form-control" onChange={HandleInputChange}>
+                            <select name="Comuna" className="form-control" id="Comuna" onChange={HandleInputChange}>
                                 <option value="">Seleccione su comuna </option>
                                 {comunas.map((comuna, index) => {
                                     return (<option key={index} value={comuna}>{comuna}</option>)
@@ -122,10 +122,9 @@ const FormularioTalento = () => {
                             </select>
                         </div>
                     </div>
-
                     <div className="form-group">
-                        <label htmlFor="Talento"> Cuentanos con que talento quieres aportar </label>
-                        <textarea name="Talento" className="form-control" id="talento" cols="40" rows="4" onChange={HandleInputChange}></textarea>
+                        <label htmlFor="Capacitación"> Cuentanos en que te gustaría capacitar a la comunidad </label>
+                        <textarea name="capacitacion" className="form-control" id="capacitacion" cols="40" rows="4" onChange={HandleInputChange}></textarea>
                     </div>
 
                     <input type="submit" value="Enviar" placeholder="Enviar" className="btn mybtn" />
@@ -138,4 +137,4 @@ const FormularioTalento = () => {
     )
 }
 
-export default FormularioTalento;
+export default FormularioCapacitacion;
