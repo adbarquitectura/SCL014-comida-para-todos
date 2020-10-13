@@ -6,6 +6,7 @@ import FormularioRestaurant from '../../Formularios/FormularioRestaurant';
 import FormularioMetroCuadrado from '../../Formularios/FormularioMetro2';
 import FormularioCapacitacion from '../../Formularios/FormularioCapacitación';
 import FormularioBancoAlimentos from '../../Formularios/FormularioBancoAlimentos';
+import RegalaUnAlmuerzo from '../../ElementosDinamicos/RegalaUnAlmuerzo';
 
 const clickBton = () => {
     window.open('https://yodono.cl/proyecto/207/CultivaComidaparaTods');
@@ -19,6 +20,9 @@ const ComoAportarView = () => {
 
 
         <div>
+
+            <RegalaUnAlmuerzo
+            contenidoInfo={'Regala un Almuerzo'}/>
             < BotonGeneral
                 contenidobtn={'Inscribe tu talento'}
                 funcion={() => setModalShow(true)}

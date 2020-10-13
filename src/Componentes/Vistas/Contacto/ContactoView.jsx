@@ -1,5 +1,5 @@
 import React from 'react';
-import Mapa from '../../ElementosDinamicos/Mapa';
+import Mapa from '../../Mapa/Mapa';
 
 const ContactoView = () => {
     return (
