@@ -7,7 +7,7 @@ import './ModalInicio.css';
 
 
 function ModalFormularios(props) {
-    
+
   return (
     <Modal
       {...props}
@@ -28,10 +28,15 @@ function ModalFormularios(props) {
       </Modal.Header>
       <Modal.Body>
         <h4>{props.subtituloModal}</h4>
+
         <p>
           {props.contenidoModal}
         </p>
-        
+
+        <p>
+          {props.contenidoModalSecundario}
+        </p>
+
       </Modal.Body>
       {/* <Modal.Footer>
 

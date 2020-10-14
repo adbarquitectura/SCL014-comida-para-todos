@@ -49,8 +49,7 @@ const FormularioBancoAlimentos = () => {
                 enviarCorreoConfirmacion();
             });
         setModalShow(true);
-        
-      
+              
     };
 
     //funcion enviar correo Confirmacion
