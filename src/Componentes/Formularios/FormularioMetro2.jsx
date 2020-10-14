@@ -3,6 +3,7 @@ import './Formularios.css';
 import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
+import ModalGeneral from '../Modales/ModalGeneral';
 
 const FormularioMetroCuadrado = () => {
 
@@ -11,6 +12,9 @@ const FormularioMetroCuadrado = () => {
 
     /* Definición del Estado de select Comunas*/
     const [comunas, setcomunas] = useState([]);
+
+    /* Definición Estado Modal */
+    const [modalShow, setModalShow] = React.useState(false);
 
     /* Contiene firestore */
     const refMetroCuadrado = firebase.firestore().collection('FormularioMetroCuadrado');
@@ -43,6 +47,7 @@ const FormularioMetroCuadrado = () => {
             .then(() => {
                 enviarCorreoConfirmacion();
             });
+        setModalShow(true)
     };
 
     //funcion enviar correo Confirmacion
@@ -68,6 +73,11 @@ const FormularioMetroCuadrado = () => {
             );
     };
 
+    /* Función para manejar boton de Segundo Modal */
+      const clickBton = () => {
+        setModalShow(false);
+        // setformBancoAlimentos({...formBancoAlimentos});
+    };
 
     return (
         <div className="form-group form-bg">
@@ -130,7 +140,14 @@ const FormularioMetroCuadrado = () => {
                 </form>
 
             </div>
-
+            <ModalGeneral
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+            tituloModal={'Gracias por unirte a la causa.'}
+            contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
+            contenidoBotonModal={'Cerrar'}
+            funcionBotonModal={clickBton}
+            />
 
         </div>
     )

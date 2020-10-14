@@ -7,14 +7,14 @@ import ModalGeneral from '../Modales/ModalGeneral';
 
 const FormularioBancoAlimentos = () => {
 
-    /* Definición Estado Modal */
-    const [modalShow, setModalShow] = React.useState(false);
-
     /* Definición de Estado del form */
     const [formBancoAlimentos, setformBancoAlimentos] = useState({});
 
     /* Definición del Estado de select Comunas*/
     const [comunas, setcomunas] = useState([]);
+
+     /* Definición Estado Modal */
+    const [modalShow, setModalShow] = React.useState(false);
 
     /* Contiene firestore */
     const refBancoAlimentos = firebase.firestore().collection('FormularioBancoAlimentos');
@@ -39,6 +39,7 @@ const FormularioBancoAlimentos = () => {
         setformBancoAlimentos({ ...formBancoAlimentos, [name]: value })
     };
 
+
     /* Función para manejar Form con HandleSubmit*/
     const HandleSubmit = (e) => {
         e.preventDefault();
@@ -47,7 +48,9 @@ const FormularioBancoAlimentos = () => {
             .then(() => {
                 enviarCorreoConfirmacion();
             });
-        setModalShow(true)
+        setModalShow(true);
+        
+      
     };
 
     //funcion enviar correo Confirmacion
