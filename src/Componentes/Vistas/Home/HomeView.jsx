@@ -36,18 +36,28 @@ const HomeView = () => {
 
       <InfografiaImpacto/>
 
+      <SeccionManerasAportar
+        contenidoInfo={'Otras maneras de aportar'}
+      />
+
+      <CarruselMultimediaInformativo
+        contenidoInfo={'Seguridad alimentaria en Chile'}
+      />
+
+
       <TarjetasDescriptivas
         contenidoInfo={'Nuestros 4 ingredientes para la receta'}
       />
 
       <InfografiaCiclo/>
 
-      <CarruselMultimediaInformativo
-        contenidoInfo={'Seguridad alimentaria en Chile'}
+      <Infografia
+        contenidoInfo={'impacto-organizacion'}
       />
-      <SeccionManerasAportar
-        contenidoInfo={'Otras maneras de aportar'}
-        maneras={'talento, metro cuadrado, educación y horas de capacitación, alimentos'}
+
+
+      <Infografia
+        contenidoInfo={'ciclo-de-vida'}
       />
 
       <Alianzas
@@ -59,7 +69,6 @@ const HomeView = () => {
       />
 
     </div >
-
 
   )
 }

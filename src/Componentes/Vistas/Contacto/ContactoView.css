@@ -1,6 +1,4 @@
-.MapaContacto{
-    display: flex;
-    justify-content: center;
-    /* width: 50%;
-    height: 50%; */
+.ContainerContacto{
+    box-sizing: border-box;
+    padding: 25px;
 }

@@ -1,0 +1,19 @@
+.contenedorGeneralAportarRestaurant p {
+  text-align: left;
+}
+
+.imgRestaurant img {
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: 40px 15px 40px 15px;
+  height: 400px;
+}
+
+.ContainerBoxTexto {
+  text-align: left;
+  align-self: center;
+  box-sizing: border-box;
+  padding: 40px 15px 40px 15px;
+  height: 100%;
+}

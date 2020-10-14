@@ -64,12 +64,13 @@ const Alianzas = (props) => {
       <div className="boxTituloCarruselAlianzas">
         <div className="viñetaYellow"></div>
         <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
-
+      </div>
+      
+      <div className="boxBotonAlianzas">
         < BotonGeneral
           contenidobtn={'Aporta como Restaurant'}
           funcion={() => console.log('va al restaurant')}
         />
-
       </div>
 
       <div>
@@ -118,7 +119,7 @@ const Alianzas = (props) => {
                     <h3>Jorge Lopez</h3>
                     <h4>Dueño Boa Restaurant</h4>
                     <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
-                    <a href='https://www.boasantiago.cl/pedir'target='_blank'>Boasantiago.cl</a>
+                    <a href='https://www.boasantiago.cl/pedir' target='_blank'>Boasantiago.cl</a>
                   </div>
                 </Col>
               </Row>
