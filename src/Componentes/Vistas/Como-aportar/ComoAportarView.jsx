@@ -51,8 +51,8 @@ const ComoAportarView = () => {
 {/* 
       <FormularioRestaurant />
       <FormularioMetroCuadrado />
-      <FormularioCapacitacion />
-      <FormularioBancoAlimentos /> */}
+      <FormularioCapacitacion />*/}
+      <FormularioBancoAlimentos /> 
     </div >
 
 

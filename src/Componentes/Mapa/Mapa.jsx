@@ -34,7 +34,7 @@ const Mapa = () => {
             <ModalGeneral
             show={modalShow}
             onHide={() => setModalShow(false)}
-            tituloModal={'Nos encontramos en las siguientes regiones, participando en distintas comunas'}
+            subtituloModal={'Nos encontramos en las siguientes regiones, participando en distintas comunas'}
             contenidoModal={<MapaChile/>}
             contenidoBotonModal={'Cerrar'}
             funcionBotonModal={clickBton}
