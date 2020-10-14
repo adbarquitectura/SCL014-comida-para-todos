@@ -21,3 +21,7 @@ svg {
     fill: #FD4C00;
     cursor: pointer;
 }
+
+#cl:hover, #es:hover {
+    fill: #FDAC07;
+}

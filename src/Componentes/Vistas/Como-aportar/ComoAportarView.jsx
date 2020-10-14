@@ -1,4 +1,6 @@
 import React from 'react';
+import './ComoAportarView.css';
+
 import FormularioTalento from '../../Formularios/FormularioTalento';
 import ModalFormularios from '../../Modales/ModalFormularios';
 import BotonGeneral from '../../Botones/BotonGeneral';
@@ -18,10 +20,7 @@ const ComoAportarView = () => {
  const [modalShow, setModalShow] = React.useState(false);
 
     return (
-
-
-        <div>
-
+        <div className="containeComoAportarView">
             <RegalaUnAlmuerzo
             contenidoInfo={'Regala un Almuerzo'}/>
 

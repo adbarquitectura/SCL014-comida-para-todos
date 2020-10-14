@@ -5,7 +5,7 @@ import './ContactoView.css';
 
 const ContactoView = () => {
     return (
-        <div>
+        <div className="containerContactoView">
             <div className="MapaContacto">
                 <Mapa />
             </div >
