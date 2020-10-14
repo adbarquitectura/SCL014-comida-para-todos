@@ -22,16 +22,16 @@ const HomeView = () => {
 
       <TarjetasDonaciones />
 
+      <SeccionManerasAportar
+        contenidoInfo={'Otras maneras de aportar'}
+        contenidoAnclaSeccion={'/comoAportar#Otras maneras de aportar'}
+      />
+
       <TarjetasDescriptivas
         contenidoInfo={'Nuestros 4 ingredientes para la receta'}
       />
 
       <InfografiaCiclo />
-
-
-      <SeccionManerasAportar
-        contenidoInfo={'Otras maneras de aportar'}
-      />
 
       <CarruselMultimediaInformativo
         contenidoInfo={'Seguridad alimentaria en Chile'}
