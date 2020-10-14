@@ -86,7 +86,7 @@ const Alianzas = (props) => {
             <Col>
               <div className="fotoAlianzas">
                 {arregloAlianza.map((aliado, idx) => {
-                  return <img src={aliado} key={idx} />;
+                  return <img className="imgFotoAlianzas" src={aliado} key={idx} />;
                 })}
               </div>
             </Col>

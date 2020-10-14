@@ -59,14 +59,20 @@
     margin: 25px;
 }
 
+.imgFotoAlianzas{
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
 .boxTextoCarruselAlianzas h4{
     padding-bottom: 50px;
     font-size: 21px;
 }
 
 .fotoAlianzas>img:first-child{
-    background-color: hotpink;
-    border: 3px red solid;
+    /* background-color: hotpink;
+    border: 3px red solid; */
+    filter: grayscale(0%);
 }
 
 .boxBotonAlianzas button{
