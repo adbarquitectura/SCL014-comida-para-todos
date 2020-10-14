@@ -38,12 +38,12 @@ const HomeView = () => {
 
       <InfografiaCiclo />
 
-      <Alianzas
-        contenidoInfo={'Nuestras Alianzas'}
-      />
-
       <CarruselMultimediaComunidad
         contenidoInfo={'¿Qué dice la comunidad en las redes?'}
+      />
+
+      <Alianzas
+        contenidoInfo={'Nuestras Alianzas'}
       />
 
     </div >

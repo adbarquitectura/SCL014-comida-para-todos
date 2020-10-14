@@ -20,13 +20,16 @@ const SeccionManerasAportar = (props) => {
         <Container>
           <Row>
             <Col>
-              <p>
-                Sé parte de esta gran receta para un mejor país Estamos decididos a
-                empoderar a la comunidad, ayudándola no solo con un plato de alimento
-                nutritivo, también existen otras maneras de aportar a las comunidades
-                como, por ejemplo: tu Talento, un metro cuadrado de cultivo, horas de
-                capacitación y banco de alimentos.
-        </p>
+              <div className="contenedorParrafoTarjetasAportar">
+                <h4>Sé parte de esta gran receta para un mejor país </h4>
+                <p>
+                  Estamos decididos a empoderar a la comunidad, ayudándola no solo con un
+                  plato de alimento nutritivo, también existen otras maneras de aportar a
+                  las comunidades como, por ejemplo: tu Talento, un metro cuadrado de cultivo,
+                  horas de capacitación y banco de alimentos.
+              </p>
+              </div>
+
             </Col>
 
           </Row>

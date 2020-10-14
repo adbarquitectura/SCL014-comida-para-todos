@@ -1,5 +1,6 @@
 import React from 'react';
 import './ComoAportarView.css';
+import SeccionManerasAportar from '../../ElementosDinamicos/SeccionManerasAportar';
 
 import FormularioTalento from '../../Formularios/FormularioTalento';
 import ModalFormularios from '../../Modales/ModalFormularios';
@@ -17,21 +18,24 @@ const clickBton = () => {
 };
 
 const ComoAportarView = () => {
- const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow, setModalShow] = React.useState(false);
 
-    return (
-        <div className="containeComoAportarView">
-            <RegalaUnAlmuerzo
-            contenidoInfo={'Regala un Almuerzo'}/>
+  return (
+    <div className="containeComoAportarView">
+      <RegalaUnAlmuerzo
+        contenidoInfo={'Regala un Almuerzo'}
+      />
 
-            <br/> <br/> <br/>
+      <SeccionManerasAportar
+        contenidoInfo={'Otras maneras de aportar'}
+      />
 
-            < BotonGeneral
-                contenidobtn={'Inscribe tu talento'}
-                funcion={() => setModalShow(true)}
-            />
+      < BotonGeneral
+        contenidobtn={'Inscribe tu talento'}
+        funcion={() => setModalShow(true)}
+      />
 
-            <ModalFormularios
+      <ModalFormularios
         show={modalShow}
         onHide={() => setModalShow(false)}
         tituloModal={
@@ -44,12 +48,12 @@ const ComoAportarView = () => {
       <AportarRestaurante
         contenidoInfo={"¿Cómo aportar si eres un Restaurant?"}
       />
-      
-      <FormularioRestaurant/>
-             <FormularioMetroCuadrado/>
-             <FormularioCapacitacion/>
-             <FormularioBancoAlimentos/> 
-        </div >
+
+      <FormularioRestaurant />
+      <FormularioMetroCuadrado />
+      <FormularioCapacitacion />
+      <FormularioBancoAlimentos />
+    </div >
 
 
   );

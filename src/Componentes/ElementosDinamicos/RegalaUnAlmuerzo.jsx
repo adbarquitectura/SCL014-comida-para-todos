@@ -21,52 +21,49 @@ const RegalaUnAlmuerzo = (props) => {
                 <div className="viñetaYellow"></div>
                 <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
             </div>
+            <div className="contenedorboxRegalaAlmuerzo">
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="textoalineadoIzquierda">
+                                <h3> Aseguremos un plato nutritivo y balanceado a quien no puede tenerlo.</h3>
+                                <p>
+                                    Con un aporte de $3.000 pesos, podemos asegurarle día a día un alimento nutritivo,
+                                    de calidad y rico a muchas personas que en estos momentos los están necesitando.
+                                </p>
+                                <p>Un pequeño gesto le dará la energía y alegría a quien más le falta.</p>
+                            </div>
 
-            <Container>
-                <Row>
-                    <Col>
-                        <div className="textoalineadoIzquierda">
-                            <h3> Aseguremos un plato nutritivo y balanceado a quien no puede tenerlo.</h3>
-                            <p>Con un aporte de $3.000 pesos, podemos asegurarle día a día un alimento nutritivo, de calidad y rico a muchas personas que en estos momentos los están necesitando.</p>
-                            <p>Un pequeño gesto le dará la energía y alegría a quien más le falta.</p>
-                        </div>
-                        <Row>
-                            <Col>
-                                <div className="btn-gral">
-                                    < BotonGeneral
-                                        contenidobtn={'Regala un almuerzo'}
-                                        funcion={() => setModalShow(true)}
-                                    />
-                                </div>
-                            </Col>
+                            <div className="btn-gral">
+                                < BotonGeneral
+                                    contenidobtn={'Regala un almuerzo'}
+                                    funcion={() => setModalShow(true)}
+                                />
+                                <BotonSecundario
+                                    contenidobtn={'Transparencia'}
+                                />
+                            </div>
+                        </Col>
 
-                            <Col>
-                                <div className="btn-secundario">
-                                    <BotonSecundario
-                                        contenidobtn={'Transparencia'}
-                                    />
-                                </div>
+                        <Col>
+                            <div className="fotoAlmuerzo">
+                                <img src={FotoAlmuerzo} alt="Foto" />
+                            </div>
+                        </Col>
+                    </Row>
+                </Container >
 
-                            </Col>
-                        </Row>
-                    </Col>
+                <ModalGeneral
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                    tituloModal={'Será redireccionado al sitio de yodono.cl para completar la donación.'}
+                    contenidoModal={' Tu aporte generará un plato de alimento nutritivo, para alguien que no lo tiene :).'}
+                    contenidoBotonModal={'Entendido'}
+                    funcionBotonModal={clickBton}
+                />
 
-                    <Col>
-                        <div className="fotoAlmuerzo">
-                            <img src={FotoAlmuerzo} alt="Foto" />
-                        </div>
-                    </Col>
-                </Row>
-            </Container >
+            </div>
 
-            <ModalGeneral
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-                tituloModal={'Será redireccionado al sitio de yodono.cl para completar la donación.'}
-                contenidoModal={' Tu aporte generará un plato de alimento nutritivo, para alguien que no lo tiene :).'}
-                contenidoBotonModal={'Entendido'}
-                funcionBotonModal={clickBton}
-            />
         </div >
     )
 }
