@@ -6,7 +6,7 @@ import imgCloseIcon from '../../img/closeModalIcon.png';
 const BotonCloseModal = (props) => {
     return (
       <button className="btnCloseModal" onClick={props.funcion}>
-          <img src={imgCloseIcon} />
+          <img src= {imgCloseIcon}/>
       </button>
     )
   }

@@ -1,0 +1,29 @@
+svg {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-end;
+    outline: #fff;
+    fill: #404040;
+    outline: none;
+}
+
+/* path {
+    fill: #404040;
+    cursor: pointer;
+    outline: none;
+} */
+
+
+path#cl-rm, path#cl-an, path#cl-vs, path#cl-bi{
+    fill: #FD4C00;
+    cursor: pointer;
+} 
+
+path#cl-rm:hover, path#cl-an:hover, path#cl-vs:hover, path#cl-bi:hover{
+    fill: #FDAC07;
+}
+
+
+
+
