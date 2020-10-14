@@ -3,11 +3,13 @@
     color: white;
     box-sizing: border-box;
     transition-duration: 0.4s;
-    min-height: 42px;
+    min-height: 45px;
     border: none;
     border-radius: 3px;
     font-size: 18px;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .btnGeneral:hover {
@@ -21,16 +23,25 @@
     border: 2px solid #FD4C00;
 }
 
+.btnGeneral a:link,
+.btnGeneral a:visited,
+.btnGeneral a:active  {
+    text-decoration: none;
+    color: white;       
+}
+
 .btnSecundario {
     background-color: transparent;
     color: #8A2900;
     box-sizing: border-box;
     transition-duration: 0.4s;
-    min-height: 42px;
+    min-height: 45px;
     border: 2px solid #8A2900;
     border-radius: 3px;
     font-size: 18px;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .btnSecundario:hover {
@@ -61,3 +72,4 @@
 .btnCloseModal img:hover {
     opacity: 1;
 }
+

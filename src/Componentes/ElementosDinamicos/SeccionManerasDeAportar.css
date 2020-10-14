@@ -10,6 +10,11 @@
   flex-direction: row;
   justify-content: space-around;
 }
+.contenedorParrafoTarjetasAportar{
+  width: 50%;
+  text-align: left;
+  margin-bottom: 25px;
+}
 
 .boxImagenesTarjetaAportar {
   width: 100%;

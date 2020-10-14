@@ -8,10 +8,17 @@ import './TarjetasDonaciones.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import BotonGeneral from '../Botones/BotonGeneral';
 import ModalGeneral from '../Modales/ModalGeneral';
+import { Link } from 'react-router-dom';
+import BotonLink from '../Botones/BotonLink';
 
 /* Función Botón 'Regala un almuerzo' */
 const clickBton = () => {
     window.open('https://yodono.cl/proyecto/207/CultivaComidaparaTods');
+};
+
+/* Funcion dirige a otras seccion */
+const IrOtraSeccion = () => {
+
 };
 
 const TarjetasDonaciones = (props) => {
@@ -19,7 +26,7 @@ const TarjetasDonaciones = (props) => {
     const [modalShow, setModalShow] = React.useState(false);
 
     return (
-        <div className="contenedorGeneralTarjetasDonarciones">            
+        <div className="contenedorGeneralTarjetasDonarciones">
             <Container>
                 <Row>
                     <Col>
@@ -43,9 +50,9 @@ const TarjetasDonaciones = (props) => {
                                 tituloImg={'¿Quieres aportar como restaurant?'}
                                 parrafoImg={'Los aportes desde los restaurantes son parte fundamental para que toda esta hermosa labor se vuelva realidad, los restaurantes colaboran, junto con nosotros a favor de las comunidades vulnerables, no solo llevándoles alimentos.'}
                             />
-                            < BotonGeneral
+                            < BotonLink
                                 contenidobtn={'Conoce más'}
-                                funcion={() => setModalShow(true)}
+                                anclaLinkTo={'/comoAportar#¿Cómo aportar si eres un Restaurant?'}
                             />
                         </div>
                     </Col>

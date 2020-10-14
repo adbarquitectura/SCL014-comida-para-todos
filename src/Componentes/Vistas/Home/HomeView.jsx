@@ -22,6 +22,13 @@ const HomeView = () => {
 
       <TarjetasDonaciones />
 
+      <TarjetasDescriptivas
+        contenidoInfo={'Nuestros 4 ingredientes para la receta'}
+      />
+
+      <InfografiaCiclo />
+
+
       <SeccionManerasAportar
         contenidoInfo={'Otras maneras de aportar'}
       />
@@ -32,18 +39,13 @@ const HomeView = () => {
 
       <InfografiaImpacto />
 
-      <TarjetasDescriptivas
-        contenidoInfo={'Nuestros 4 ingredientes para la receta'}
-      />
-
-      <InfografiaCiclo />
-
-      <Alianzas
-        contenidoInfo={'Nuestras Alianzas'}
-      />
 
       <CarruselMultimediaComunidad
         contenidoInfo={'¿Qué dice la comunidad en las redes?'}
+      />
+
+      <Alianzas
+        contenidoInfo={'Nuestras Alianzas'}
       />
 
     </div >
