@@ -3,8 +3,12 @@ import './Formularios.css';
 import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
+import ModalGeneral from '../Modales/ModalGeneral';
 
 const FormularioBancoAlimentos = () => {
+
+    /* Definición Estado Modal */
+    const [modalShow, setModalShow] = React.useState(false);
 
     /* Definición de Estado del form */
     const [formBancoAlimentos, setformBancoAlimentos] = useState({});
@@ -43,6 +47,7 @@ const FormularioBancoAlimentos = () => {
             .then(() => {
                 enviarCorreoConfirmacion();
             });
+        setModalShow(true)
     };
 
     //funcion enviar correo Confirmacion
@@ -68,6 +73,11 @@ const FormularioBancoAlimentos = () => {
             );
     };
 
+    /* Función para manejar boton de Segundo Modal */
+    const clickBton = () => {
+        setModalShow(false);
+        // setformBancoAlimentos({...formBancoAlimentos});
+    };
 
     return (
         <div className="form-group form-bg">
@@ -122,16 +132,32 @@ const FormularioBancoAlimentos = () => {
                             </select>
                         </div>
                     </div>
+                    <div className="form-region">
+                        <div className="form-group">
+                            <label htmlFor="Alimento"> Cuentanos con que alimentos te gustaría aportar a nuestro Banco </label>
+                            <textarea name="Alimento" className="form-control" id="capacitacion" cols="40" rows="4" onChange={HandleInputChange}></textarea>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="Fecha">Señala la fecha en que quieres que retiremos los alimentos </label>
+                            <input type="date" className="form-control" name="Fecha" id="fecha" />
+                        </div>
 
-                    <div className="form-group">
-                        <label htmlFor="Alimento"> Cuentanos con que alimentos te gustaría aportar a nuestro Banco </label>
-                        <textarea name="Alimento" className="form-control" id="capacitacion" cols="40" rows="4" onChange={HandleInputChange}></textarea>
                     </div>
 
                     <input type="submit" value="Enviar" placeholder="Enviar" className="btn mybtn" />
                 </form>
 
             </div>
+
+            
+            <ModalGeneral
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+            tituloModal={'Gracias por unirte a la causa.'}
+            contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
+            contenidoBotonModal={'Cerrar'}
+            funcionBotonModal={clickBton}
+            />
 
 
         </div>
