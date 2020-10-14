@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import BotonGeneral from "../Botones/BotonGeneral";
 import './ModuloContacto.css';
 
+
 const ModuloContacto = () => {
   const frmContact = {
     userName: "",
@@ -46,7 +47,6 @@ const ModuloContacto = () => {
   };
   return (
     <div className="containerModuloContacto">
-
       <div className="alert alert-light" role="alert"></div>
 
       {showMessage ? (
@@ -60,6 +60,7 @@ const ModuloContacto = () => {
       <form onSubmit={handleSubmit}>
         <div className="pt-3">
           <h2 className="font-weight-bold"> Contáctanos!</h2>
+
         </div>
         <div className="pt-3 col-md-5 mx-auto">
           <div className="form-group text-left">

@@ -6,6 +6,7 @@ import MenuNavegacion from "./Componentes/ElementosFijos/MenuNavegacion";
 import Footer from "./Componentes/ElementosFijos/Footer";
 import ModalCargadoInicial from '../src/Componentes/Modales/ModalInicio';
 
+
 function Home() {
 
   const [modalShow, setModalShow] = React.useState(false);
@@ -19,6 +20,7 @@ function Home() {
       <MenuNavegacion />
       <Whatsapp />
       <Footer /> 
+    
       <ModalCargadoInicial
         show={modalShow}
         onHide={() => setModalShow(false)}
