@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './ComoAportarView.css';
 import SeccionManerasAportar from '../../ElementosDinamicos/SeccionManerasAportar';
 
@@ -11,7 +11,8 @@ import FormularioCapacitacion from '../../Formularios/FormularioCapacitación';
 import FormularioBancoAlimentos from '../../Formularios/FormularioBancoAlimentos';
 import AportarRestaurante from "../../ElementosDinamicos/AportarRestaurante";
 import RegalaUnAlmuerzo from '../../ElementosDinamicos/RegalaUnAlmuerzo';
-
+import ManerasAportarSeccionDesp from '../../ElementosDinamicos/ManerasAportarSeccionDesp';
+import imgTalento from '../../../img/imgcarousel2.jpg';
 
 
 const clickBton = () => {
@@ -21,13 +22,19 @@ const clickBton = () => {
 
 const ComoAportarView = () => {
   const [modalShow, setModalShow] = React.useState(false);
+  const [estadoboton, setEstadoboton] = useState(false);
+  //Maneja estado de boton
+  const [styleBoton, setStyleBoton] = useState({ backgroundColor: '#FD4C00', border: 'none' });
 
-
-  // const [styleBoton, changeEstadoBotonActive, changeEstadoBotonNormal] = estadoBoton();
-  const [styleBoton, setStyleBoton] = useState({ backgroundColor: '#FD4C00', border: 'none' })
-
-  const changeEstadoBotonActive = () => {    
+  //Maneja estados para seccion de despliegue de formularios
+  const [imgFondoSeccion, setImgFondoSeccion] = useState({ backgroundImage : `url('${imgTalento}')`});
+  const [tituloSeccionDespliegue, setTituloSeccionDespliegue] = useState('Que tipo de Talento puedo ragalar');
+  const [parrafoSeccionDespliegue, setParrafoSeccionDespliegue] = useState('Los aportes desde los restaurantes son parte fundamental para que toda esta hermosa labor se vuelva realidad, los restaurantes colaboran, junto con nosotros a favor de las comunidades vulnerables, no solo llevándoles alimentos.');
+  const [funcionBotonSeccionDespliegue, setFuncionBotonSeccionDespliegue] = useState();
+ 
+  const changeEstadoBotonActive = () => {
     setStyleBoton({ backgroundColor: 'transparent', border: '2px solid #FD4C00', color: '#FD4C00' });
+    setEstadoboton(true);
   };
 
   const changeEstadoBotonNormal = () => {
@@ -45,6 +52,13 @@ const ComoAportarView = () => {
         estiloBotonTarjetaActiva={styleBoton}
         funcionBotonTarjetaActiva={changeEstadoBotonActive}
 
+      />
+      <ManerasAportarSeccionDesp
+        imgFondoSeccion={imgFondoSeccion}
+        tituloSeccionDespliegue={tituloSeccionDespliegue}
+        parrafoSeccionDespliegue={parrafoSeccionDespliegue}
+        contenidoBotonSeccionDespliegue={'Inscribete'}
+        funcionBotonSeccionDespliegue={funcionBotonSeccionDespliegue}
       />
 
       < BotonGeneral
