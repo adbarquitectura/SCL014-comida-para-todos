@@ -1,34 +1,26 @@
 import React, { useState } from "react";
-import './Alianzas.css';
-import { Carousel } from 'react-bootstrap';
+import "./Alianzas.css";
+import { Carousel } from "react-bootstrap";
 
-import { Col, Container, Row } from 'react-bootstrap';
-import BotonGeneral from '../Botones/BotonGeneral';
+import { Col, Container, Row } from "react-bootstrap";
+import BotonGeneral from "../Botones/BotonGeneral";
 import PrevIcon from "../Iconos/PrevIcon";
 import NextIcon from "../Iconos/NextIcon";
-import quoteIcon from '../../img/quote icon.png';
-
+import quoteIcon from "../../img/quote icon.png";
 
 import restaurant from "../../img/99-restaurant.png";
-import boa from "../../img/Boa.png";
-import chimba from "../../img/lachimba.jpg";
-import cava from "../../img/CAVA_DEL_SOMMELIER.jpg";
+import boa from "../../img/boa-logo.png";
+import chimba from "../../img/Logo-LaChimba.png";
+import cava from "../../img/cava_logo.png";
 import BotonLink from "../Botones/BotonLink";
 
-import restaurant1 from "../../img/99-restaurant.png";
-import boa1 from "../../img/Boa.png";
-import chimba1 from "../../img/lachimba.jpg";
-import cava1 from "../../img/CAVA_DEL_SOMMELIER.jpg";
-
-
+import restaurant1 from "../../img/99_restaurante.jpg";
+import boa1 from "../../img/Boa-Restaurant.jpg";
+import chimba1 from "../../img/cocinaconsentido.jpg";
+import cava1 from "../../img/cava_rest.jpg";
 
 // Data imagenes de carrusel
-const alianzasData = [
-  restaurant,
-  boa,
-  chimba,
-  cava
-];
+const alianzasData = [restaurant, boa, chimba, cava];
 
 const Alianzas = (props) => {
   const [arregloAlianza, setArregloAlianza] = useState(alianzasData);
@@ -41,20 +33,18 @@ const Alianzas = (props) => {
     if (e !== undefined) {
       if (e.currentTarget.className === "carousel-control-next") {
         actualizarAlianzasRenderizadasAdelante();
-        console.log('mover arreglo adelante')
-      }
-      else if (e.currentTarget.className === "carousel-control-prev") {
+        console.log("mover arreglo adelante");
+      } else if (e.currentTarget.className === "carousel-control-prev") {
         actualizarAlianzasRenderizadasAtras();
-        console.log('mover arreglo atras')
+        console.log("mover arreglo atras");
       }
-    }
-    else {
-      console.log('mover arreglo adelante')
+    } else {
+      console.log("mover arreglo adelante");
       actualizarAlianzasRenderizadasAdelante();
     }
   };
 
-  // funcion actualiza posiciones de elementos en arreglo de Data Alianza adelante 
+  // funcion actualiza posiciones de elementos en arreglo de Data Alianza adelante
   const actualizarAlianzasRenderizadasAdelante = () => {
     arregloAlianza.push(arregloAlianza.shift());
     setArregloAlianza([...arregloAlianza]);
@@ -69,14 +59,16 @@ const Alianzas = (props) => {
     <div className="boxCarruselAlianzas">
       <div className="boxTituloCarruselAlianzas">
         <div className="viñetaYellow"></div>
-        <a name={props.contenidoInfo}><h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2></a>
+        <a name={props.contenidoInfo}>
+          <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
+        </a>
       </div>
 
       <div className="boxBotonAlianzas">
-        < BotonLink
-          contenidobtn={'Aporta como Restaurant'}
+        <BotonLink
+          contenidobtn={"Aporta como Restaurant"}
           enlaceLinkTo={"/comoAportar"}
-          anclaLinkTo={'#¿Cómo aportar si eres un Restaurant?'}
+          anclaLinkTo={"#¿Cómo aportar si eres un Restaurant?"}
         />
       </div>
 
@@ -85,19 +77,13 @@ const Alianzas = (props) => {
           <Row>
             <Col>
               <div className="fotoAlianzas">
-                {
-                  arregloAlianza.map((aliado, idx) => {
-                    return (
-                      <img
-                        src={aliado} key={idx} />
-                    )
-                  })
-                }
+                {arregloAlianza.map((aliado, idx) => {
+                  return <img src={aliado} key={idx} />;
+                })}
               </div>
             </Col>
           </Row>
         </Container>
-
       </div>
 
       <div className="boxContenedorCarruselAlianzas">
@@ -120,13 +106,19 @@ const Alianzas = (props) => {
 
                 <Col>
                   <div className="boxTextoCarruselAlianzas">
-                    <img
-                      src={quoteIcon}
-                    />
-                    <h3>Jorge Lopez</h3>
-                    <h4>Dueño Boa Restaurant</h4>
-                    <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
-                    <a href='https://www.boasantiago.cl/pedir' target='_blank'>Boasantiago.cl</a>
+                    <img src={quoteIcon} />
+                    <h3>Kurt Schmidt </h3>
+                    <h4>Chef 99 Restaurante</h4>
+                    <p>
+                      Este es un nuevo tiempo, un tiempo de cambios. Nos
+                      tomaremos esta crisis para reflexionar y para entender los
+                      nuevos desafíos que nos impone el planeta, estamos para
+                      ayudarnos uno a los otros, nosotros le ponemos el pecho y
+                      aca estamos.
+                    </p>
+                    <a href="https://99restaurante.com/" target="_blank">
+                      99restaurante.com
+                    </a>
                   </div>
                 </Col>
               </Row>
@@ -146,13 +138,19 @@ const Alianzas = (props) => {
 
                 <Col>
                   <div className="boxTextoCarruselAlianzas">
-                    <img
-                      src={quoteIcon}
-                    />
+                    <img src={quoteIcon} />
                     <h3>Jorge Lopez</h3>
                     <h4>Dueño Boa Restaurant</h4>
-                    <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
-                    <a href='https://www.boasantiago.cl/pedir' target='_blank'>Boasantiago.cl</a>
+                    <p>
+                      Como restaurant, estamos muy contentos de unirnos a esta
+                      causa y poder colaborar con platos de comida ricos y de
+                      calidad, cocinados por nuestros propios chefs y con mucho
+                      cariño para las comunidades. Nos llena de satisfacción
+                      saber que con poco se ayuda mucho.
+                    </p>
+                    <a href="https://www.boasantiago.cl/pedir" target="_blank">
+                      Boasantiago.cl
+                    </a>
                   </div>
                 </Col>
               </Row>
@@ -172,13 +170,18 @@ const Alianzas = (props) => {
 
                 <Col>
                   <div className="boxTextoCarruselAlianzas">
-                    <img
-                      src={quoteIcon}
-                    />
-                    <h3>Jorge Lopez</h3>
-                    <h4>Dueño Boa Restaurant</h4>
-                    <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
-                    <a href='https://www.boasantiago.cl/pedir' target='_blank'>Boasantiago.cl</a>
+                    <img src={quoteIcon} />
+                    <h3>Pablo Godoy</h3>
+                    <h4>Fundador La Chimba </h4>
+                    <p>
+                      Somos una Corporación sin fines de lucro que busca aportar
+                      al mejoramiento de las condiciones de vida de las
+                      personas. Estamos muy contentos de poder colaborar con
+                      comidas para todos, nos llena el alma.
+                    </p>
+                    <a href="https://lachimba.org/" target="_blank">
+                      lachimba.org
+                    </a>
                   </div>
                 </Col>
               </Row>
@@ -198,25 +201,28 @@ const Alianzas = (props) => {
 
                 <Col>
                   <div className="boxTextoCarruselAlianzas">
-                    <img
-                      src={quoteIcon}
-                    />
-                    <h3>Jorge Lopez</h3>
-                    <h4>Dueño Boa Restaurant</h4>
-                    <p>Como restaurant, estamos muy contentos de unirnos a esta causa y poder colaborar con platos de comida ricos y de calidad, cocinados por nuestros propios chefs y con mucho cariño para las comunidades.</p>
-                    <a href='https://www.boasantiago.cl/pedir' target='_blank'>Boasantiago.cl</a>
+                    <img src={quoteIcon} />
+                    <h3>Javier Nuñez</h3>
+                    <h4>Dueño La Cava del Sommelier.</h4>
+                    <p>
+                      Nuestro equipo de cocina trabaja con cariño, con
+                      convencimiento de que hacemos lo mejor que podemos y
+                      aprendemos cada día para ser mejores. Felices de poder
+                      unirnos en esta causa, creemos que todos podemos ayudar y
+                      estamos aca para aportar nuestro granito de arena.
+                    </p>
+                    <a href="https://cavadelsommelier.cl/" target="_blank">
+                      cavadelsommelier.cl
+                    </a>
                   </div>
                 </Col>
               </Row>
             </Container>
           </Carousel.Item>
-
         </Carousel>
       </div>
     </div>
   );
-
-
 };
 
 export default Alianzas;
