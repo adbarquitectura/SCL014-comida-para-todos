@@ -1,5 +1,5 @@
 import React from "react";
-import BotonGeneral from "../Botones/BotonGeneral";
+import BotonLink from "../Botones/BotonLink";
 import "./SeccionManerasDeAportar.css";
 
 const TarjetasAportar = (props) => {
@@ -11,8 +11,10 @@ const TarjetasAportar = (props) => {
         alt="First slide" />
 
       <div className="boxTextoTarjetaAportar">
-        <BotonGeneral
+        <BotonLink
           contenidobtn={props.contenidoBotonTarjeta}
+          anclaLinkTo={props.contenidoAnclaTarjeta}
+          funcion={props.contenidoBotonfuncionTarjeta}
         />
         <p className="parrafoBoxTextoTarjetaAportar">{props.parrafoImg}</p>
       </div>

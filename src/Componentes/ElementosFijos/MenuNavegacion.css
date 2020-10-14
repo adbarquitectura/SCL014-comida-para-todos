@@ -13,7 +13,7 @@
     margin: 0px 0px;
     width: 100%;
     height: auto;
-    box-sizing: border-box;     
+    box-sizing: border-box;
     /* background-color: tomato; */
 }
 
@@ -42,7 +42,7 @@
     margin: auto auto 0px auto;
 }
 
-.boxListaMenuNavegacion {  
+.boxListaMenuNavegacion {
     display: flex;
     font-size: 16px;
     line-height: 16px;
@@ -56,11 +56,11 @@
     box-sizing: border-box;
     margin: 5px;
     overflow: hidden;
-    overflow-y: hidden; 
+    overflow-y: hidden;
 }
 
-.boxListaMenuNavegacion:hover {  
-    color: #FD4C00;    
+.boxListaMenuNavegacion:hover {
+    color: #FD4C00;
 }
 
 .boxListaMenuNavegacion li {
@@ -69,11 +69,23 @@
 
 .boxListaMenuNavegacion a:link, 
 .boxListaMenuNavegacion a:visited, 
-.boxListaMenuNavegacion a:active {
+.boxLis taMenuNavegacion a:active{
     text-decoration: none;
     color: black;
     font-size: 16px;
 }
-.boxListaMenuNavegacion a:hover {    
+
+.boxListaMenuNavegacion a:hover {
     color: #FD4C00;
 }
+
+/* .boxListaMenuNavegacion a:link, .boxListaMenuNavegacion a:visited {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.boxListaMenuNavegacion li a:active:before, .boxListaMenuNavegacion li a:link:before {
+    color: #FD4C00;
+    background-color: tomato !important;
+} */

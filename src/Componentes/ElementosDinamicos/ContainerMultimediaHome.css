@@ -11,7 +11,7 @@
     font-size: 30px;
     position: absolute;
     text-align: left;
-    width: 30%;
+    width: 35%;
     top: -1000%;
     left: -5%;
     height: 200px;
@@ -19,4 +19,8 @@
 }
 .colorTextoh1{
     color: white;
+}
+
+.Overlay button{
+    margin-top: 25px;    
 }
