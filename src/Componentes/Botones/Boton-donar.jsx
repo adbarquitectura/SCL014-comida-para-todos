@@ -21,11 +21,11 @@ const BotonDonar = () => {
 
                 {/* Información del Botón */}
                 <DropdownMenu>
-                    <DropdownItem href="https://yodono.cl/proyecto/207/CultivaComidaparaTods"> Regala un almuerzo </DropdownItem>
-                    <DropdownItem href="/comoAportar"> Regala talento </DropdownItem>
-                    <DropdownItem href="/comoAportar"> Regala un espacio de cultivo </DropdownItem>
-                    <DropdownItem href="/comoAportar"> Regala Capacitación </DropdownItem>
-                    <DropdownItem href="/comoAportar"> Regala Alimentos </DropdownItem>
+                    <DropdownItem href="/comoAportar#Regala un Almuerzo"> Regala un almuerzo </DropdownItem>
+                    <DropdownItem href="/comoAportar#Regala un Almuerzo"> Regala talento </DropdownItem>
+                    <DropdownItem href="/comoAportar#Regala un Almuerzo"> Regala un espacio de cultivo </DropdownItem>
+                    <DropdownItem href="/comoAportar#Regala un Almuerzo"> Regala Capacitación </DropdownItem>
+                    <DropdownItem href="/comoAportar#Regala un Almuerzo"> Regala Alimentos </DropdownItem>
                 </DropdownMenu>
             </Dropdown>
 

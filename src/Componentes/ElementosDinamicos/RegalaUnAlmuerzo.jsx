@@ -5,6 +5,7 @@ import BotonSecundario from '../Botones/BotonSecundario';
 import ModalGeneral from '../Modales/ModalGeneral';
 import FotoAlmuerzo from '../../img/IMGRegalaAlmuerzo.jpg';
 import './RegalaUnAlmuerzo.css';
+import BotonLink from '../Botones/BotonLink';
 
 /* Función Botón 'Regala un almuerzo' */
 const clickBton = () => {
@@ -39,9 +40,10 @@ const RegalaUnAlmuerzo = (props) => {
                                     contenidobtn={'Regala un almuerzo'}
                                     funcion={() => setModalShow(true)}
                                 />
-                                <BotonSecundario
-                                    contenidobtn={'Transparencia'}
-                                />
+                                < BotonLink
+                                contenidobtn={'Aporta como Restaurant'}
+                                anclaLinkTo={'#¿Cómo aportar si eres un Restaurant?'}
+                            />
                             </div>
                         </Col>
 

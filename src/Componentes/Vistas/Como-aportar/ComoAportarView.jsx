@@ -28,6 +28,7 @@ const ComoAportarView = () => {
 
       <SeccionManerasAportar
         contenidoInfo={'Otras maneras de aportar'}
+        
       />
 
       < BotonGeneral
