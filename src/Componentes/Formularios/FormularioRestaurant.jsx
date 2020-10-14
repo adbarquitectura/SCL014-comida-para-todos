@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import './Formularios.css';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
+import ModalGeneral from '../Modales/ModalGeneral';
 
 const FormularioRestaurant = () => {
 
     /* Definición de Estado del form */
     const [formRestaurant, setformRestaurant] = useState({});
+
+    /* Definición Estado Modal */
+    const [modalShow, setModalShow] = React.useState(false);
 
     /* Contiene firestore */
     const refRestaurant = firebase.firestore().collection('FormularioRestaurant');
@@ -28,6 +32,7 @@ const FormularioRestaurant = () => {
             .then(() => {
                 enviarCorreoConfirmacion();
             });
+        setModalShow(true)
     };
 
     //funcion enviar correo Confirmacion
@@ -52,6 +57,13 @@ const FormularioRestaurant = () => {
                 }
             );
     };
+
+    /* Función para manejar boton de Segundo Modal */
+    const clickBton = () => {
+        setModalShow(false);
+        // setformBancoAlimentos({...formBancoAlimentos});
+    };
+
 
 
     return (
@@ -85,6 +97,15 @@ const FormularioRestaurant = () => {
                 </form>
 
             </div>
+
+            <ModalGeneral
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                tituloModal={'Gracias por unirte a la causa.'}
+                contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
+                contenidoBotonModal={'Cerrar'}
+                funcionBotonModal={clickBton}
+            />
 
 
         </div>

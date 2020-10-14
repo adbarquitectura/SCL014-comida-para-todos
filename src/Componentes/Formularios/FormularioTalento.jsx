@@ -3,6 +3,7 @@ import './Formularios.css';
 import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
+import ModalGeneral from '../Modales/ModalGeneral';
 
 const FormularioTalento = () => {
 
@@ -12,10 +13,11 @@ const FormularioTalento = () => {
     /* Definición del Estado de select Comunas*/
     const [comunas, setcomunas] = useState([]);
 
+    /* Definición Estado Modal */
+    const [modalShow, setModalShow] = React.useState(false);
+
     /* Contiene firestore */
     const refTalento = firebase.firestore().collection('FormularioTalento');
-
-
 
     /* Asociar opción de select */
     const RegionSelect = (e) => {
@@ -43,6 +45,7 @@ const FormularioTalento = () => {
             .then(() => {
                 enviarCorreoConfirmacion();
             });
+        setModalShow(true)
     };
 
     //funcion enviar correo Confirmacion
@@ -66,6 +69,13 @@ const FormularioTalento = () => {
                     console.log("FAILED...", err);
                 }
             );
+    };
+
+
+    /* Función para manejar boton de Segundo Modal */
+    const clickBton = () => {
+        setModalShow(false);
+        // setformBancoAlimentos({...formBancoAlimentos});
     };
 
 
@@ -132,6 +142,16 @@ const FormularioTalento = () => {
                 </form>
 
             </div>
+
+            <ModalGeneral
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                tituloModal={'Gracias por unirte a la causa.'}
+                contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
+                contenidoBotonModal={'Cerrar'}
+                funcionBotonModal={clickBton}
+            />
+
 
 
         </div>
