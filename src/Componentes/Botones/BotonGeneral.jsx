@@ -11,4 +11,5 @@ const BotonGeneral = (props) => {
     </button>
   );
 };
+
 export default BotonGeneral;

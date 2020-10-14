@@ -7,6 +7,7 @@ import BancoAlimento from "../../img/Banco-de-Alimentos.jpg";
 import "./SeccionManerasDeAportar.css";
 import { Col, Container, Row } from 'react-bootstrap';
 
+
 const SeccionManerasAportar = (props) => {
   return (
     <div className="contenedorManerasDeAportar">
@@ -39,6 +40,8 @@ const SeccionManerasAportar = (props) => {
               <TarjetasAportar
                 contenidoBotonTarjeta={"Talento"}
                 contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
+                estiloBotonTarjeta={props.estiloBotonTarjetaActiva}
+                funcionBotonTarjeta={props.funcionBotonTarjetaActiva}
                 imgSrc={Talento}
                 tituloImg={"Talento"}
                 parrafoImg={

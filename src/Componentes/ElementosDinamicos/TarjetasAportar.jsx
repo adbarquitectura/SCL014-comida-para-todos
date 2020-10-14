@@ -14,7 +14,8 @@ const TarjetasAportar = (props) => {
         <BotonLink
           contenidobtn={props.contenidoBotonTarjeta}
           anclaLinkTo={props.contenidoAnclaTarjeta}
-          funcion={props.contenidoBotonfuncionTarjeta}
+          funcion={props.funcionBotonTarjeta}
+          estiloBoton={props.estiloBotonTarjeta}
         />
         <p className="parrafoBoxTextoTarjetaAportar">{props.parrafoImg}</p>
       </div>

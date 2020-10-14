@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './ComoAportarView.css';
 import SeccionManerasAportar from '../../ElementosDinamicos/SeccionManerasAportar';
 
@@ -13,12 +13,26 @@ import AportarRestaurante from "../../ElementosDinamicos/AportarRestaurante";
 import RegalaUnAlmuerzo from '../../ElementosDinamicos/RegalaUnAlmuerzo';
 
 
+
 const clickBton = () => {
   window.open("https://yodono.cl/proyecto/207/CultivaComidaparaTods");
 };
 
+
 const ComoAportarView = () => {
   const [modalShow, setModalShow] = React.useState(false);
+
+
+  // const [styleBoton, changeEstadoBotonActive, changeEstadoBotonNormal] = estadoBoton();
+  const [styleBoton, setStyleBoton] = useState({ backgroundColor: '#FD4C00', border: 'none' })
+
+  const changeEstadoBotonActive = () => {    
+    setStyleBoton({ backgroundColor: 'transparent', border: '2px solid #FD4C00', color: '#FD4C00' });
+  };
+
+  const changeEstadoBotonNormal = () => {
+    setStyleBoton({ backgroundColor: '#FD4C00', border: 'none' });
+  };
 
   return (
     <div className="containeComoAportarView">
@@ -28,7 +42,9 @@ const ComoAportarView = () => {
 
       <SeccionManerasAportar
         contenidoInfo={'Otras maneras de aportar'}
-        
+        estiloBotonTarjetaActiva={styleBoton}
+        funcionBotonTarjetaActiva={changeEstadoBotonActive}
+
       />
 
       < BotonGeneral
@@ -49,7 +65,7 @@ const ComoAportarView = () => {
       <AportarRestaurante
         contenidoInfo={"¿Cómo aportar si eres un Restaurant?"}
       />
-{/* 
+      {/* 
       <FormularioRestaurant />
       <FormularioMetroCuadrado />
       <FormularioCapacitacion />

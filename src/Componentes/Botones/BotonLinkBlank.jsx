@@ -10,6 +10,7 @@ const BotonLinkBlank = (props) => {
             <a
                 href={props.anclaLinkTo}
                 target='_blank'
+                rel='noopener noreferrer'
                 >{props.contenidobtn}
             </a>            
         </button>

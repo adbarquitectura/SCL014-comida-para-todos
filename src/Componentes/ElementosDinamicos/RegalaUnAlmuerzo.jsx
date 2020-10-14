@@ -41,9 +41,9 @@ const RegalaUnAlmuerzo = (props) => {
                                     funcion={() => setModalShow(true)}
                                 />
                                 < BotonLink
-                                contenidobtn={'Aporta como Restaurant'}
-                                anclaLinkTo={'#¿Cómo aportar si eres un Restaurant?'}
-                            />
+                                    contenidobtn={'Aporta como Restaurant'}
+                                    anclaLinkTo={'#¿Cómo aportar si eres un Restaurant?'}
+                                />
                             </div>
                         </Col>
 

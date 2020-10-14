@@ -48,7 +48,7 @@ const ContainerMultimediaHome = () => {
             <div className="Overlay">
               <h1 className="colorTextoh1"> Ayúdanos a sumar más platos de comida en las mesas de los chilenos </h1>
               < BotonLinkBlank
-                contenidobtn={'Conoce más'}
+                contenidobtn={'Objetivos de desarrollo sostenible'}
                 anclaLinkTo={'https://www.un.org/sustainabledevelopment/es/hunger/'}
               />
             </div>

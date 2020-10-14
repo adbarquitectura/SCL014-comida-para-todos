@@ -4,6 +4,7 @@ import { Carousel } from "react-bootstrap";
 
 import { Col, Container, Row } from "react-bootstrap";
 import BotonGeneral from "../Botones/BotonGeneral";
+import BotonLink from '../Botones/BotonLink';
 import PrevIcon from "../Iconos/PrevIcon";
 import NextIcon from "../Iconos/NextIcon";
 import quoteIcon from "../../img/quote icon.png";
@@ -12,7 +13,6 @@ import restaurant from "../../img/99-restaurant.png";
 import boa from "../../img/boa-logo.png";
 import chimba from "../../img/Logo-LaChimba.png";
 import cava from "../../img/cava_logo.png";
-import BotonLink from "../Botones/BotonLink";
 
 import restaurant1 from "../../img/99_restaurante.jpg";
 import boa1 from "../../img/Boa-Restaurant.jpg";
@@ -74,9 +74,7 @@ const Alianzas = (props) => {
               <div className="boxBotonAlianzas">
                 <BotonLink
                   contenidobtn={"Aporta como Restaurant"}
-                  anclaLinkTo={
-                    "/comoAportar#¿Cómo aportar si eres un Restaurant?"
-                  }
+                  anclaLinkTo={"/comoAportar#¿Cómo aportar si eres un Restaurant?"}
                 />
               </div>
             </Col>
@@ -86,7 +84,7 @@ const Alianzas = (props) => {
             <Col>
               <div className="fotoAlianzas">
                 {arregloAlianza.map((aliado, idx) => {
-                  return <img className="imgFotoAlianzas" src={aliado} key={idx} />;
+                  return <img className="fotoAlianzas" src={aliado} key={idx} />;
                 })}
               </div>
             </Col>
