@@ -1,0 +1,40 @@
+/* .mapa-container{
+    width: 50%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+    padding: 40px 15px 40px 15px;
+} */
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 40%;
+}
+
+/* #ar{
+    fill: #FD4C00;
+} */
+
+svg {
+    stroke: #fff;
+}
+    /* // All layers are just path elements */
+path {
+      fill: #404040;
+      outline: #fff;
+}     
+
+#cl, #es {
+    fill: #FD4C00;
+    cursor: pointer;
+} 
+
+
+/* // When a layer is hovered
+      &:hover {
+        fill: rgba(168,43,43,0.83);
+      } */

@@ -7,6 +7,7 @@ import FormularioMetroCuadrado from '../../Formularios/FormularioMetro2';
 import FormularioCapacitacion from '../../Formularios/FormularioCapacitación';
 import FormularioBancoAlimentos from '../../Formularios/FormularioBancoAlimentos';
 import AportarRestaurante from "../../ElementosDinamicos/AportarRestaurante";
+import RegalaUnAlmuerzo from '../../ElementosDinamicos/RegalaUnAlmuerzo';
 
 
 const clickBton = () => {
@@ -14,16 +15,24 @@ const clickBton = () => {
 };
 
 const ComoAportarView = () => {
-  const [modalShow, setModalShow] = React.useState(false);
+ const [modalShow, setModalShow] = React.useState(false);
 
-  return (
-    <div>
-      <BotonGeneral
-        contenidobtn={"Inscribete"}
-        funcion={() => setModalShow(true)}
-      />
+    return (
 
-      <ModalFormularios
+
+        <div>
+
+            <RegalaUnAlmuerzo
+            contenidoInfo={'Regala un Almuerzo'}/>
+
+            <br/> <br/> <br/>
+
+            < BotonGeneral
+                contenidobtn={'Inscribe tu talento'}
+                funcion={() => setModalShow(true)}
+            />
+
+            <ModalFormularios
         show={modalShow}
         onHide={() => setModalShow(false)}
         tituloModal={
@@ -41,9 +50,10 @@ const ComoAportarView = () => {
              <FormularioMetroCuadrado/>
              <FormularioCapacitacion/>
              <FormularioBancoAlimentos/> 
-    </div>
+        </div >
+
+
   );
 };
-
 export default ComoAportarView;
 
