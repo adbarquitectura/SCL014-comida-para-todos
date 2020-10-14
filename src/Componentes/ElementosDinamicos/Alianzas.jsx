@@ -185,7 +185,7 @@ const Alianzas = (props) => {
                       Somos una Corporación sin fines de lucro que busca aportar
                       al mejoramiento de las condiciones de vida de las
                       personas. Estamos muy contentos de poder colaborar con
-                      comidas para todos, nos llena el alma.
+                      comidas para todos, nos llena el alma y el corazón.
                     </p>
                     <a href="https://lachimba.org/" target="_blank">
                       lachimba.org
