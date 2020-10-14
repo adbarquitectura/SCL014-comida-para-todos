@@ -38,6 +38,7 @@ const SeccionManerasAportar = (props) => {
             <Col>
               <TarjetasAportar
                 contenidoBotonTarjeta={"Talento"}
+                contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
                 imgSrc={Talento}
                 tituloImg={"Talento"}
                 parrafoImg={
@@ -48,6 +49,7 @@ const SeccionManerasAportar = (props) => {
             <Col>
               <TarjetasAportar
                 contenidoBotonTarjeta={"Metro cuadrado"}
+                contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
                 imgSrc={Metro}
                 tituloImg={"Metro cuadrado"}
                 parrafoImg={
@@ -58,6 +60,7 @@ const SeccionManerasAportar = (props) => {
             <Col>
               <TarjetasAportar
                 contenidoBotonTarjeta={"Capacitación"}
+                contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
                 imgSrc={Capacitacion}
                 tituloImg={"Capacitación"}
                 parrafoImg={
@@ -68,6 +71,7 @@ const SeccionManerasAportar = (props) => {
             <Col>
               <TarjetasAportar
                 contenidoBotonTarjeta={"Banco de Alimentos"}
+                contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
                 imgSrc={BancoAlimento}
                 tituloImg={"Banco de Alimento"}
                 parrafoImg={

@@ -64,16 +64,24 @@ const Alianzas = (props) => {
         </a>
       </div>
 
-      <div className="boxBotonAlianzas">
-        <BotonLink
-          contenidobtn={"Aporta como Restaurant"}
-          enlaceLinkTo={"/comoAportar"}
-          anclaLinkTo={"#¿Cómo aportar si eres un Restaurant?"}
-        />
-      </div>
-
       <div>
         <Container>
+          <Row>
+            <Col></Col>
+            <Col></Col>
+            <Col></Col>
+            <Col>
+              <div className="boxBotonAlianzas">
+                <BotonLink
+                  contenidobtn={"Aporta como Restaurant"}
+                  anclaLinkTo={
+                    "/comoAportar#¿Cómo aportar si eres un Restaurant?"
+                  }
+                />
+              </div>
+            </Col>
+          </Row>
+
           <Row>
             <Col>
               <div className="fotoAlianzas">
