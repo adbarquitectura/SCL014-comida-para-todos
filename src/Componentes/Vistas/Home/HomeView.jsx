@@ -20,21 +20,7 @@ const HomeView = () => {
     <div className="containerMainView">
       <ContainerMultimediaHome />
 
-      {/* <CarrouselMultimediaProblematica 
-      tituloPrimerSlide = {'titulo1'}
-      parrafoPrimerSlide = {'parrafo1'}
-
-      tituloSegundoSlide = {'titulo2'}
-      parrafoSegundoSlide = {'parrafo2'}
-
-      tituloTercerSlide = {'titulo3'}
-      parrafoTercerSlide = {'parrafo3'}
-
-      />   */}
-
       <TarjetasDonaciones />
-
-      <InfografiaImpacto/>
 
       <SeccionManerasAportar
         contenidoInfo={'Otras maneras de aportar'}
@@ -44,21 +30,13 @@ const HomeView = () => {
         contenidoInfo={'Seguridad alimentaria en Chile'}
       />
 
+      <InfografiaImpacto />
 
       <TarjetasDescriptivas
         contenidoInfo={'Nuestros 4 ingredientes para la receta'}
       />
 
-      <InfografiaCiclo/>
-
-      <Infografia
-        contenidoInfo={'impacto-organizacion'}
-      />
-
-
-      <Infografia
-        contenidoInfo={'ciclo-de-vida'}
-      />
+      <InfografiaCiclo />
 
       <Alianzas
         contenidoInfo={'Nuestras Alianzas'}

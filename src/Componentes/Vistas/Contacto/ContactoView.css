@@ -1,3 +1,7 @@
+.MapaContacto{
+    width: 100%;
+    align-items: center;
+}
 .ContainerContacto{
     box-sizing: border-box;
     padding: 25px;

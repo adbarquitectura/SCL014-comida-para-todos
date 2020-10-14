@@ -5,16 +5,16 @@ import './ContactoView.css';
 
 const ContactoView = () => {
     return (
+        <div>
+            <div className="MapaContacto">
+                <Mapa />
+            </div >
+            <div className="ContainerContacto">
+                <ModuloContacto />
 
+            </div >
 
-        <div className="MapaContacto">
-            Estas en el módulo de “Contacto”
-            <Mapa/>
-
-        <div className="ContainerContacto">
-            <ModuloContacto />
-
-        </div >
+        </div>
     );
 };
 

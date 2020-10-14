@@ -1,12 +1,10 @@
 import React from 'react';
 import { VectorMap } from '@south-paw/react-vector-maps';
 import './Mapa.css';
-
  
 // You'll need to download the json file from the docs site or you can create your own.
 import world from './world.json';
-// import { Alert } from 'react-bootstrap';
-// import chile from './chile.json';
+
  
 const Mapa = () => {
 
