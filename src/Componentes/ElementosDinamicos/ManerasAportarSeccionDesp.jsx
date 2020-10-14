@@ -6,12 +6,12 @@ import BotonGeneral from '../Botones/BotonGeneral';
 const ManerasAportarSeccionDesp = (props) => {
     return (
         <div className="containerSeccionDespliegue"
-        style={props.imgFondoSeccion}
+            style={props.imgFondoSeccion}
         >
             <Container>
                 <Row>
                     <Col>
-                        
+
                     </Col>
 
                     <Col>

@@ -41,7 +41,7 @@ const SeccionManerasAportar = (props) => {
                 contenidoBotonTarjeta={"Talento"}
                 contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
                 estiloBotonTarjeta={props.estiloBotonTarjetaActiva}
-                funcionBotonTarjeta={props.funcionBotonTarjetaActiva}
+                funcionBotonTarjeta={props.funcionBotonTarjetaActivaTalento}
                 imgSrc={Talento}
                 tituloImg={"Talento"}
                 parrafoImg={
@@ -53,6 +53,8 @@ const SeccionManerasAportar = (props) => {
               <TarjetasAportar
                 contenidoBotonTarjeta={"Metro cuadrado"}
                 contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
+                estiloBotonTarjeta={props.estiloBotonTarjetaActiva}
+                funcionBotonTarjeta={props.funcionBotonTarjetaActivaMetro}
                 imgSrc={Metro}
                 tituloImg={"Metro cuadrado"}
                 parrafoImg={
@@ -64,6 +66,8 @@ const SeccionManerasAportar = (props) => {
               <TarjetasAportar
                 contenidoBotonTarjeta={"Capacitación"}
                 contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
+                estiloBotonTarjeta={props.estiloBotonTarjetaActiva}
+                funcionBotonTarjeta={props.funcionBotonTarjetaActivaCapacitacion}
                 imgSrc={Capacitacion}
                 tituloImg={"Capacitación"}
                 parrafoImg={
@@ -75,6 +79,8 @@ const SeccionManerasAportar = (props) => {
               <TarjetasAportar
                 contenidoBotonTarjeta={"Banco de Alimentos"}
                 contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
+                estiloBotonTarjeta={props.estiloBotonTarjetaActiva}
+                funcionBotonTarjeta={props.funcionBotonTarjetaActivaBanco}
                 imgSrc={BancoAlimento}
                 tituloImg={"Banco de Alimento"}
                 parrafoImg={

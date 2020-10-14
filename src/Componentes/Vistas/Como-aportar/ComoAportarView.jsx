@@ -23,6 +23,10 @@ const clickBton = () => {
 const ComoAportarView = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const [estadoboton, setEstadoboton] = useState(false);
+
+  //Maneja estado de boton
+  const [contenidoModal, setContenidoModal] = useState();
+
   //Maneja estado de boton
   const [styleBoton, setStyleBoton] = useState({ backgroundColor: '#FD4C00', border: 'none' });
 
@@ -50,7 +54,10 @@ const ComoAportarView = () => {
       <SeccionManerasAportar
         contenidoInfo={'Otras maneras de aportar'}
         estiloBotonTarjetaActiva={styleBoton}
-        funcionBotonTarjetaActiva={changeEstadoBotonActive}
+        funcionBotonTarjetaActivaTalento={changeEstadoBotonActive}
+        funcionBotonTarjetaActivaMetro={changeEstadoBotonActive}
+        funcionBotonTarjetaActivaCapacitacion={changeEstadoBotonActive}
+        funcionBotonTarjetaActivaBanco={changeEstadoBotonActive} 
 
       />
       <ManerasAportarSeccionDesp
@@ -59,12 +66,13 @@ const ComoAportarView = () => {
         parrafoSeccionDespliegue={parrafoSeccionDespliegue}
         contenidoBotonSeccionDespliegue={'Inscribete'}
         funcionBotonSeccionDespliegue={funcionBotonSeccionDespliegue}
+        
       />
-
+{/* 
       < BotonGeneral
         contenidobtn={'Inscribe tu talento'}
         funcion={() => setModalShow(true)}
-      />
+      /> */}
 
       <ModalFormularios
         show={modalShow}
@@ -72,8 +80,7 @@ const ComoAportarView = () => {
         tituloModal={
           "Será redireccionado al sitio de yodono.cl para completar la donación."
         }
-        contenidoModal={<FormularioTalento />}
-        contenidoBotonModal={"Eviar"}
+        contenidoModal={contenidoModal}       
         funcionBotonModal={clickBton}
       />
       <AportarRestaurante
