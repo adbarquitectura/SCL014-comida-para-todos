@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+
 import "./Home.css";
 import Whatsapp from "./Componentes/ElementosFijos/Whatsapp";
 import MenuNavegacion from "./Componentes/ElementosFijos/MenuNavegacion";
@@ -17,8 +18,7 @@ function Home() {
     <div className="ContenedorPadre">
       <MenuNavegacion />
       <Whatsapp />
-      <Footer />
-
+      <Footer /> 
       <ModalCargadoInicial
         show={modalShow}
         onHide={() => setModalShow(false)}
