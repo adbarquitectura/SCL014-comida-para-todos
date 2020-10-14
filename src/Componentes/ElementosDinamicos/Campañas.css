@@ -1,0 +1,12 @@
+.contenedorLoQueHacemos p{
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.imgalmuerzo{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    box-sizing: border-box;
+    /* padding: 40px  40px ; */
+}
