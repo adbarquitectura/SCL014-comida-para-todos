@@ -7,14 +7,16 @@ const BotonLink = (props) => {
     return (
         <button
             className="btnGeneral"
-            onClick={props.funcion}
         >
-            <Link to={props.enlaceLinkTo}>{props.contenidobtn}
-            <a class="sr-only sr-only-focusable" href={props.anclaLinkTo}></a>
-            </Link>
+            <a
+                href={props.anclaLinkTo}>{props.contenidobtn}
+            </a>
             
         </button>
+
+
+
+
     );
 };
 export default BotonLink;
-

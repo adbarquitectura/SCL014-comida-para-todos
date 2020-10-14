@@ -48,11 +48,11 @@ const ComoAportarView = () => {
       <AportarRestaurante
         contenidoInfo={"¿Cómo aportar si eres un Restaurant?"}
       />
-
+{/* 
       <FormularioRestaurant />
       <FormularioMetroCuadrado />
       <FormularioCapacitacion />
-      <FormularioBancoAlimentos />
+      <FormularioBancoAlimentos /> */}
     </div >
 
 

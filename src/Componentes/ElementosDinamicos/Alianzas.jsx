@@ -13,6 +13,12 @@ import restaurant from "../../img/99-restaurant.png";
 import boa from "../../img/Boa.png";
 import chimba from "../../img/lachimba.jpg";
 import cava from "../../img/CAVA_DEL_SOMMELIER.jpg";
+import BotonLink from "../Botones/BotonLink";
+
+import restaurant1 from "../../img/99-restaurant.png";
+import boa1 from "../../img/Boa.png";
+import chimba1 from "../../img/lachimba.jpg";
+import cava1 from "../../img/CAVA_DEL_SOMMELIER.jpg";
 
 
 
@@ -63,13 +69,14 @@ const Alianzas = (props) => {
     <div className="boxCarruselAlianzas">
       <div className="boxTituloCarruselAlianzas">
         <div className="viñetaYellow"></div>
-        <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
+        <a name={props.contenidoInfo}><h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2></a>
       </div>
-      
+
       <div className="boxBotonAlianzas">
-        < BotonGeneral
+        < BotonLink
           contenidobtn={'Aporta como Restaurant'}
-          funcion={() => console.log('va al restaurant')}
+          enlaceLinkTo={"/comoAportar"}
+          anclaLinkTo={'#¿Cómo aportar si eres un Restaurant?'}
         />
       </div>
 
@@ -106,7 +113,7 @@ const Alianzas = (props) => {
                 <Col>
                   <img
                     className="boxImagenCarruselAlianzas"
-                    src={restaurant}
+                    src={restaurant1}
                     alt="First slide"
                   />
                 </Col>
@@ -132,7 +139,7 @@ const Alianzas = (props) => {
                 <Col>
                   <img
                     className="boxImagenCarruselAlianzas"
-                    src={boa}
+                    src={boa1}
                     alt="First slide"
                   />
                 </Col>
@@ -158,7 +165,7 @@ const Alianzas = (props) => {
                 <Col>
                   <img
                     className="boxImagenCarruselAlianzas"
-                    src={chimba}
+                    src={chimba1}
                     alt="First slide"
                   />
                 </Col>
@@ -184,7 +191,7 @@ const Alianzas = (props) => {
                 <Col>
                   <img
                     className="boxImagenCarruselAlianzas"
-                    src={cava}
+                    src={cava1}
                     alt="First slide"
                   />
                 </Col>

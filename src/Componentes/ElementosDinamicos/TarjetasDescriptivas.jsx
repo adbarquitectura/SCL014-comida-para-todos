@@ -14,7 +14,7 @@ const TarjetasDescriptivas = (props) => {
 
             <div className="boxTituloCarrusel">
                 <div className="viñetaYellow"></div>
-                <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
+                <a name={props.contenidoInfo}><h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2></a>
             </div>
             <div>
                 <Container>

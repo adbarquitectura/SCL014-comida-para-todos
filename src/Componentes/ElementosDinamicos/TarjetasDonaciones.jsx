@@ -17,7 +17,7 @@ const clickBton = () => {
 };
 
 /* Funcion dirige a otras seccion */
-const irOtraSeccion = () => {
+const IrOtraSeccion = () => {
 
 };
 
@@ -52,9 +52,7 @@ const TarjetasDonaciones = (props) => {
                             />
                             < BotonLink
                                 contenidobtn={'Conoce más'}
-                                enlaceLinkTo={"/comoAportar"}
-                                anclaLinkTo={"#¿Cómo aportar si eres un Restaurant?"}
-                                // funcion={() => setModalShow(true)}
+                                anclaLinkTo={'/comoAportar#¿Cómo aportar si eres un Restaurant?'}
                             />
                         </div>
                     </Col>
