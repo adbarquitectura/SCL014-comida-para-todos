@@ -4,7 +4,10 @@ import impacto from '../../img/impactocolectivo.jpg';
 const InfografiaImpacto = () => {
     return (
         <div>
-            <img src= {impacto} alt=""/>
+            <img
+                className="imgInfografias"
+                src={impacto}
+                alt="" />
         </div>
     )
 }

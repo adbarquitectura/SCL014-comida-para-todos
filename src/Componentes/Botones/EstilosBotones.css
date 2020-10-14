@@ -3,7 +3,7 @@
     color: white;
     box-sizing: border-box;
     transition-duration: 0.4s;
-    height: 42px;
+    min-height: 42px;
     border: none;
     border-radius: 3px;
     font-size: 18px;
@@ -26,7 +26,7 @@
     color: #8A2900;
     box-sizing: border-box;
     transition-duration: 0.4s;
-    height: 42px;
+    min-height: 42px;
     border: 2px solid #8A2900;
     border-radius: 3px;
     font-size: 18px;
