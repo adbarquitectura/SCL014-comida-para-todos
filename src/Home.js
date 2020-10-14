@@ -6,8 +6,6 @@ import MenuNavegacion from "./Componentes/ElementosFijos/MenuNavegacion";
 import Footer from "./Componentes/ElementosFijos/Footer";
 import ModalCargadoInicial from '../src/Componentes/Modales/ModalInicio';
 
-import ModuloContacto
- from './Componentes/ElementosDinamicos/ModuloContacto';
 
 function Home() {
 
@@ -21,12 +19,8 @@ function Home() {
     <div className="ContenedorPadre">
       <MenuNavegacion />
       <Whatsapp />
-      <ModuloContacto
-/>
-
-      <Footer />
-  
-
+      <Footer /> 
+    
       <ModalCargadoInicial
         show={modalShow}
         onHide={() => setModalShow(false)}

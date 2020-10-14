@@ -1,8 +1,13 @@
-import React from "react";
-import FormularioTalento from "../../Formularios/FormularioTalento";
-import ModalFormularios from "../../Modales/ModalFormularios";
-import BotonGeneral from "../../Botones/BotonGeneral";
+import React from 'react';
+import FormularioTalento from '../../Formularios/FormularioTalento';
+import ModalFormularios from '../../Modales/ModalFormularios';
+import BotonGeneral from '../../Botones/BotonGeneral';
+import FormularioRestaurant from '../../Formularios/FormularioRestaurant';
+import FormularioMetroCuadrado from '../../Formularios/FormularioMetro2';
+import FormularioCapacitacion from '../../Formularios/FormularioCapacitación';
+import FormularioBancoAlimentos from '../../Formularios/FormularioBancoAlimentos';
 import AportarRestaurante from "../../ElementosDinamicos/AportarRestaurante";
+
 
 const clickBton = () => {
   window.open("https://yodono.cl/proyecto/207/CultivaComidaparaTods");
@@ -31,8 +36,14 @@ const ComoAportarView = () => {
       <AportarRestaurante
         contenidoInfo={"¿Cómo aportar si eres un Restaurant?"}
       />
+      
+      <FormularioRestaurant/>
+             <FormularioMetroCuadrado/>
+             <FormularioCapacitacion/>
+             <FormularioBancoAlimentos/> 
     </div>
   );
 };
 
 export default ComoAportarView;
+

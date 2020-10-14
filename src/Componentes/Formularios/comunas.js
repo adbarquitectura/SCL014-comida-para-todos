@@ -20,7 +20,7 @@ export const biobio = ['Arauco', 'Cañete', 'Contulmo', 'Curanilahue', 'Lebu', '
 'Penco', 'San Pedro de la Paz', 'Santa Juana', 'Talcahuano', 'Tomé' ];
 export const araucania = ['Carahue', 'Cholchol', 'Cunco', 'Curarrehue', 'Freire','Galvarino', 'Gorbea', 'Lautaro','Loncoche', 'Melipeuco', 'Nueva Imperial', 'Padre Las Casas', 'Perquenco', 'Pitrufquén', 'Pucón','Saavedra', 'Temuco', 
 'Teodoro Schmidt', 'Toltén', 'Vilcún', 'Villarrica', 'Angol', 'Collipulli', 'Curacautín', 'Ercilla', 'Lonquimay', 'Los Sauces', 'Lumaco', 'Purén', 'Renaico', 'Traiguén', 'Victoria'];
-export const losrios = ['Futrono', 'La Unión', 'Lago Ranco', 'Río Bueno', 'Corral', 'Lanco', 'Los Lagos', 'Máfil', 'Mariquina','Paillaco', 'Panguipulli', 'Valdivia'];
+export const losríos = ['Futrono', 'La Unión', 'Lago Ranco', 'Río Bueno', 'Corral', 'Lanco', 'Los Lagos', 'Máfil', 'Mariquina','Paillaco', 'Panguipulli', 'Valdivia'];
 export const loslagos = ['Ancud', 'Castro', 'Chonchi', 'Curaco de Vélez', 'Dalcahue', 'Puqueldón', 'Queilén', 'Quellón', 'Quemchi', 'Quinchao', 'Calbuco', 
 'Cochamó', 'Fresia', 'Frutillar', 'Llanquihue', 'Los Muermos', 'Maullín', 'Puerto Montt', 'Puerto Varas', 'Osorno', 'Puerto Octay', 'Purranque', 'Puyehue', 'Río Negro', 'San Pablo', 'San Juan de la Costa', 
 'Chaitén', 'Futaleufú', 'Hualaihué','Palena'];
