@@ -20,9 +20,7 @@ const CarruselMultimediaInformativo = (props) => {
     <div className="boxCarrusel">
       <div className="boxTituloCarrusel">
         <div className="viñetaYellow"></div>
-        <a name={props.contenidoInfo}>
-          <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
-        </a>
+        <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
       </div>
 
       <div className="boxContenedorCarrusel">

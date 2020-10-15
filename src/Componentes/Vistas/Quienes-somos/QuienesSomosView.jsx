@@ -11,20 +11,17 @@ const QuienesSomosView = (props) => {
   return (
     <div className="contenedorGeneralRegalaAlmuerzo">
       <div className="boxTituloCarrusel">
-        <a name={props.contenidoInfo}>
-          <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
-        </a>
+        <div className="viñetaYellow"></div>
+        <h2 className="tituloalineadoIzquierda">Acerca de nosotros</h2>
       </div>
+
       <div className="contenedorboxRegalaAlmuerzo">
+
         <Container>
           <Row>
             <Col>
-              <div className="textoalineadoIzquierda">
-                <div className="viñetaYellow">
-                  <h3>Acerca de nosotros...</h3>
-                </div>
+              <div className="parrafoAlineadoIzquierda">
                 <p>
-                  <br></br>
                   Trabajamos para ayudar a combatir el hambre en Chile, a través
                   una alimentación de calidad y nutritiva; conectando,
                   colaborando y generando asociatividad entre los actores de la
@@ -37,61 +34,65 @@ const QuienesSomosView = (props) => {
             </Col>
 
             <Col>
-              <div className="fotoAlmuerzo">
-                <img src={ElEquipo} alt="Foto" />
-              </div>
+
+              <img className="imgSectionNosotros" src={ElEquipo} alt="Foto" />
+
             </Col>
           </Row>
         </Container>
+
+
+        <div className="boxTituloCarrusel">
+          <div className="viñetaYellow"></div>
+          <h2 className="tituloalineadoIzquierda">Nuestro Equipo</h2>
+        </div>
         <Container>
+
           <Row>
             <Col>
-              <div className="textoalineadoIzquierda">
-                <div className="viñetaYellow"></div>
-                <h3>El equipo</h3>
-                <p>
-                  <br></br>
-                  Somos un gran equipo de trabajo interdisciplinario y en
-                  conjunto nos esforzamos por que día a día se cumplan los
-                  objetivos de nuestra labor.
-                </p>
+              <div className="fotoAlmuerzoDos">
+                <img src={Rafael} alt="Foto" />
+                <h4>Rafael Rincón </h4>
+                <p>Director y Cofundador</p>
               </div>
             </Col>
-            <Col />
-            <Row>
-              <Col>
-                <div className="fotoAlmuerzoDos">
-                  <img src={Rafael} alt="Foto" />
-                  <p>Rafael Rincón </p>
-                  <p>Director y Cofundador</p>
-                </div>
-              </Col>
-              <Col>
-                <div className="fotoAlmuerzoDos">
-                  <img src={Enrique} alt="Foto" />
-                  <p>Enrique Gellona</p>
-                  <p>Cofundador</p>
-                </div>
-              </Col>
-              <Col>
-                <div className="fotoAlmuerzoDos">
-                  <img src={Camila} alt="Foto" />
-                  <p>Camila Moreno</p>
-                  <p>Cofundadora</p>
-                </div>
-              </Col>
-              <Col>
-                <div className="fotoAlmuerzoDos">
-                  <img src={Maria} alt="Foto" />
-                  <p>María Jose de la Fuente</p>
-                  <p>Cofundadora</p>
-                </div>
-              </Col>
-            </Row>
+            <Col>
+              <div className="fotoAlmuerzoDos">
+                <img src={Enrique} alt="Foto" />
+                <h4>Enrique Gellona</h4>
+                <p>Cofundador</p>
+              </div>
+            </Col>
+            <Col>
+              <div className="fotoAlmuerzoDos">
+                <img src={Camila} alt="Foto" />
+                <h4>Camila Moreno</h4>
+                <p>Cofundadora</p>
+              </div>
+            </Col>
+            <Col>
+              <div className="fotoAlmuerzoDos">
+                <img src={Maria} alt="Foto" />
+                <h4>María Jose de la Fuente</h4>
+                <p>Cofundadora</p>
+              </div>
+            </Col>
           </Row>
+
+          <Row>
+            <Col>
+              <p className="parrafoFinal">
+                Somos un gran equipo de trabajo interdisciplinario y en
+                conjunto nos esforzamos por que día a día se cumplan los
+                objetivos de nuestra labor.
+              </p>
+
+            </Col>
+          </Row>
+
         </Container>
       </div>
-    </div>
+    </div >
   );
 };
 

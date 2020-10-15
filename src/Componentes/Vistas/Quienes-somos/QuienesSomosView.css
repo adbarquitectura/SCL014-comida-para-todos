@@ -4,8 +4,37 @@
   left: 62px;
 } */
 
+.contenedorGeneralRegalaAlmuerzo{
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 45px;
+}
+
 .fotoAlmuerzoDos img {
   width: 250px;
   height: 250px;
   object-fit: fill;
+}
+.imgSectionNosotros{
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: 0 15px 40px 15px;
+  height: 400px;
+}
+.fotoAlmuerzoDos h4{
+  color: #FD4C00;
+  text-align: center;
+  min-height: 50px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+.parrafoAlineadoIzquierda{
+  text-align: left;
+}
+
+.parrafoFinal{
+box-sizing: border-box;
+padding: 50px 150px 50px 150px;
+color:#FD4C00;
 }
