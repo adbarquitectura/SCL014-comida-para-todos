@@ -23,11 +23,13 @@
     border: 2px solid #FD4C00;
 }
 
-.btnGeneral a:link,
-.btnGeneral a:visited,
-.btnGeneral a:active  {
+.btnGeneral a:link, .btnGeneral a:visited, .btnGeneral a:active {
     text-decoration: none;
-    color: white;       
+    color: white;
+}
+
+.btnGeneral.active a {
+    color: #FD4C00 !important;
 }
 
 .btnSecundario {
@@ -72,4 +74,3 @@
 .btnCloseModal img:hover {
     opacity: 1;
 }
-

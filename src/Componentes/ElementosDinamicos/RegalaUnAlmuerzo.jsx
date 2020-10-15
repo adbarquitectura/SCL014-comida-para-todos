@@ -42,7 +42,7 @@ const RegalaUnAlmuerzo = (props) => {
                                 />
                                 < BotonLink
                                     contenidobtn={'Aporta como Restaurant'}
-                                    anclaLinkTo={'#¿Cómo aportar si eres un Restaurant?'}
+                                    anclaLinkTo={'#sectionRestaurant'}
                                 />
                             </div>
                         </Col>

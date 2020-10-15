@@ -74,10 +74,9 @@ const Alianzas = (props) => {
               <div className="boxBotonAlianzas">
                 <BotonLink
                   contenidobtn={"Aporta como Restaurant"}
-                  anclaLinkTo={"#sectionRestaurant"}
-                />   
-                <a href="/comoAportar#sectionRestaurant">prueba
-                  </a>             
+                  anclaLinkTo={"/comoAportar#sectionRestaurant"}
+                />
+                          
               </div>
             </Col>
           </Row>

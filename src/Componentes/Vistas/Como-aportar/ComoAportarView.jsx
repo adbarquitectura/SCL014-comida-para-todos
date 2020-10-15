@@ -136,7 +136,7 @@ const ComoAportarView = () => {
     setStyleBotonBanco({
       backgroundColor: "transparent",
       border: "2px solid #FD4C00",
-      color: "#FD4C00",
+      color: "#FD4C00"
     });
     setStyleBotonTalento({ backgroundColor: "#FD4C00", border: "none" });
     setStyleBotonCapacitacion({ backgroundColor: "#FD4C00", border: "none" });

@@ -8,7 +8,6 @@ import './TarjetasDonaciones.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import BotonGeneral from '../Botones/BotonGeneral';
 import ModalGeneral from '../Modales/ModalGeneral';
-import { Link } from 'react-router-dom';
 import BotonLink from '../Botones/BotonLink';
 
 /* Función Botón 'Regala un almuerzo' */
@@ -52,10 +51,8 @@ const TarjetasDonaciones = (props) => {
                             />
                             < BotonLink
                                 contenidobtn={'Conoce más'}
-                                anclaLinkTo={'/comoAportar#¿Cómo aportar si eres un Restaurant?'}
-                            />
-                            <Link to="/comoAportar#sectionRestaurant">prueba
-                  </Link>
+                                anclaLinkTo={'/comoAportar#manerasDeAportar'}
+                            />                   
                         </div>
                     </Col>
                 </Row>

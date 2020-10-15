@@ -24,7 +24,7 @@ const HomeView = () => {
 
       <SeccionManerasAportar
         contenidoInfo={'Otras maneras de aportar'}
-        contenidoAnclaSeccion={'/comoAportar#Otras maneras de aportar'}
+        contenidoAnclaSeccion={'/comoAportar#manerasDeAportar'}
       />
 
       <TarjetasDescriptivas
@@ -50,7 +50,7 @@ const HomeView = () => {
 
     </div >
 
-  )
-}
+  );
+};
 
 export default HomeView;
