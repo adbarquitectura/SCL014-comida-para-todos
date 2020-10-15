@@ -1,0 +1,38 @@
+.formularioEstilo {
+    /* background-color: violet; */
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.FormSection {
+    /* background-color: yellowgreen; */
+    text-align: left;
+}
+
+.BoxTextForm {
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+.form-bg {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-region {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mybtn {
+    background-color: #FD4C00 !important;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+}

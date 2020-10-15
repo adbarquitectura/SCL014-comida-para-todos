@@ -1,0 +1,45 @@
+.contenedorManerasDeAportar{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+} 
+
+.contenedorTarjetasAportar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contenedorParrafoTarjetasAportar{
+  width: 50%;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.boxImagenesTarjetaAportar {
+  width: 100%;
+}
+
+.boxTextoTarjetaAportar {
+  /* padding: 15px; */
+  padding-top: 15px;
+  box-sizing: border-box;
+  /* background-color: tomato; */
+}
+
+.imgAportar { 
+  height: 300px;
+  /* padding: 15px; */
+  object-fit: cover;
+  box-sizing: border-box;
+  /* background-color: violet; */
+}
+
+.parrafoBoxTextoTarjetaAportar {  
+  text-align: left;
+  padding-top: 15px;
+}
+
+.boxTextoTarjetaAportar  button{
+  width: 100%;  
+}

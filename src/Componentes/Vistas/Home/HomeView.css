@@ -1,0 +1,8 @@
+.containerMainView {
+    width: 100%;
+}
+
+.imgInfografias {
+    width: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,36 @@
+.ContenedorPadre {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #222222;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222222;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #4d4d4d
+  ;
+}
+
+h4 {
+  font-size: 21px;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+
+p {
+  font-weight: 21px;
+  font-weight: 400;
+  color: #4d4d4d;
+}

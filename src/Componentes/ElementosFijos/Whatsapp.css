@@ -1,0 +1,41 @@
+.btnWhatsapp {
+  position: fixed;
+  top: 200px;
+  left: 0;
+  line-height: 55px;
+  background-color: #298200;
+  color: white;
+  text-align: center;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  width: 35px;
+  height: 205px;
+  box-sizing: border-box;
+  filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25)); 
+  border-right: 2px #4F5515 solid;
+  border-top: 2px #4F5515 solid;
+  border-bottom: 2px #4F5515 solid;
+}
+
+.btnWhatsapp h4 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin-left: 8px;
+  margin-top: -170px;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.btnWhatsapp button {
+  height: 30px;
+  width: 30px;
+  background-image: url("../../img/wspIcon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  object-fit: cover;
+  margin-left: 2.5px;
+  margin-top: 150px;
+}

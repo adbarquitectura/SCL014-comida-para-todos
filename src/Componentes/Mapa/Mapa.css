@@ -1,0 +1,27 @@
+.mapa {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 40%;
+    margin: auto;
+}
+
+svg {
+    stroke: #fff;
+}
+
+/* // All layers are just path elements */
+
+.mapa path {
+    fill: #404040;
+    outline: #fff;
+}
+
+#cl, #es {
+    fill: #FD4C00;
+    cursor: pointer;
+}
+
+#cl:hover, #es:hover {
+    fill: #FDAC07;
+}

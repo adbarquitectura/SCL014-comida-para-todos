@@ -1,0 +1,80 @@
+.boxCarruselAlianzas {   
+    box-sizing: border-box;
+}
+
+.boxContenedorCarruselAlianzas {
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    background-color: #F4F4F4;
+}
+
+.viñetaYellow {
+    width: 21px;
+    height: 26px;
+    background-color: #FDAC07;
+    border-top-right-radius: 20px 20px !important;
+    border-bottom-right-radius: 20px 20px !important;
+    margin-right: 15px;
+}
+
+.boxTituloCarruselAlianzas {
+    box-sizing: border-box;
+    padding-left: 128px;
+    padding-right: 128px;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    align-items: center;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.boxImagenCarruselAlianzas {
+    width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    padding: 40px 15px 40px 15px;
+    height: 400px;
+}
+
+.boxTextoCarruselAlianzas {
+    text-align: left;
+    align-self: center;
+    box-sizing: border-box;
+    padding: 40px 15px 40px 15px;
+    /* height: 100%; */
+}
+
+.boxTextoCarruselAlianzas a:link, 
+.boxTextoCarruselAlianzas a:visited, 
+.boxTextoCarruselAlianzas a:active {
+    text-decoration: none;
+    color: #FD4C00;
+    font-size: 16px;
+}
+
+.fotoAlianzasSec img{
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+}
+
+.imgFotoAlianzasSec {
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+.boxTextoCarruselAlianzas h4{
+    padding-bottom: 50px;
+    font-size: 21px;
+}
+
+.fotoAlianzasSec>img:first-child{
+    /* background-color: hotpink;
+    border: 3px red solid; */
+    filter: grayscale(0%);
+}
+
+.boxBotonAlianzas button{
+    align-self: right;
+}

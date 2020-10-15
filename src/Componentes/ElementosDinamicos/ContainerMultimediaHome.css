@@ -1,0 +1,30 @@
+/* Elemento Dinamico Container Multimedia */
+
+.video {
+  width: 100% !important;
+  object-fit: cover;
+  position: relative;
+  height: 600px !important;
+}
+
+.Overlay {
+  font-size: 30px;
+  position: absolute;
+  text-align: left;
+  width: 50%;
+  top: -950%;
+  left: -5%;
+  height: 250px;
+  z-index: -200;
+}
+.colorTextoh1 {
+  color: white;
+}
+
+.Overlay button {
+  margin-top: 25px;
+}
+
+.colorTextoh12 {
+  color: #353535;
+}

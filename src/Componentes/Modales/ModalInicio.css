@@ -1,0 +1,38 @@
+.modal-content {
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));    
+}
+.modal-content button{
+    align-self: flex-end;
+    margin: 15px;
+}
+.modal-header {
+    border-bottom-style: none;
+    justify-content: center;
+}
+
+.modal-header .modal-title {
+    text-align: center;    
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-footer {
+    border-top-style: none;
+    justify-content: center;
+}
+.boxImagenModalInicio{
+    width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    height: 400px;
+}
+
+
+.boxModalInicio.modal-content {
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+    background-color: red !important;
+}

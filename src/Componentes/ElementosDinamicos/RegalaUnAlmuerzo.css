@@ -1,0 +1,30 @@
+.contenedorGeneralRegalaAlmuerzo p{
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.contenedorboxRegalaAlmuerzo {
+   background-color: transparent;
+}
+
+.btn-gral{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} 
+
+.fotoAlmuerzo img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-sizing: border-box;
+    padding: 40px 15px 40px 15px;
+}
+
+.textoalineadoIzquierda{
+    text-align: left;
+    align-self: center;
+    box-sizing: border-box;
+    padding: 40px 15px 40px 15px;
+}
+

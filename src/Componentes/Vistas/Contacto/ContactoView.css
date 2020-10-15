@@ -1,0 +1,14 @@
+.containerContactoView{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 45px;
+}
+
+.MapaContacto{
+    width: 100%;
+    align-items: center;
+}
+.ContainerContacto{
+    box-sizing: border-box;
+    padding: 25px;
+}

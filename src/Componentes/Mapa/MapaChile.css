@@ -1,0 +1,40 @@
+.contenedorMapaChile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+svg {
+    width: 450px;
+    /* height: 120%; */
+    display: flex;
+    justify-content: flex-end;
+    outline: #fff;
+    fill: #404040;
+    outline: none;
+    margin: auto;
+    align-self: center;
+}
+
+/* path {
+    fill: #404040;
+    cursor: pointer;
+    outline: none;
+} */
+
+path#cl-rm, path#cl-an, path#cl-vs, path#cl-bi {
+    fill: #FD4C00;
+    cursor: pointer;
+}
+
+path#cl-rm:hover, path#cl-an:hover, path#cl-vs:hover, path#cl-bi:hover {
+    fill: #FDAC07;
+}
+
+.contenedorTextoChile h5 {
+    /* background-color: seagreen; */
+    font-size: 16px;
+}

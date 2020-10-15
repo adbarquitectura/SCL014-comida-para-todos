@@ -1,0 +1,38 @@
+/* h3 {
+  position: absolute;
+  top: 35px;
+  left: 62px;
+} */
+
+.contenedorGeneralRegalaAlmuerzo{
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 45px;
+}
+
+.fotoAlmuerzoDos img {
+  width: 250px;
+  height: 250px;
+  object-fit: fill;
+}
+.imgSectionNosotros{
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: 0 15px 40px 15px;
+  height: 400px;
+}
+.fotoAlmuerzoDos h4{
+  color: #FD4C00;
+  font-size: 18px;
+  text-align: center;
+   margin-top: 15px;
+}
+.parrafoAlineadoIzquierda{
+  text-align: left;
+}
+
+.parrafoFinal{
+box-sizing: border-box;
+padding: 50px 180px 50px 180px;
+}
