@@ -5,7 +5,7 @@ import fotoquehacemos from '../../img/FotoQueHacemos.jpg';
 
 const DescripcionLoQueHacemos = (props) => {
     return (
-        <div className="contenedorLoQueHacemos">
+        <div className="contenedorGeneralLoQueHacemos">
             <div className="boxTituloCarrusel">
                 <div className="viñetaYellow"></div>
                 <a name={props.contenidoInfo}><h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2></a>

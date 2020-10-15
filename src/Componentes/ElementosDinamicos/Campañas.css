@@ -3,10 +3,14 @@
     box-sizing: border-box;
 }
 
+.Col{
+    margin-left: 0 !important;
+}
+
 .imgalmuerzo{
     width: 50%;
     height: 50%;
-    object-fit: cover;
+    object-fit: fill;
     box-sizing: border-box;
     /* padding: 40px  40px ; */
 }

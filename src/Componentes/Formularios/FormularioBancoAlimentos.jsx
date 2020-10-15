@@ -95,7 +95,7 @@ const FormularioBancoAlimentos = (props) => {
                         <input type="text" className="form-control" name="NombreCompleto" id="Nombre" placeholder=" Nombre y Apellido" onChange={HandleInputChange} />
                     </div>
                     <div class="form-group">
-                        <label htmlFor="CorreoElectronico"> Correo Eléctronico </label>
+                        <label htmlFor="CorreoElectronico"> Correo Electrónico </label>
                         <input type="email" className="form-control" name="CorreoElectronico" id="Correo" placeholder="correo@electronico.com" onChange={HandleInputChange} />
                     </div>
                     <div className="form-group">

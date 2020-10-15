@@ -85,7 +85,7 @@ const FormularioRestaurant = () => {
                         <input type="text" className="form-control" name="NombreRestaurant" id="Restaurant" placeholder="Nombre Restaurant" onChange={HandleInputChange} />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="CorreoElectronico"> Correo Eléctronico </label>
+                        <label htmlFor="CorreoElectronico"> Correo Electrónico </label>
                         <input type="email" className="form-control" name="CorreoElectronico" id="Correo" placeholder="correo@electronico.com" onChange={HandleInputChange} />
                     </div>
                     <div className="form-group">

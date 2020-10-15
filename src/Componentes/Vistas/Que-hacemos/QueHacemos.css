@@ -1,0 +1,21 @@
+.containeComoAportarView {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 45px;
+}
+.Contenedorformulario{
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+.Contenedorformulario .texto {
+    display: flex;
+    flex-direction: column;
+    /* background-color: lawngreen; */
+    padding: 40px 10px 40px 10px;
+    text-align: left;
+}
+
+.Contenedorformulario .formulario{
+    padding: 40px 10px 40px 10px;
+}
