@@ -25,9 +25,8 @@ const ContainerMultimediaHome = () => {
           <Carousel.Caption>
             <div className="Overlay">
               <h1 className="colorTextoh1">
-                {" "}
                 Ayúdanos a sumar más platos de comida en las mesas de los
-                chilenos{" "}
+                chilenos
               </h1>
             </div>
           </Carousel.Caption>
@@ -39,9 +38,8 @@ const ContainerMultimediaHome = () => {
           <Carousel.Caption>
             <div className="Overlay">
               <h1 className="colorTextoh12">
-                {" "}
                 Comida para todos colabora con los siguientes objetivos de
-                desarrollo sostenible mundiales:{" "}
+                desarrollo sostenible mundiales:
               </h1>
               <BotonLinkBlank
                 contenidobtn={"Objetivos de desarrollo sostenible"}
@@ -59,10 +57,9 @@ const ContainerMultimediaHome = () => {
           <Carousel.Caption>
             <div className="Overlay">
               <h1 className="colorTextoh1">
-                {" "}
                 Ayúdanos a combatir el hambre en Chile donando almuerzos
-                solidarios.{" "}
-              </h1>
+                solidarios.
+                </h1>
             </div>
           </Carousel.Caption>
         </Carousel.Item>

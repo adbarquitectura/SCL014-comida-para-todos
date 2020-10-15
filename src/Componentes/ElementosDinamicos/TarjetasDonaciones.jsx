@@ -54,6 +54,8 @@ const TarjetasDonaciones = (props) => {
                                 contenidobtn={'Conoce más'}
                                 anclaLinkTo={'/comoAportar#¿Cómo aportar si eres un Restaurant?'}
                             />
+                            <Link to="/comoAportar#sectionRestaurant">prueba
+                  </Link>
                         </div>
                     </Col>
                 </Row>
