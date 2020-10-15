@@ -10,10 +10,10 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const SeccionManerasAportar = (props) => {
   return (
-    <div className="contenedorManerasDeAportar">
+    <div id={props.contenidoInfo} className="contenedorManerasDeAportar">
       <div className="boxTituloCarrusel">
         <div className="viñetaYellow"></div>
-        <a name={props.contenidoInfo}><h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2></a>
+        <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
       </div>
 
       <div className="contenedorTarjetasAportar">

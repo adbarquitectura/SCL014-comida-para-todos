@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './EstilosBotones.css';
 
 const BotonLink = (props) => {
@@ -8,9 +9,9 @@ const BotonLink = (props) => {
             onClick={props.funcion}
             style={props.estiloBoton}
         >
-            <a
+             <a
                 href={props.anclaLinkTo}>{props.contenidobtn}
-            </a>
+            </a> 
         </button>
     );
 };

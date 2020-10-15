@@ -74,17 +74,17 @@ const Alianzas = (props) => {
               <div className="boxBotonAlianzas">
                 <BotonLink
                   contenidobtn={"Aporta como Restaurant"}
-                  anclaLinkTo={"/comoAportar#¿Cómo aportar si eres un Restaurant?"}
-                />
+                  anclaLinkTo={"#sectionRestaurant"}
+                />                
               </div>
             </Col>
           </Row>
 
           <Row>
             <Col>
-              <div className="fotoAlianzas">
+              <div className="fotoAlianzasSec">
                 {arregloAlianza.map((aliado, idx) => {
-                  return <img className="fotoAlianzas" src={aliado} key={idx} />;
+                  return <img className="imgFotoAlianzasSec" src={aliado} key={idx} />;
                 })}
               </div>
             </Col>
