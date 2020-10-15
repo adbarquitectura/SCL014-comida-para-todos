@@ -7,7 +7,7 @@ import BotonGeneral from "../Botones/BotonGeneral";
 
 const AportarRestaurante = (props) => {
   return (
-    <div className="contenedorGeneralAportarRestaurant">
+    <div id="sectionRestaurant" className="contenedorGeneralAportarRestaurant">
       <div className="boxTituloCarrusel">
         <div className="viñetaYellow"></div>
         <a name={props.contenidoInfo}><h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2></a>

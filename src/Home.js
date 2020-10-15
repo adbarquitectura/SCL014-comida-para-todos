@@ -12,15 +12,16 @@ function Home() {
   const [modalShow, setModalShow] = React.useState(false);
 
   useEffect(() => {
-    setModalShow(true)
+    setModalShow(true);
+    console.log('home');
   }, []);
+
 
   return (
     <div className="ContenedorPadre">
       <MenuNavegacion />
       <Whatsapp />
-      <Footer /> 
-    
+      <Footer />
       <ModalCargadoInicial
         show={modalShow}
         onHide={() => setModalShow(false)}
