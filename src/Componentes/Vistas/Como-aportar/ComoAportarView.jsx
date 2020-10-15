@@ -185,7 +185,7 @@ const ComoAportarView = () => {
       />
 
       <AportarRestaurante
-        contenidoInfo={"#manerasDeAportar"}
+        contenidoInfo={"¿Cómo aportar si eres un Restaurant?"}
         funcionboton={mostrarModalConFormulario}
       />
 

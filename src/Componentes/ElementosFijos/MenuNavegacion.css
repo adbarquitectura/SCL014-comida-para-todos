@@ -25,7 +25,7 @@
 
 .boxMenuNavegacion {
     background-color: white;
-    height: 80px;
+    height: 75px;
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;

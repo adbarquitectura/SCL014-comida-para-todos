@@ -3,8 +3,6 @@ import './Formularios.css';
 import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
-import ModalGeneral from '../Modales/ModalGeneral';
-import { propTypes } from 'react-bootstrap/esm/Image';
 
 const FormularioBancoAlimentos = (props) => {
 
@@ -14,13 +12,9 @@ const FormularioBancoAlimentos = (props) => {
     /* Definición del Estado de select Comunas*/
     const [comunas, setcomunas] = useState([]);
 
-     /* Definición Estado Modal */
-    const [modalShow, setModalShow] = React.useState(false);
 
     /* Contiene firestore */
     const refBancoAlimentos = firebase.firestore().collection('FormularioBancoAlimentos');
-
-
 
     /* Asociar opción de select */
     const RegionSelect = (e) => {
@@ -44,12 +38,11 @@ const FormularioBancoAlimentos = (props) => {
     /* Función para manejar Form con HandleSubmit*/
     const HandleSubmit = (e) => {
         e.preventDefault();
-        console.log(formBancoAlimentos);
         refBancoAlimentos.add(formBancoAlimentos)
             .then(() => {
                 enviarCorreoConfirmacion();
                 props.cerrarModal();
-            });            
+            });
     };
 
     //funcion enviar correo Confirmacion
@@ -73,12 +66,6 @@ const FormularioBancoAlimentos = (props) => {
                     console.log("FAILED...", err);
                 }
             );
-    };
-
-    /* Función para manejar boton de Segundo Modal */
-    const clickBton = () => {
-        setModalShow(false);
-        // setformBancoAlimentos({...formBancoAlimentos});
     };
 
     return (
@@ -150,17 +137,6 @@ const FormularioBancoAlimentos = (props) => {
                 </form>
 
             </div>
-
-            
-            {/* <ModalGeneral
-            show={modalShow}
-            onHide={() => setModalShow(false)}
-            tituloModal={'Gracias por unirte a la causa.'}
-            contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
-            contenidoBotonModal={'Cerrar'}
-            funcionBotonModal={clickBton}
-            /> */}
-
 
         </div>
     )

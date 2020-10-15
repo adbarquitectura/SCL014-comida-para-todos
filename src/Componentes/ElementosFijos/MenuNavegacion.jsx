@@ -28,10 +28,10 @@ const MenuNavegacion = () => {
                         alt="Logo Comida para todos"
                     />
                     <ul className="boxListaMenuNavegacion">
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/quienesSomos">¿Quiénes somos?</Link></li>
-                        <li><Link to="/queHacemos">¿Qué hacemos?</Link></li>
-                        <li><Link to="/comoAportar">¿Cómo aportar?</Link></li>
+                        <li><Link to="/">Comida para Todos</Link></li>
+                        <li><Link to="/quienesSomos">Quiénes somos</Link></li>
+                        <li><Link to="/queHacemos">Lo Que hacemos</Link></li>
+                        <li><Link to="/comoAportar">Cómo aportar</Link></li>
                         <li><Link to="/contacto">Contacto</Link></li>                        
                     </ul>
                     <BotonDonar />

@@ -24,10 +24,9 @@
 }
 .fotoAlmuerzoDos h4{
   color: #FD4C00;
+  font-size: 18px;
   text-align: center;
-  min-height: 50px;
-  margin-bottom: 15px;
-  margin-top: 25px;
+   margin-top: 15px;
 }
 .parrafoAlineadoIzquierda{
   text-align: left;
