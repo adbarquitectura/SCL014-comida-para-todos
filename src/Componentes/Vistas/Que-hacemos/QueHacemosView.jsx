@@ -24,10 +24,9 @@ const QueHacemosView = () => {
 
             </div>
 
+
         </div >
-
-
-    )
-}
+    );
+};
 
 export default QueHacemosView;

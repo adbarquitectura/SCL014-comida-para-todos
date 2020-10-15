@@ -7,7 +7,7 @@ import BotonGeneral from "../Botones/BotonGeneral";
 
 const AportarRestaurante = (props) => {
   return (
-    <div className="contenedorGeneralAportarRestaurant">
+    <div id="sectionRestaurant" className="contenedorGeneralAportarRestaurant">
       <div className="boxTituloCarrusel">
         <div className="viñetaYellow"></div>
         <a name={props.contenidoInfo}><h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2></a>
@@ -59,7 +59,10 @@ const AportarRestaurante = (props) => {
                 en el corto plazo, debido a la emergencia sanitaria, ser parte
                 de los cursos de capacitación y educación a la comunidad.
               </p>
-              <BotonGeneral contenidobtn={"Aporta como Restaurant"} />
+              <BotonGeneral
+                contenidobtn={"Aporta como Restaurant"} 
+                funcion={props.funcionboton}
+                />
             </div>
           </Col>
         </Row>

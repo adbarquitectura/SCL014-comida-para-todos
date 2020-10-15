@@ -10,10 +10,10 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const SeccionManerasAportar = (props) => {
   return (
-    <div className="contenedorManerasDeAportar">
+    <div id={props.contenidoInfo} className="contenedorManerasDeAportar">
       <div className="boxTituloCarrusel">
         <div className="viñetaYellow"></div>
-        <a name={props.contenidoInfo}><h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2></a>
+        <h2 className="tituloalineadoIzquierda">{props.contenidoInfo}</h2>
       </div>
 
       <div className="contenedorTarjetasAportar">
@@ -40,7 +40,7 @@ const SeccionManerasAportar = (props) => {
               <TarjetasAportar
                 contenidoBotonTarjeta={"Talento"}
                 contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
-                estiloBotonTarjeta={props.estiloBotonTarjetaActiva}
+                estiloBotonTarjeta={props.estiloBotonTarjetaActivaTalento}
                 funcionBotonTarjeta={props.funcionBotonTarjetaActivaTalento}
                 imgSrc={Talento}
                 tituloImg={"Talento"}
@@ -53,7 +53,7 @@ const SeccionManerasAportar = (props) => {
               <TarjetasAportar
                 contenidoBotonTarjeta={"Metro cuadrado"}
                 contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
-                estiloBotonTarjeta={props.estiloBotonTarjetaActiva}
+                estiloBotonTarjeta={props.estiloBotonTarjetaActivaMetro}
                 funcionBotonTarjeta={props.funcionBotonTarjetaActivaMetro}
                 imgSrc={Metro}
                 tituloImg={"Metro cuadrado"}
@@ -66,7 +66,7 @@ const SeccionManerasAportar = (props) => {
               <TarjetasAportar
                 contenidoBotonTarjeta={"Capacitación"}
                 contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
-                estiloBotonTarjeta={props.estiloBotonTarjetaActiva}
+                estiloBotonTarjeta={props.estiloBotonTarjetaActivaCapacitacion}
                 funcionBotonTarjeta={props.funcionBotonTarjetaActivaCapacitacion}
                 imgSrc={Capacitacion}
                 tituloImg={"Capacitación"}
@@ -79,7 +79,7 @@ const SeccionManerasAportar = (props) => {
               <TarjetasAportar
                 contenidoBotonTarjeta={"Banco de Alimentos"}
                 contenidoAnclaTarjeta={props.contenidoAnclaSeccion}
-                estiloBotonTarjeta={props.estiloBotonTarjetaActiva}
+                estiloBotonTarjeta={props.estiloBotonTarjetaActivaBanco}
                 funcionBotonTarjeta={props.funcionBotonTarjetaActivaBanco}
                 imgSrc={BancoAlimento}
                 tituloImg={"Banco de Alimento"}
