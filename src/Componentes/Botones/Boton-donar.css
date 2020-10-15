@@ -1,11 +1,23 @@
 /* Estilo boton Se Parte, dropdown */
 
-.sePartedrop{
-    background-color: #FD4C00 !important;
-    border-color: transparent !important;
-    border-top-left-radius: 150px 150px !important;
-    border-bottom-left-radius: 150px 150px !important;
-    border-top-right-radius: 30px 30px !important;
-    border-bottom-right-radius: 30px 30px !important;
-    width: 180px !important;
-  }
+.sePartedrop {
+  background-color: #FD4C00 !important;
+  border-color: transparent !important;
+  border-top-left-radius: 150px 150px !important;
+  border-bottom-left-radius: 150px 150px !important;
+  border-top-right-radius: 30px 30px !important;
+  border-bottom-right-radius: 30px 30px !important;
+  width: 180px !important;
+}
+
+.botonDonarDrop a.dropdown-item a {
+  color: #373F41;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.botonDonarDrop .dropdown-item.active, .botonDonarDrop .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}

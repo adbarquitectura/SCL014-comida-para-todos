@@ -7,11 +7,11 @@ import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import './Boton-donar.css';
-
+import { HashLink as Link } from 'react-router-hash-link';
 
 const BotonDonar = () => {
     return (
-        <div>
+        <div className="botonDonarDrop">
 
             <Dropdown>
                 {/* Botón que se despliega*/}
@@ -21,11 +21,11 @@ const BotonDonar = () => {
 
                 {/* Información del Botón */}
                 <DropdownMenu>
-                    <DropdownItem href="/comoAportar#Regala un Almuerzo"> Regala un almuerzo </DropdownItem>
-                    <DropdownItem href="/comoAportar#Regala un Almuerzo"> Regala talento </DropdownItem>
-                    <DropdownItem href="/comoAportar#Regala un Almuerzo"> Regala un espacio de cultivo </DropdownItem>
-                    <DropdownItem href="/comoAportar#Regala un Almuerzo"> Regala Capacitación </DropdownItem>
-                    <DropdownItem href="/comoAportar#Regala un Almuerzo"> Regala Alimentos </DropdownItem>
+                    <DropdownItem><Link to="comoAportar#manerasDeAportar">Regala un almuerzo</Link></DropdownItem>
+                    <DropdownItem><Link to="comoAportar#manerasDeAportar"> Regala talento </Link></DropdownItem>
+                    <DropdownItem><Link to="comoAportar#manerasDeAportar"> Regala un espacio de cultivo </Link></DropdownItem>
+                    <DropdownItem><Link to="comoAportar#manerasDeAportar"> Regala Capacitación </Link></DropdownItem>
+                    <DropdownItem><Link to="comoAportar#manerasDeAportar"> Regala Alimentos </Link></DropdownItem>
                 </DropdownMenu>
             </Dropdown>
 
