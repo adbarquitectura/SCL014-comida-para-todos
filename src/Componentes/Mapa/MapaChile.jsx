@@ -27,8 +27,8 @@ const MapaChile = () => {
 
     return (
 
-        <div className="contenedorMapa">
-            <div className="contenedorTexto">
+        <div className="contenedorMapaChile">
+            <div className="contenedorTextoChile">
                 {comunas.map((comuna, index) => {
                     return (<h5 key={index} value={comuna}>{comuna}</h5>)
                 })}
@@ -36,10 +36,6 @@ const MapaChile = () => {
             <div className="contenedor-chile">
                 < VectorMap classname="chile-map" {...Chile} layerProps={{ onClick }} />
             </div>
-
-
-
-
         </div>
     )
 }

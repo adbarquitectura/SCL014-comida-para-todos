@@ -30,7 +30,7 @@ const MenuNavegacion = () => {
                     <ul className="boxListaMenuNavegacion">
                         <li><Link to="/">Comida para Todos</Link></li>
                         <li><Link to="/quienesSomos">Quiénes somos</Link></li>
-                        <li><Link to="/queHacemos">Lo Que hacemos</Link></li>
+                        <li><Link to="/queHacemos">Lo que hacemos</Link></li>
                         <li><Link to="/comoAportar">Cómo aportar</Link></li>
                         <li><Link to="/contacto">Contacto</Link></li>                        
                     </ul>

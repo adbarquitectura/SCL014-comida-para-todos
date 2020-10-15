@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal'
 import BotonCloseModal from '../Botones/BotonCloseModal';
 import BotonGeneral from '../Botones/BotonGeneral';
 import './ModalInicio.css';
-import imgcarrusel2 from '../../img/imgcarousel2.jpg';
+import imgcarrusel2 from '../../img/images.jpg';
 
 function ModalCargadoInicial(props) {
   return (
@@ -31,7 +31,7 @@ function ModalCargadoInicial(props) {
             {props.contenidoModal}
           </p>
           <img
-            className="boxImagenCarruselAlianzas"
+            className="boxImagenModalInicio"
             src={imgcarrusel2}
             alt="First slide"
           />

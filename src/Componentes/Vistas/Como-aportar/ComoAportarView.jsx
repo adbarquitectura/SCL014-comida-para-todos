@@ -86,7 +86,7 @@ const ComoAportarView = () => {
     setStyleBotonCapacitacion({ backgroundColor: "#FD4C00", border: "none" });
     setStyleBotonBanco({ backgroundColor: "#FD4C00", border: "none" });
     setImgFondoSeccion({ backgroundImage: `url('${imgTalento}')` });
-    setTituloSeccionDespliegue("Que tipo de Talento puedo ragalar");
+    setTituloSeccionDespliegue("Que tipo de Talento puedo regalar");
     setParrafoSeccionDespliegue(
       "Los aportes desde los restaurantes son parte fundamental para que toda esta hermosa labor se vuelva realidad, los restaurantes colaboran, junto con nosotros a favor de las comunidades vulnerables, no solo llevándoles alimentos."
     );

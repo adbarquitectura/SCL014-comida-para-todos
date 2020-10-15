@@ -23,8 +23,11 @@
     border-top-style: none;
     justify-content: center;
 }
-.backModalInicio{
-        z-index: -1;
+.boxImagenModalInicio{
+    width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    height: 400px;
 }
 
 
