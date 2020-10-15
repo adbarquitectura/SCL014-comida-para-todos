@@ -1,5 +1,11 @@
-.fotoAlmuerzo2 img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
+h3 {
+  position: absolute;
+  top: 35px;
+  left: 62px;
+}
+
+.fotoAlmuerzoDos img {
+  width: 250px;
+  height: 250px;
+  object-fit: fill;
 }

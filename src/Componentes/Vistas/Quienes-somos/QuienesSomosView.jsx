@@ -1,5 +1,5 @@
 import React from "react";
-/* import "./RegalaUnAlmuerzo.css"; */
+import "./QuienesSomosView.css";
 import { Col, Container, Row } from "react-bootstrap";
 import ElEquipo from "../../../img/equipo.jpg";
 import Rafael from "../../../img/Ellipse 2.png";
@@ -20,10 +20,11 @@ const QuienesSomosView = (props) => {
           <Row>
             <Col>
               <div className="textoalineadoIzquierda">
-                <div className="viñetaYellow"></div>
-                <h3>Acerca de nosotros...</h3>
-
+                <div className="viñetaYellow">
+                  <h3>Acerca de nosotros...</h3>
+                </div>
                 <p>
+                  <br></br>
                   Trabajamos para ayudar a combatir el hambre en Chile, a través
                   una alimentación de calidad y nutritiva; conectando,
                   colaborando y generando asociatividad entre los actores de la
@@ -49,35 +50,41 @@ const QuienesSomosView = (props) => {
                 <div className="viñetaYellow"></div>
                 <h3>El equipo</h3>
                 <p>
+                  <br></br>
                   Somos un gran equipo de trabajo interdisciplinario y en
                   conjunto nos esforzamos por que día a día se cumplan los
                   objetivos de nuestra labor.
                 </p>
               </div>
             </Col>
+            <Col />
             <Row>
               <Col>
-                <div className="fotoAlmuerzo2">
+                <div className="fotoAlmuerzoDos">
                   <img src={Rafael} alt="Foto" />
-                  <p>Rafael Rincón Director y Cofundador </p>
+                  <p>Rafael Rincón </p>
+                  <p>Director y Cofundador</p>
                 </div>
               </Col>
               <Col>
-                <div className="fotoAlmuerzo2">
+                <div className="fotoAlmuerzoDos">
                   <img src={Enrique} alt="Foto" />
-                  <p>Enrique Gellona Cofundador</p>
+                  <p>Enrique Gellona</p>
+                  <p>Cofundador</p>
                 </div>
               </Col>
               <Col>
-                <div className="fotoAlmuerzo2">
+                <div className="fotoAlmuerzoDos">
                   <img src={Camila} alt="Foto" />
-                  <p>Camila Moreno Cofundadora </p>
+                  <p>Camila Moreno</p>
+                  <p>Cofundadora</p>
                 </div>
               </Col>
               <Col>
-                <div className="fotoAlmuerzo2">
+                <div className="fotoAlmuerzoDos">
                   <img src={Maria} alt="Foto" />
-                  <p>María Jose de la Fuente Cofundadora </p>
+                  <p>María Jose de la Fuente</p>
+                  <p>Cofundadora</p>
                 </div>
               </Col>
             </Row>
