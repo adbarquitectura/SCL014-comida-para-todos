@@ -5,10 +5,10 @@ import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
 import ModalGeneral from '../Modales/ModalGeneral';
 
-const FormularioCapacitacion = () => {
+const FormularioTalento = () => {
 
     /* Definición de Estado del form */
-    const [formCapacitacion, setformCapacitacion] = useState({});
+    const [formQueHacemos, setformQueHacemos] = useState({});
 
     /* Definición del Estado de select Comunas*/
     const [comunas, setcomunas] = useState([]);
@@ -17,16 +17,14 @@ const FormularioCapacitacion = () => {
     const [modalShow, setModalShow] = React.useState(false);
 
     /* Contiene firestore */
-    const refCapacitacion = firebase.firestore().collection('FormularioCapacitacion');
-
-
+    const refTalento = firebase.firestore().collection('FormularioQueHacemos');
 
     /* Asociar opción de select */
     const RegionSelect = (e) => {
         const { name, value } = e.target;
         const region = Comunas[value];
         setcomunas([...region]);
-        setformCapacitacion({ ...formCapacitacion, [name]: value })
+        setformQueHacemos({ ...formQueHacemos, [name]: value })
 
     }
 
@@ -36,19 +34,18 @@ const FormularioCapacitacion = () => {
         //   console.log(e.target.value)
         const { name, value } = e.target;
         // console.log(name,value);
-        setformCapacitacion({ ...formCapacitacion, [name]: value })
+        setformQueHacemos({ ...formQueHacemos, [name]: value })
     };
 
     /* Función para manejar Form con HandleSubmit*/
     const HandleSubmit = (e) => {
         e.preventDefault();
-        console.log(formCapacitacion);
-        refCapacitacion.add(formCapacitacion)
+        console.log(formQueHacemos);
+        refTalento.add(formQueHacemos)
             .then(() => {
                 enviarCorreoConfirmacion();
             });
         setModalShow(true)
-        
     };
 
     //funcion enviar correo Confirmacion
@@ -59,7 +56,7 @@ const FormularioCapacitacion = () => {
                 //ID plantilla correo a enviar
                 "template_5w4glhd",
                 {
-                    email_donante: formCapacitacion.CorreoElectronico
+                    email_donante: formQueHacemos.CorreoElectronico
                 },
                 // User ID servicio 
                 "user_rM14hw1bnYdkRYLeQZpSK"
@@ -74,32 +71,30 @@ const FormularioCapacitacion = () => {
             );
     };
 
+
     /* Función para manejar boton de Segundo Modal */
-     const clickBton = () => {
+    const clickBton = () => {
         setModalShow(false);
         // setformBancoAlimentos({...formBancoAlimentos});
     };
 
+
     return (
         <div className="form-group form-bg">
-            <div className="FormTalento">
-                <div className="text">
-                    <h3>Regala a las comunidades horas de capacitación para áreas en las cuales puedas aportar, y podamos empezar a crear comunidades orientadas a la sustentabilidad.</h3>
+            <div className="FormQueHacemos">
+                {/* <div className="text">
+                    <h3>Regala un poco de talento a las comunidades, ellas te lo agradecerán.</h3>
                     <p>A continuación puedes completar este formulario de inscripción.</p>
                     <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
-                </div>
+                </div> */}
                 <form action="talento form-group" onSubmit={HandleSubmit}>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label htmlFor="NombreCompleto"> Nombre Completo </label>
                         <input type="text" className="form-control" name="NombreCompleto" id="Nombre" placeholder=" Nombre y Apellido" onChange={HandleInputChange} />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label htmlFor="CorreoElectronico"> Correo Electrónico </label>
                         <input type="email" className="form-control" name="CorreoElectronico" id="Correo" placeholder="correo@electronico.com" onChange={HandleInputChange} />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="Telefono"> Teléfono </label>
-                        <input type="text" className="form-control" name="Telefono" id="Telefono" placeholder="1 2345789" onChange={HandleInputChange} />
                     </div>
                     <div className="form-region">
                         <div className="form-group">
@@ -125,7 +120,7 @@ const FormularioCapacitacion = () => {
                         </div>
                         <div className="form-group">
                             <label htmlFor="Comuna"> Comuna </label>
-                            <select name="Comuna" className="form-control" id="Comuna" onChange={HandleInputChange}>
+                            <select name="Comuna" id="Comuna" className="form-control" onChange={HandleInputChange}>
                                 <option value="">Seleccione su comuna </option>
                                 {comunas.map((comuna, index) => {
                                     return (<option key={index} value={comuna}>{comuna}</option>)
@@ -133,22 +128,24 @@ const FormularioCapacitacion = () => {
                             </select>
                         </div>
                     </div>
+
                     <div className="form-group">
-                        <label htmlFor="Capacitación"> Cuentanos en que te gustaría capacitar a la comunidad </label>
-                        <textarea name="capacitacion" className="form-control" id="capacitacion" cols="40" rows="4" onChange={HandleInputChange}></textarea>
+                        <label htmlFor="MensajeQueHacemos"> Mensaje </label>
+                        <textarea name="Mensaje" className="form-control" id="talento" cols="40" rows="4" onChange={HandleInputChange}></textarea>
                     </div>
 
                     <input type="submit" value="Enviar" placeholder="Enviar" className="btn mybtn" />
                 </form>
 
             </div>
+
             <ModalGeneral
-            show={modalShow}
-            onHide={() => setModalShow(false)}
-            tituloModal={'Gracias por unirte a la causa.'}
-            contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
-            contenidoBotonModal={'Cerrar'}
-            funcionBotonModal={clickBton}
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                tituloModal={'Gracias por unirte a la causa.'}
+                contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
+                contenidoBotonModal={'Cerrar'}
+                funcionBotonModal={clickBton}
             />
 
 
@@ -157,4 +154,4 @@ const FormularioCapacitacion = () => {
     )
 }
 
-export default FormularioCapacitacion;
+export default FormularioTalento;
