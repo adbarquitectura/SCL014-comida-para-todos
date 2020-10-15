@@ -2,15 +2,12 @@ import React, { useState } from 'react';
 import './Formularios.css';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
-import ModalGeneral from '../Modales/ModalGeneral';
 
-const FormularioRestaurant = () => {
+const FormularioRestaurant = (props) => {
 
     /* Definición de Estado del form */
     const [formRestaurant, setformRestaurant] = useState({});
 
-    /* Definición Estado Modal */
-    const [modalShow, setModalShow] = React.useState(false);
 
     /* Contiene firestore */
     const refRestaurant = firebase.firestore().collection('FormularioRestaurant');
@@ -31,8 +28,8 @@ const FormularioRestaurant = () => {
         refRestaurant.add(formRestaurant)
             .then(() => {
                 enviarCorreoConfirmacion();
+                props.cerrarModal();
             });
-        setModalShow(true)
     };
 
     //funcion enviar correo Confirmacion
@@ -58,23 +55,16 @@ const FormularioRestaurant = () => {
             );
     };
 
-    /* Función para manejar boton de Segundo Modal */
-    const clickBton = () => {
-        setModalShow(false);
-        // setformBancoAlimentos({...formBancoAlimentos});
-    };
-
-
-
     return (
-        <div className="form-group form-bg">
-            <div className="FormTalento">
-                <div className="text">
-                    <h3>Ayuda a las comunidades y de paso genera empleos en tu cocina.</h3>
-                    <p>Sabemos que estos tiempos han sido dificiles para el sector gastronómico, pero si te unes a la causa,
+        <div className="formularioEstilo">
+
+            <div className="BoxTextForm">
+                <h3>Ayuda a las comunidades y de paso genera empleos en tu cocina.</h3>
+                <p>Sabemos que estos tiempos han sido dificiles para el sector gastronómico, pero si te unes a la causa,
                         también se veran beneficiados ustedes</p>
-                    <h2>Formulario de Registro</h2>
-                </div>
+                <h2>Formulario de Registro</h2>
+            </div>
+            <div className="FormSection">
                 <form action="restaurant form-group" onSubmit={HandleSubmit}>
                     <div className="form-group">
                         <label htmlFor="NombreCompleto"> Nombre Completo </label>
@@ -97,16 +87,6 @@ const FormularioRestaurant = () => {
                 </form>
 
             </div>
-
-            <ModalGeneral
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-                tituloModal={'Gracias por unirte a la causa.'}
-                contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
-                contenidoBotonModal={'Cerrar'}
-                funcionBotonModal={clickBton}
-            />
-
 
         </div>
     )

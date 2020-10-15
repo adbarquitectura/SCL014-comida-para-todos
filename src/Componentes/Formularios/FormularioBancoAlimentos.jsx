@@ -69,13 +69,15 @@ const FormularioBancoAlimentos = (props) => {
     };
 
     return (
-        <div className="form-group form-bg">
-            <div className="FormTalento">
-                <div className="text">
-                    <h3> Queremos crear comunidades con el apoyo de todos, puedes aportar con alimentos a nuestro "Banco de Alimentos". Así podremos llegar cada día a más comunidades. </h3>
-                    <p>A continuación puedes completar este formulario de inscripción.</p>
-                    <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
-                </div>
+        <div className="formularioEstilo">
+
+            <div className="BoxTextForm">
+                <h3> Queremos crear comunidades con el apoyo de todos, puedes aportar con alimentos a nuestro "Banco de Alimentos". Así podremos llegar cada día a más comunidades. </h3>
+                <p>A continuación puedes completar este formulario de inscripción.</p>
+                <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
+            </div>
+
+            <div className="FormSection">
                 <form action="talento form-group" onSubmit={HandleSubmit}>
                     <div class="form-group">
                         <label htmlFor="NombreCompleto"> Nombre Completo </label>

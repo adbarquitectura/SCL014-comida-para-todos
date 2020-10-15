@@ -3,9 +3,9 @@ import './Formularios.css';
 import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
-import ModalGeneral from '../Modales/ModalGeneral';
 
-const FormularioCapacitacion = () => {
+
+const FormularioCapacitacion = (props) => {
 
     /* Definición de Estado del form */
     const [formCapacitacion, setformCapacitacion] = useState({});
@@ -13,12 +13,9 @@ const FormularioCapacitacion = () => {
     /* Definición del Estado de select Comunas*/
     const [comunas, setcomunas] = useState([]);
 
-    /* Definición Estado Modal */
-    const [modalShow, setModalShow] = React.useState(false);
 
     /* Contiene firestore */
     const refCapacitacion = firebase.firestore().collection('FormularioCapacitacion');
-
 
 
     /* Asociar opción de select */
@@ -46,9 +43,8 @@ const FormularioCapacitacion = () => {
         refCapacitacion.add(formCapacitacion)
             .then(() => {
                 enviarCorreoConfirmacion();
+                props.cerrarModal();
             });
-        setModalShow(true)
-        
     };
 
     //funcion enviar correo Confirmacion
@@ -74,20 +70,15 @@ const FormularioCapacitacion = () => {
             );
     };
 
-    /* Función para manejar boton de Segundo Modal */
-     const clickBton = () => {
-        setModalShow(false);
-        // setformBancoAlimentos({...formBancoAlimentos});
-    };
-
     return (
-        <div className="form-group form-bg">
-            <div className="FormTalento">
-                <div className="text">
-                    <h3>Regala a las comunidades horas de capacitación para áreas en las cuales puedas aportar, y podamos empezar a crear comunidades orientadas a la sustentabilidad.</h3>
-                    <p>A continuación puedes completar este formulario de inscripción.</p>
-                    <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
-                </div>
+        <div className="formularioEstilo">
+            <div className="BoxTextForm">
+                <h3>Regala a las comunidades horas de capacitación para áreas en las cuales puedas aportar, y podamos empezar a crear comunidades orientadas a la sustentabilidad.</h3>
+                <p>A continuación puedes completar este formulario de inscripción.</p>
+                <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
+            </div>
+
+            <div className="FormSection">
                 <form action="talento form-group" onSubmit={HandleSubmit}>
                     <div class="form-group">
                         <label htmlFor="NombreCompleto"> Nombre Completo </label>
@@ -142,16 +133,6 @@ const FormularioCapacitacion = () => {
                 </form>
 
             </div>
-            <ModalGeneral
-            show={modalShow}
-            onHide={() => setModalShow(false)}
-            tituloModal={'Gracias por unirte a la causa.'}
-            contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
-            contenidoBotonModal={'Cerrar'}
-            funcionBotonModal={clickBton}
-            />
-
-
 
         </div>
     )

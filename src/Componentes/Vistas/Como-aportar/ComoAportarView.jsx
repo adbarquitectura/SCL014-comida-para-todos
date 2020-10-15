@@ -72,8 +72,7 @@ const ComoAportarView = () => {
     setContenidoModal('');
     setTituloModal('Gracias por unirte a la causa.');
     setContenidoModalSecundario('A la brevedad te enviaremos un correo con más información.');
-    setTimeout(function () { setModalShow(false) }, 3000);
-    console.log('despuesde cerrar');
+    setTimeout(function () { setModalShow(false) }, 1500);
   };
 
 
@@ -91,9 +90,11 @@ const ComoAportarView = () => {
     setParrafoSeccionDespliegue(
       "Los aportes desde los restaurantes son parte fundamental para que toda esta hermosa labor se vuelva realidad, los restaurantes colaboran, junto con nosotros a favor de las comunidades vulnerables, no solo llevándoles alimentos."
     );
-    setContenidoModal(<FormularioTalento />);
-    /* console.log(dataComoAportar.dataAportar);
-    setEstadoboton(true); */
+    setContenidoModal(<FormularioTalento
+      cerrarModal={CerrarModalDesplegado}
+    />);
+    setTituloModal('');
+    setContenidoModalSecundario('');
   };
 
   const changeEstadoBotonActiveMetro = () => {
@@ -110,7 +111,11 @@ const ComoAportarView = () => {
     setParrafoSeccionDespliegue(
       "La respuesta es SÍ, otra manera de aportar es que regales algo de tu propia huerta casera, cualquier verdura, fruta o hierbas con los que quieras colaborar, serán un aporte para las ollas comunes de todo el País. Solo debes completar un breve formulario para nosotros poder ponernos en contacto con tigo e ir a buscar los alimentos hasta la puerta de tu hogar."
     );
-    setContenidoModal(<FormularioMetroCuadrado />);
+    setContenidoModal(<FormularioMetroCuadrado
+      cerrarModal={CerrarModalDesplegado}
+    />);
+    setTituloModal('');
+    setContenidoModalSecundario('');
   };
 
   const changeEstadoBotonActiveCapacitacion = () => {
@@ -129,7 +134,11 @@ const ComoAportarView = () => {
     setParrafoSeccionDespliegue(
       "Si tienes conocimientos de algún área en específico y quieres colaborar para que las comunidades se empoderen y aprendan algo que les pueda dar más herramientas para poder generar ingresos por su cuenta, ésta manera de donar será la indicada. Puede ser por ejemplo algún taller para que aprendan inglés, un taller enfocado en que las personas de la tercera edad aprendan a navegar por internet o utilizar celulares, algun taller sobre cómo llevar cuentas, etc. Completando el siguiente formulario podrás inscribirte para participar capacitando a las comunidades."
     );
-    setContenidoModal(<FormularioCapacitacion />);
+    setContenidoModal(<FormularioCapacitacion
+      cerrarModal={CerrarModalDesplegado}
+    />);
+    setTituloModal('');
+    setContenidoModalSecundario('');
   };
 
   const changeEstadoBotonActiveBanco = () => {
@@ -147,7 +156,8 @@ const ComoAportarView = () => {
     setContenidoModal(<FormularioBancoAlimentos
       cerrarModal={CerrarModalDesplegado}
     />);
-
+    setTituloModal('');
+    setContenidoModalSecundario('');
   };
 
   // const changeEstadoBotonNormal = () => {
@@ -156,7 +166,11 @@ const ComoAportarView = () => {
 
   const mostrarModalConFormulario = () => {
     setModalShow(true);
-    setContenidoModal(<FormularioRestaurant />);
+    setContenidoModal(<FormularioRestaurant 
+      cerrarModal={CerrarModalDesplegado}
+    />);
+    setTituloModal('');
+    setContenidoModalSecundario('');
   };
 
   return (

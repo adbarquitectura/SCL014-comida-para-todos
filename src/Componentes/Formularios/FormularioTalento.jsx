@@ -3,18 +3,14 @@ import './Formularios.css';
 import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
-import ModalGeneral from '../Modales/ModalGeneral';
 
-const FormularioTalento = () => {
+const FormularioTalento = (props) => {
 
     /* Definición de Estado del form */
     const [formTalento, setformTalento] = useState({});
 
     /* Definición del Estado de select Comunas*/
     const [comunas, setcomunas] = useState([]);
-
-    /* Definición Estado Modal */
-    const [modalShow, setModalShow] = React.useState(false);
 
     /* Contiene firestore */
     const refTalento = firebase.firestore().collection('FormularioTalento');
@@ -24,12 +20,10 @@ const FormularioTalento = () => {
         const { name, value } = e.target;
         const region = Comunas[value];
         setcomunas([...region]);
-        setformTalento({ ...formTalento, [name]: value })
-
-    }
+        setformTalento({ ...formTalento, [name]: value });
+    };
 
     /* Función para manejar cambio de input*/
-
     const HandleInputChange = (e) => {
         //   console.log(e.target.value)
         const { name, value } = e.target;
@@ -44,8 +38,8 @@ const FormularioTalento = () => {
         refTalento.add(formTalento)
             .then(() => {
                 enviarCorreoConfirmacion();
+                props.cerrarModal();
             });
-        setModalShow(true)
     };
 
     //funcion enviar correo Confirmacion
@@ -72,21 +66,15 @@ const FormularioTalento = () => {
     };
 
 
-    /* Función para manejar boton de Segundo Modal */
-    const clickBton = () => {
-        setModalShow(false);
-        // setformBancoAlimentos({...formBancoAlimentos});
-    };
-
-
     return (
-        <div className="form-group form-bg">
-            <div className="FormTalento">
-                <div className="text">
-                    <h3>Regala un poco de talento a las comunidades, ellas te lo agradecerán.</h3>
-                    <p>A continuación puedes completar este formulario de inscripción.</p>
-                    <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
-                </div>
+        <div className="formularioEstilo">
+
+            <div className="BoxTextForm">
+                <h3>Regala un poco de talento a las comunidades, ellas te lo agradecerán.</h3>
+                <p>A continuación puedes completar este formulario de inscripción.</p>
+                <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
+            </div>
+            <div className="FormSection">
                 <form action="talento form-group" onSubmit={HandleSubmit}>
                     <div className="form-group">
                         <label htmlFor="NombreCompleto"> Nombre Completo </label>
@@ -142,17 +130,6 @@ const FormularioTalento = () => {
                 </form>
 
             </div>
-
-            <ModalGeneral
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-                tituloModal={'Gracias por unirte a la causa.'}
-                contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
-                contenidoBotonModal={'Cerrar'}
-                funcionBotonModal={clickBton}
-            />
-
-
 
         </div>
     )

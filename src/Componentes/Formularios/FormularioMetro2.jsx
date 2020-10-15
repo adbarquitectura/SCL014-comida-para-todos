@@ -3,9 +3,8 @@ import './Formularios.css';
 import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
-import ModalGeneral from '../Modales/ModalGeneral';
 
-const FormularioMetroCuadrado = () => {
+const FormularioMetroCuadrado = (props) => {
 
     /* Definición de Estado del form */
     const [formMetroCuadrado, setformMetroCuadrado] = useState({});
@@ -13,13 +12,8 @@ const FormularioMetroCuadrado = () => {
     /* Definición del Estado de select Comunas*/
     const [comunas, setcomunas] = useState([]);
 
-    /* Definición Estado Modal */
-    const [modalShow, setModalShow] = React.useState(false);
-
     /* Contiene firestore */
     const refMetroCuadrado = firebase.firestore().collection('FormularioMetroCuadrado');
-
-
 
     /* Asociar opción de select */
     const RegionSelect = (e) => {
@@ -46,8 +40,8 @@ const FormularioMetroCuadrado = () => {
         refMetroCuadrado.add(formMetroCuadrado)
             .then(() => {
                 enviarCorreoConfirmacion();
+                props.cerrarModal();
             });
-        setModalShow(true)
     };
 
     //funcion enviar correo Confirmacion
@@ -73,20 +67,15 @@ const FormularioMetroCuadrado = () => {
             );
     };
 
-    /* Función para manejar boton de Segundo Modal */
-      const clickBton = () => {
-        setModalShow(false);
-        // setformBancoAlimentos({...formBancoAlimentos});
-    };
-
     return (
-        <div className="form-group form-bg">
-            <div className="FormTalento">
-                <div className="text">
-                    <h3>Queremos avanzar en la autosustentabilidad de las comunidades por medio de la producción y cuidado de huertos en ellas. </h3>
-                    <p>Si tienes un metro cuadrado disponible para llegar a este objetivo, inscribete y se parte de un cambio en tu comunidad.</p>
-                    <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
-                </div>
+        <div className="formularioEstilo">
+
+            <div className="BoxTextForm">
+                <h3>Queremos avanzar en la autosustentabilidad de las comunidades por medio de la producción y cuidado de huertos en ellas. </h3>
+                <p>Si tienes un metro cuadrado disponible para llegar a este objetivo, inscribete y se parte de un cambio en tu comunidad.</p>
+                <p>Te enviaremos una respuesta a tu correo a la brevedad</p>
+            </div>
+            <div className="FormSection">
                 <form action="talento form-group" onSubmit={HandleSubmit}>
                     <div className="form-group">
                         <label htmlFor="NombreCompleto"> Nombre Completo </label>
@@ -140,17 +129,10 @@ const FormularioMetroCuadrado = () => {
                 </form>
 
             </div>
-            <ModalGeneral
-            show={modalShow}
-            onHide={() => setModalShow(false)}
-            tituloModal={'Gracias por unirte a la causa.'}
-            contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
-            contenidoBotonModal={'Cerrar'}
-            funcionBotonModal={clickBton}
-            />
 
         </div>
-    )
-}
+
+    );
+};
 
 export default FormularioMetroCuadrado;

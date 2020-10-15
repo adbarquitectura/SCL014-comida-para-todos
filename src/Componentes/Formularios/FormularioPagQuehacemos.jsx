@@ -3,18 +3,14 @@ import './Formularios.css';
 import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
-import ModalGeneral from '../Modales/ModalGeneral';
 
-const FormularioTalento = () => {
+const FormularioTalento = (props) => {
 
     /* Definición de Estado del form */
     const [formQueHacemos, setformQueHacemos] = useState({});
 
     /* Definición del Estado de select Comunas*/
     const [comunas, setcomunas] = useState([]);
-
-    /* Definición Estado Modal */
-    const [modalShow, setModalShow] = React.useState(false);
 
     /* Contiene firestore */
     const refTalento = firebase.firestore().collection('FormularioQueHacemos');
@@ -44,8 +40,8 @@ const FormularioTalento = () => {
         refTalento.add(formQueHacemos)
             .then(() => {
                 enviarCorreoConfirmacion();
+                props.cerrarModal();
             });
-        setModalShow(true)
     };
 
     //funcion enviar correo Confirmacion
@@ -72,16 +68,9 @@ const FormularioTalento = () => {
     };
 
 
-    /* Función para manejar boton de Segundo Modal */
-    const clickBton = () => {
-        setModalShow(false);
-        // setformBancoAlimentos({...formBancoAlimentos});
-    };
-
-
     return (
-        <div className="form-group form-bg">
-            <div className="FormQueHacemos">
+        <div className="formularioEstilo">
+            <div className="FormSection">
                 {/* <div className="text">
                     <h3>Regala un poco de talento a las comunidades, ellas te lo agradecerán.</h3>
                     <p>A continuación puedes completar este formulario de inscripción.</p>
@@ -138,17 +127,6 @@ const FormularioTalento = () => {
                 </form>
 
             </div>
-
-            <ModalGeneral
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-                tituloModal={'Gracias por unirte a la causa.'}
-                contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
-                contenidoBotonModal={'Cerrar'}
-                funcionBotonModal={clickBton}
-            />
-
-
 
         </div>
     )
