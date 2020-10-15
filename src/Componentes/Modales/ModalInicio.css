@@ -1,6 +1,6 @@
 .modal-content {
     justify-content: center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));    
 }
 .modal-content button{
     align-self: flex-end;
@@ -26,6 +26,10 @@
 .backModalInicio{
         z-index: -1;
 }
-.boxModalInicio .modal-content{
+
+
+.boxModalInicio.modal-content {
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
     background-color: red !important;
 }

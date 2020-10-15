@@ -3,12 +3,12 @@
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
+    margin: 50px 0 50px 0;
 }
 
 .boxTextoSeccionDespliegue button{   
     align-self: flex-start;
-    bottom: -90px;
+    bottom: -60px;
     left: 5px;
     position: absolute;
 }
