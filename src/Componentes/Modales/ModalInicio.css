@@ -23,3 +23,9 @@
     border-top-style: none;
     justify-content: center;
 }
+.backModalInicio{
+        z-index: -1;
+}
+.boxModalInicio .modal-content{
+    background-color: red !important;
+}

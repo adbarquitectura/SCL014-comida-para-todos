@@ -3,9 +3,8 @@ import './EstilosBotones.css';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const BotonLink = (props) => {
-    
     const [active, setActive] = useState('');
-
+    
     const setEstadoActivoBoton = () => {
         if (props.estiloBoton !== undefined) {           
             if (props.estiloBoton.backgroundColor==="transparent") {
