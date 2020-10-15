@@ -4,8 +4,9 @@ import * as Comunas from './comunas.js';
 import firebase from '../../Firebase';
 import emailjs from "emailjs-com";
 import ModalGeneral from '../Modales/ModalGeneral';
+import { propTypes } from 'react-bootstrap/esm/Image';
 
-const FormularioBancoAlimentos = () => {
+const FormularioBancoAlimentos = (props) => {
 
     /* Definición de Estado del form */
     const [formBancoAlimentos, setformBancoAlimentos] = useState({});
@@ -47,9 +48,8 @@ const FormularioBancoAlimentos = () => {
         refBancoAlimentos.add(formBancoAlimentos)
             .then(() => {
                 enviarCorreoConfirmacion();
-            });
-        setModalShow(true);
-              
+                props.cerrarModal();
+            });            
     };
 
     //funcion enviar correo Confirmacion
@@ -152,14 +152,14 @@ const FormularioBancoAlimentos = () => {
             </div>
 
             
-            <ModalGeneral
+            {/* <ModalGeneral
             show={modalShow}
             onHide={() => setModalShow(false)}
             tituloModal={'Gracias por unirte a la causa.'}
             contenidoModal={'A la brevedad te enviaremos un correo con más información.'}
             contenidoBotonModal={'Cerrar'}
             funcionBotonModal={clickBton}
-            />
+            /> */}
 
 
         </div>

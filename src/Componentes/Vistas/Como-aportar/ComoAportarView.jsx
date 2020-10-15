@@ -54,6 +54,15 @@ const ComoAportarView = () => {
   const [parrafoSeccionDespliegue, setParrafoSeccionDespliegue] = useState('Los aportes desde los restaurantes son parte fundamental para que toda esta hermosa labor se vuelva realidad, los restaurantes colaboran, junto con nosotros a favor de las comunidades vulnerables, no solo llevándoles alimentos.');
   const [funcionBotonSeccionDespliegue, setFuncionBotonSeccionDespliegue] = useState();
 
+  const CerrarModalDesplegado = () => {
+    setContenidoModal('');
+    setTituloModal('Gracias por unirte a la causa.');
+    setContenidoModalSecundario('A la brevedad te enviaremos un correo con más información.');
+    setTimeout(function () { setModalShow(false) }, 3000);
+    console.log('despuesde cerrar');
+  };
+
+
   const changeEstadoBotonActiveTalento = () => {
     setStyleBotonTalento({ backgroundColor: 'transparent', border: '2px solid #FD4C00', color: '#FD4C00' });
     setStyleBotonMetro({ backgroundColor: '#FD4C00', border: 'none' });
@@ -97,7 +106,9 @@ const ComoAportarView = () => {
     setImgFondoSeccion({ backgroundImage: `url('${imgBanco}')` });
     setTituloSeccionDespliegue('Banco de alimentos');
     setParrafoSeccionDespliegue('Otra manera de aportar es regalando los alimentos que quieras y puedas donar desde tu hogar, puede ser cualquier tipo de alimento no perecible. Tus donaciones nos servirán para hacer más contundentes los platos de almuerzos y nos permitirá llegar a más personas. Nos debes indicar en el siguiente formulario la fecha que deseas que retiremos tu donación.');
-    setContenidoModal(<FormularioBancoAlimentos />);
+    setContenidoModal(<FormularioBancoAlimentos
+      cerrarModal={CerrarModalDesplegado}
+    />);
   };
 
   // const changeEstadoBotonNormal = () => {

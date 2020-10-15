@@ -82,9 +82,9 @@ const Alianzas = (props) => {
 
           <Row>
             <Col>
-              <div className="fotoAlianzas">
+              <div className="fotoAlianzasSec">
                 {arregloAlianza.map((aliado, idx) => {
-                  return <img className="fotoAlianzas" src={aliado} key={idx} />;
+                  return <img className="imgFotoAlianzasSec" src={aliado} key={idx} />;
                 })}
               </div>
             </Col>

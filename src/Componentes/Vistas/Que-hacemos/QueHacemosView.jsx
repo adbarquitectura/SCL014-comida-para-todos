@@ -10,11 +10,8 @@ const QueHacemosView = () => {
             <DescripcionLoQueHacemos
             contenidoInfo={'Las ollas solidarias y la comunidad'}/>
             <Campañas/>
-
         </div >
-
-
-    )
-}
+    );
+};
 
 export default QueHacemosView;
